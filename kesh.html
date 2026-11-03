@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <title>Çoklu Kanal Mako HLS Oynatıcı</title>
+  <style>
+    body { font-family: sans-serif; background: #111; color: #fff; padding: 20px; }
+    select, button { padding: 10px; font-size: 16px; margin-bottom: 15px; border-radius: 5px; }
+    video { width: 100%; max-width: 800px; background: #000; border-radius: 8px; }
+    .container { max-width: 800px; margin: 0 auto; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Mako Çoklu Kanal Canlı Yayın</h2>
+    
+    <!-- Kanal Seçim Menüsü -->
+    <label for="channelSelect">Kanal Seçin:</label><br>
+    <select id="channelSelect" onchange="changeChannel()">
+      <option value="k12">K12</option>
+      <option value="k12wad">K12WAD</option>
+      <option value="n12rh" selected>N12rh</option>
+      <option value="comedy">Comedy</option>
+      <option value="drama">Drama</option>
+      <option value="music">Music</option>
+      <option value="food">Food</option>
+      <option value="erets">Erets</option>
+      <option value="savri">Savri</option>
+      <option value="ch24live">Ch24Live</option>
+      <option value="t24">T24</option>
+    </select>
+    <br>
+
+    <video id="video" controls autoplay playsinline></video>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+  
+  <script>
+    // Python scriptindeki kanalların tam path ve master URL sözlüğü
+    const channels = {
+      "k12": {
+        "path": "/stream/hls/live/2033791/k12/index.m3u8",
+        "base": "https://mako-streaming.akamaized.net/stream/hls/live/2033791/k12/"
+      },
+      "k12wad": {
+        "path": "/stream/hls/live/2033791/k12n12wad/index.m3u8",
+        "base": "https://mako-streaming.akamaized.net/stream/hls/live/2033791/k12n12wad/"
+      },
+      "n12rh": {
+        "path": "/n12/hls/live/20000821/k12rh/index.m3u8",
+        "base": "https://mako-streaming.akamaized.net/n12/hls/live/20000821/k12rh/"
+      },
+      "comedy": {
+        "path": "/evrideo/hls/live/20001278/free_comedy/index.m3u8",
+        "base": "https://mako-streaming.akamaized.net/evrideo/hls/live/20001278/free_comedy/"
+      },
+      "drama": {
+        "path": "/evrideo/hls/live/20001278/free_drama/index.m3u8",
+        "base": "https://mako-streaming.akamaized.net/evrideo/hls/live/20001278/free_drama/"
+      },
+      "music": {
+        "path": "/evrideo/hls/live/20001278/free_music/index.m3u8",
+        "base": "https://mako-streaming.akamaized.net/evrideo/hls/live/20001278/free_music/"
+      },
+      "food": {
+        "path": "/evrideo/hls/live/20001278/free_food/index.m3u8",
+        "base": "https://mako-streaming.akamaized.net/evrideo/hls/live/20001278/free_food/"
+      },
+      "erets": {
+        "path": "/evrideo/hls/live/20001278/erets/index.m3u8",
+        "base": "https://mako-streaming.akamaized.net/evrideo/hls/live/20001278/erets/"
+      },
+      "savri": {
+        "path": "/evrideo/hls/live/20001278/savri/index.m3u8",
+        "base": "https://mako-streaming.akamaized.net/evrideo/hls/live/20001278/savri/"
+      },
+      "ch24live": {
+        "path": "/evrideo/hls/live/20001278/ch24live/index.m3u8",
+        "base": "https://mako-streaming.akamaized.net/evrideo/hls/live/20001278/ch24live/"
+      },
+      "t24": {
+        "path": "/direct/hls/live/2035340/ch24live/index.m3u8",
+        "base": "https://mako-streaming.akamaized.net/direct/hls/live/2035340/ch24live/"
+      }
+    };
+
+    const video = document.getElementById('video');
+    const channelSelect = document.getElementById('channelSelect');
+    const streamBaseUrl = 'https://mako-streaming.akamaized.net';
+    
+    let hls = null;
+    let refreshTimer = null;
+
+    // Ticket alma fonksiyonu (Seçilen kanalın path değerini kullanarak)
+    async function fetchTicket(channelPath) {
+      try {
+        const entitlementUrl = `https://mass.mako.co.il/ClicksStatistics/entitlementsServicesV2.jsp?et=ngt&lp=${encodeURIComponent(channelPath)}?as=1&rv=AKAMAI`;
+        const response = await fetch(entitlementUrl);
+        const data = await response.json();
+        return data.tickets[0].ticket;
+      } catch (error) {
+        console.error("Ticket alınamadı:", error);
+        return null;
+      }
+    }
+
+    // Oynatıcıyı yükleme/güncelleme ana fonksiyonu
+    async function loadPlayer() {
+      const selectedKey = channelSelect.value;
+      const channelInfo = channels[selectedKey];
+      if (!channelInfo) return;
+
+      console.log(`[${selectedKey}] için güncel ticket isteniyor...`);
+      const ticket = await fetchTicket(channelInfo.path);
+      if (!ticket) return;
+
+      const videoSrc = `${streamBaseUrl}${channelInfo.path}?${ticket}`;
+
+      if (Hls.isSupported()) {
+        if (hls) {
+          hls.destroy();
+        }
+        
+        hls = new Hls();
+        hls.loadSource(videoSrc);
+        hls.attachMedia(video);
+        
+        hls.on(Hls.Events.ERROR, async function (event, data) {
+          if (data.fatal) {
+            switch (data.fatal) {
+              case Hls.ErrorTypes.NETWORK_ERROR:
+              case Hls.ErrorTypes.MEDIA_ERROR:
+                console.warn("Hata yakalandı, ticket yenilenip kurtarılıyor...");
+                const freshTicket = await fetchTicket(channelInfo.path);
+                if (freshTicket) {
+                  hls.loadSource(`${streamBaseUrl}${channelInfo.path}?${freshTicket}`);
+                  hls.startLoad();
+                }
+                break;
+              default:
+                hls.destroy();
+                break;
+            }
+          }
+        });
+
+      } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+        video.src = videoSrc;
+      }
+    }
+
+    // Kanal değiştirildiğinde tetiklenen fonksiyon
+    function changeChannel() {
+      // Zamanlayıcıyı sıfırla ki anında yeni kanalın ticket'ı çekilsin
+      if (refreshTimer) clearInterval(refreshTimer);
+      
+      loadPlayer();
+      
+      // 5 dakikada bir güncel kanalı yenileyecek döngüyü yeniden başlat
+      refreshTimer = setInterval(loadPlayer, 5 * 60 * 1000);
+    }
+
+    // Sayfa açıldığında ilk başlatma
+    changeChannel();
+  </script>
+</body>
+</html>
