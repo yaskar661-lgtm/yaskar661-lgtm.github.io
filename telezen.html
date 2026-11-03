@@ -1,0 +1,1121 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="tr">
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&amp;display=swap" rel="stylesheet">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>teleZEN TV - Ana Sayfa</title>
+<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+<style>
+        :root {
+            --primary-color: #ffcc00;
+            --bg-dark: #000000;
+            --bg-light: #111111;
+            --text-main: #ffffff;
+            --text-muted: #b3b3b3;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Header */
+        header {
+            background-color: #000;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 15px rgba(255,204,0,0.1);
+            border-bottom: 1px solid #222;
+        }
+
+        .logo img {
+            height: 45px;
+            object-fit: contain;
+            transition: transform 0.3s ease;
+        }
+
+        .logo img:hover {
+            transform: scale(1.05);
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            z-index: 1001;
+        }
+
+        nav {
+            display: flex;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 10px;
+        }
+
+        nav ul li a {
+            color: var(--text-main);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 15px;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        nav ul li a:hover, nav ul li a.active {
+            background-color: var(--primary-color);
+            color: #000;
+        }
+
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--primary-color);
+            font-size: 28px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        /* Sections */
+        section {
+            display: none;
+            padding: 40px 5%;
+            min-height: 80vh;
+        }
+
+        section.active {
+            display: block;
+            animation: fadeInPage 0.4s ease forwards;
+        }
+
+        @keyframes fadeInPage {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h1, h2 {
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+
+        /* Ana Sayfa Hero */
+        .hero {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('https://images.unsplash.com/photo-1593784991095-a205069470b6?auto=format&fit=crop&q=80&w=2070') center/cover;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            border: 1px solid #222;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            color: #fff;
+        }
+
+        .home-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 30px;
+        }
+
+        .home-stream-box, .home-schedule-box {
+            background-color: var(--bg-light);
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #222;
+        }
+
+        /* Custom Player & Iframe */
+        .custom-player-wrapper {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            background: #000;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #222;
+        }
+        .custom-player-wrapper video,
+        .custom-player-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            background: #000;
+            border: none;
+        }
+        
+        .player-controls {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(transparent, rgba(0,0,0,0.9));
+            padding: 10px 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: 10;
+        }
+        .custom-player-wrapper:hover .player-controls {
+            opacity: 1;
+        }
+        .player-left {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .ctrl-btn {
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .ctrl-btn:hover {
+            color: var(--primary-color);
+        }
+        .live-badge {
+            background-color: var(--primary-color);
+            color: #000;
+            font-weight: 600;
+            font-size: 0.75rem;
+            padding: 3px 8px;
+            border-radius: 4px;
+            text-transform: uppercase;
+        }
+        .volume-slider {
+            width: 80px;
+            accent-color: var(--primary-color);
+            cursor: pointer;
+        }
+
+        .external-link {
+            display: block;
+            text-align: center;
+            margin-top: 15px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+        .external-link a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        /* Tarayıcı Sekmesi Player */
+        .player-tabs-container {
+            width: 100%;
+        }
+        .player-tab-headers {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: #050505;
+            padding: 8px 8px 0 8px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border: 1px solid #222;
+            border-bottom: none;
+            gap: 5px;
+        }
+        .player-tab-btn {
+            background-color: #111;
+            color: #888;
+            border: 1px solid #222;
+            border-bottom: none;
+            padding: 10px 18px;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 0.9rem;
+            position: relative;
+            top: 1px;
+            flex-grow: 1;
+            text-align: center;
+        }
+        .player-tab-btn:hover {
+            background-color: #1a1a1a;
+            color: #fff;
+        }
+        .player-tab-btn.active {
+            background-color: var(--bg-light);
+            color: var(--primary-color);
+            border-top: 3px solid var(--primary-color);
+            border-left: 1px solid #333;
+            border-right: 1px solid #333;
+            z-index: 2;
+        }
+        .player-tab-pane {
+            display: none;
+            background-color: var(--bg-light);
+            border: 1px solid #333;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border-top-right-radius: 10px;
+            padding: 15px;
+            position: relative;
+            z-index: 1;
+        }
+        .player-tab-pane.active {
+            display: block;
+        }
+
+        /* Yayın Akışı Tabs */
+        .tabs {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        .tab-btn {
+            background-color: var(--bg-light);
+            color: white;
+            border: 1px solid #222;
+            padding: 8px 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: 600;
+        }
+        .tab-btn.active {
+            background-color: var(--primary-color);
+            color: #000;
+        }
+        .tab-content {
+            display: none;
+            background-color: var(--bg-light);
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #222;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .schedule-list {
+            list-style: none;
+            max-height: 450px;
+            overflow-y: auto;
+            padding-right: 5px;
+        }
+        .schedule-list::-webkit-scrollbar { width: 6px; }
+        .schedule-list::-webkit-scrollbar-thumb { background: var(--primary-color); border-radius: 3px; }
+        
+        .schedule-list li {
+            padding: 10px 15px;
+            border-bottom: 1px solid #222;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 15px;
+        }
+        .schedule-list li:hover {
+            background-color: #1a1a1a;
+        }
+        .time {
+            font-weight: 600;
+            color: var(--primary-color);
+            width: 110px;
+            flex-shrink: 0;
+            text-align: left;
+        }
+
+        /* Diziler */
+        .series-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 280px));
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+        }
+        .series-card {
+            background-color: var(--bg-light);
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid #222;
+            display: flex;
+            flex-direction: column;
+        }
+        .series-card img {
+            width: 100%;
+            aspect-ratio: 2 / 3;
+            object-fit: cover;
+            border-bottom: 3px solid var(--primary-color);
+        }
+        .series-info {
+            padding: 20px;
+            text-align: center;
+            background: var(--bg-light);
+        }
+        .series-btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: #000;
+            padding: 12px 15px;
+            border: none;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        /* Kurumsal */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+        .contact-card {
+            background-color: var(--bg-light);
+            padding: 25px;
+            border-radius: 10px;
+            border-top: 4px solid var(--primary-color);
+            border: 1px solid #222;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .contact-card-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            border-bottom: 1px dashed #333;
+            padding-bottom: 15px;
+        }
+        .contact-logo {
+            height: 50px;
+            object-fit: contain;
+            border-radius: 4px;
+        }
+        .contact-card h3 {
+            margin: 0;
+            color: #fff;
+            font-size: 1.2rem;
+        }
+        .company-title {
+            color: var(--primary-color);
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+        .contact-info p {
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+            color: var(--text-main);
+        }
+        .contact-info strong {
+            color: #ddd;
+        }
+
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0; top: 0; width: 100%; height: 100%;
+            background-color: rgba(0,0,0,0.9);
+            align-items: center; justify-content: center;
+        }
+        .modal.show { display: flex; }
+        .modal-content {
+            background-color: var(--bg-light);
+            width: 90%; max-width: 850px;
+            border-radius: 12px;
+            border: 1px solid #333;
+            display: flex; flex-direction: column;
+            max-height: 90vh;
+        }
+        .modal-header { padding: 15px; border-bottom: 1px solid #222; display: flex; justify-content: space-between; }
+        .close-btn { color: #fff; font-size: 28px; background: none; border: none; cursor: pointer; }
+        .modal-body { padding: 20px; overflow-y: auto; }
+        .video-wrapper { position: relative; padding-bottom: 56.25%; height: 0; background: #000; border-radius: 8px; overflow: hidden; }
+        .video-wrapper iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
+        .episodes-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); gap: 10px; margin-top: 15px;}
+        .episode-btn { background: #1a1a1a; color: #fff; border: 1px solid #333; padding: 10px; cursor: pointer; border-radius: 4px;}
+        .episode-btn.active { background: var(--primary-color); color: #000; }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #000;
+            color: var(--text-muted);
+            border-top: 1px solid #222;
+        }
+
+        /* Responsive & Animasyonlu Mobil Menü */
+        @media (max-width: 992px) {
+            .home-grid { grid-template-columns: 1fr; }
+        }
+
+        @media (max-width: 768px) {
+            .menu-toggle { display: block; }
+            
+            nav {
+                position: fixed;
+                top: 0;
+                right: -280px; 
+                width: 280px;
+                height: 100vh;
+                background-color: #050505;
+                flex-direction: column;
+                padding-top: 80px;
+                border-left: 1px solid #222;
+                transition: right 0.4s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+                z-index: 999;
+                box-shadow: -5px 0 20px rgba(0,0,0,0.8);
+            }
+            
+            nav.open {
+                right: 0; 
+            }
+
+            nav ul {
+                flex-direction: column;
+                width: 100%;
+                gap: 0;
+            }
+
+            nav ul li a {
+                display: block;
+                padding: 18px 25px;
+                border-radius: 0;
+                border-bottom: 1px solid #1a1a1a;
+                font-size: 1.1rem;
+            }
+
+            .contact-card-header { flex-direction: column; align-items: flex-start; }
+            .contact-logo { margin-bottom: 10px; height: 60px; }
+        }
+    
+/* Mobil yerleşim ve canlı sohbet */
+body { min-height:100vh; min-height:100dvh; display:flex; flex-direction:column; }
+main { flex:1; min-width:0; }
+section { min-height:0; scroll-margin-top:90px; }
+.home-grid { grid-template-columns:minmax(0,2fr) minmax(0,1fr); }
+.home-grid > *, .live-layout > * { min-width:0; }
+.live-layout { display:grid; grid-template-columns:minmax(0,1fr) 350px; gap:24px; align-items:start; }
+.kick-chat { background:#111; border:1px solid #333; border-radius:10px; overflow:hidden; }
+.chat-header { display:flex; align-items:center; justify-content:space-between; gap:12px; padding:14px; border-bottom:1px solid #333; }
+.chat-header h3 { font-size:1rem; }
+.kick-chat a { color:var(--primary-color); }
+.chat-header a { font-size:.85rem; white-space:nowrap; }
+#kickChat { display:block; width:100%; height:560px; border:0; background:#0b0e0f; color-scheme:dark; }
+.chat-note { padding:12px; color:#b3b3b3; font-size:.82rem; }
+.player-status { color:#ddd; font-size:.9rem; margin-top:10px; }
+.player-status:empty { display:none; }
+.contact-grid { grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr)); }
+.contact-card { min-width:0; overflow-wrap:anywhere; border-top:4px solid var(--primary-color); }
+.contact-logo { max-width:100%; height:auto; max-height:60px; }
+.schedule-list li > span:last-child { min-width:0; overflow-wrap:anywhere; }
+.schedule-list li.on-air { background:#292300; border-left:3px solid var(--primary-color); }
+.time { white-space:nowrap; font-variant-numeric:tabular-nums; }
+#yayin-akisi .schedule-list { max-height:none; overflow:visible; }
+button, a, input { touch-action:manipulation; }
+:focus-visible { outline:2px solid var(--primary-color); outline-offset:4px; }
+.modal-content { max-height:90dvh; }
+@media (max-width:992px) { .home-grid, .live-layout { grid-template-columns:1fr; } #kickChat { height:440px; } }
+@media (max-width:768px) {
+ header { padding:12px 18px; } section { padding:24px 16px; }
+ .hero { padding:28px 16px; } .hero h1 { font-size:1.8rem; }
+ nav { right:0; transform:translateX(100%); visibility:hidden; transition:transform .3s,visibility .3s; height:100dvh; overflow-y:auto; width:min(280px,100vw); }
+ nav.open { transform:translateX(0); visibility:visible; }
+ .home-stream-box,.home-schedule-box,.tab-content { padding:12px; }
+ .schedule-list li { padding:12px 4px; gap:12px; align-items:flex-start; }
+ .time { width:100px; font-size:.9rem; }
+ .contact-card { padding:20px; } .series-grid { grid-template-columns:minmax(0,280px); }
+ .player-tab-btn { padding:10px 8px; } .modal-body { padding:12px; }
+}
+@media (prefers-reduced-motion:reduce) { *, *::before, *::after { animation:none!important; transition:none!important; scroll-behavior:auto!important; } }
+</style>
+</head>
+<body>
+<header>
+<div class="logo">
+<img alt="teleZEN Logo" src="https://i.ibb.co/pBnW7m36/n-Shot-20260721-124053178.png"/>
+</div>
+<div class="header-right">
+<button aria-controls="mainNav" aria-expanded="false" aria-label="Menüyü aç" class="menu-toggle" id="menuToggleBtn" onclick="toggleMenu()">☰</button>
+</div>
+<nav aria-label="Ana menü" id="mainNav">
+<ul>
+<li><a class="nav-link active" href="#ana-sayfa" id="nav-ana-sayfa" onclick="showSection('ana-sayfa'); return false;">Ana Sayfa</a></li>
+<li><a class="nav-link" href="#canli-yayin" id="nav-canli-yayin" onclick="showSection('canli-yayin'); return false;">Canlı Yayın</a></li>
+<li><a class="nav-link" href="#yayin-akisi" id="nav-yayin-akisi" onclick="showSection('yayin-akisi'); return false;">Yayın Akışı</a></li>
+<li><a class="nav-link" href="#diziler" id="nav-diziler" onclick="showSection('diziler'); return false;">Diziler</a></li>
+<li><a class="nav-link" href="#kurumsal" id="nav-kurumsal" onclick="showSection('kurumsal'); return false;">Kurumsal</a></li>
+</ul>
+</nav>
+</header>
+<main>
+<!-- ANA SAYFA -->
+<section class="active" id="ana-sayfa">
+<div class="hero">
+<h1>teleZEN'e Hoş Geldiniz!</h1>
+<p>Efsanevi diziler, nostaljik anlar ve kesintisiz eğlence tek adreste.</p>
+</div>
+<div class="home-grid">
+<!-- Ana Sayfa Sekmeli Canlı Yayın Kutusu -->
+<div class="home-stream-box">
+<h2>Canlı Yayındayız</h2>
+<div class="player-tabs-container">
+<div class="player-tab-headers">
+<button class="player-tab-btn active" onclick="openHomePlayerTab(event, 'homePane1')">Yayın 1</button>
+<button class="player-tab-btn" onclick="openHomePlayerTab(event, 'homePane2')">Kick 1</button>
+</div>
+<!-- Ana Sayfa Yayın 1 -->
+<div class="player-tab-pane active" id="homePane1">
+<div class="custom-player-wrapper">
+<video controls="" id="homeLiveStream" muted="" playsinline="" preload="none"></video>
+
+</div><p class="player-status" role="status"></p><button type="button" class="tab-btn" style="margin-top:12px" onclick="retryStream('homeLiveStream')">Yayını yeniden dene</button>
+<div class="external-link">
+<a href="https://kick-to-m3u8.onrender.com/stream/telezentvchannel" rel="noopener noreferrer" target="_blank">M3U8 Dosyasını Doğrudan Aç</a>
+</div>
+</div>
+<!-- Ana Sayfa Kick 1 -->
+<div class="player-tab-pane" id="homePane2">
+<div class="custom-player-wrapper">
+<iframe allow="autoplay; fullscreen; picture-in-picture; encrypted-media" allowfullscreen="" id="homeKickIframe" src="about:blank" title="teleZEN Kick canlı yayın"></iframe>
+</div>
+<div class="external-link">
+<a href="https://kick.com/telezentvchannel" rel="noopener noreferrer" target="_blank">Kick'te İzle</a>
+</div>
+</div>
+</div>
+</div>
+<div class="home-schedule-box">
+<h2 id="todayTitle">Bugünün Akışı</h2>
+<ul class="schedule-list" id="homeTodayList">
+</ul>
+</div>
+</div>
+</section>
+<!-- CANLI YAYIN SEKMESİ -->
+<section id="canli-yayin">
+<h2>Canlı Yayın Kanalları</h2>
+<div class="live-layout"><div class="player-tabs-container">
+<div class="player-tab-headers">
+<button class="player-tab-btn active" onclick="openPlayerTab(event, 'pane1')">Yayın 1 (Ana Kanal)</button>
+<button class="player-tab-btn" onclick="openPlayerTab(event, 'pane2')">Kick 1</button>
+</div>
+<!-- Yayın 1 (M3U8) -->
+<div class="player-tab-pane active" id="pane1">
+<div class="custom-player-wrapper">
+<video controls="" id="tabLiveStream1" muted="" playsinline="" preload="none"></video>
+
+</div><p class="player-status" role="status"></p><button type="button" class="tab-btn" style="margin-top:12px" onclick="retryStream('tabLiveStream1')">Yayını yeniden dene</button>
+<div class="external-link">
+<a href="https://kick-to-m3u8.onrender.com/stream/telezentvchannel" rel="noopener noreferrer" target="_blank">1. Kanal M3U8 Dosyası</a>
+</div>
+</div>
+<!-- Kick 1 Embed -->
+<div class="player-tab-pane" id="pane2">
+<div class="custom-player-wrapper">
+<iframe allow="autoplay; fullscreen; picture-in-picture; encrypted-media" allowfullscreen="" id="kickIframe1" src="about:blank" title="teleZEN Kick canlı yayın"></iframe>
+</div>
+<div class="external-link">
+<a href="https://kick.com/telezentvchannel" rel="noopener noreferrer" target="_blank">Kick'te İzle</a>
+</div>
+</div>
+</div><aside aria-labelledby="chatTitle" class="kick-chat"><div class="chat-header"><h3 id="chatTitle">Kick Canlı Sohbet</h3><a href="https://kick.com/popout/telezentvchannel/chat" rel="noopener noreferrer" target="_blank">Ayrı aç ↗</a></div><iframe id="kickChat" src="about:blank" title="teleZEN Kick sohbeti"></iframe><p class="chat-note">Sohbet görünmüyorsa veya giriş yapmak için <a href="https://kick.com/popout/telezentvchannel/chat" rel="noopener noreferrer" target="_blank">ayrı pencerede açın</a>.</p></aside></div>
+</section>
+<!-- YAYIN AKIŞI SEKMESİ -->
+<section id="yayin-akisi">
+<h2>Haftalık Yayın Akışı</h2>
+<div class="tabs">
+<button class="tab-btn active" onclick="openTab(event, 'pazartesi')">Pazartesi</button>
+<button class="tab-btn" onclick="openTab(event, 'sali')">Salı</button>
+<button class="tab-btn" onclick="openTab(event, 'carsamba')">Çarşamba</button>
+<button class="tab-btn" onclick="openTab(event, 'persembe')">Perşembe</button>
+<button class="tab-btn" onclick="openTab(event, 'cuma')">Cuma</button>
+<button class="tab-btn" onclick="openTab(event, 'cumartesi')">Cumartesi</button>
+<button class="tab-btn" onclick="openTab(event, 'pazar')">Pazar</button>
+</div>
+<!-- Pazartesi -->
+<div class="tab-content active" id="pazartesi">
+<ul class="schedule-list">
+<li><span class="time">00.00-02.00</span><span>Annem Ankara (Tekrar)</span></li>
+<li><span class="time">02.00-04.00</span><span>Arka Sokaklar (Tekrar)</span></li>
+<li><span class="time">04.00-06.00</span><span>Yalan Dünya (Tekrar)</span></li>
+<li><span class="time">06.00-07.00</span><span>Rehber (Gezi)</span></li>
+<li><span class="time">07.00-08.00</span><span>Çocuklar Duymasın</span></li>
+<li><span class="time">08.00-09.00</span><span>Sihirli Annem</span></li>
+<li><span class="time">09.00-10.00</span><span>Hayat Bilgisi</span></li>
+<li><span class="time">10.00-11.00</span><span>Mutfağım</span></li>
+<li><span class="time">11.00-12.00</span><span>Akasya Durağı</span></li>
+<li><span class="time">12.00-13.00</span><span>Kelime Oyunu</span></li>
+<li><span class="time">13.00-15.00</span><span>Hanımın Çiftliği</span></li>
+<li><span class="time">15.00-16.00</span><span>Yalan Dünya</span></li>
+<li><span class="time">16.00-17.00</span><span>Sihirli Annem</span></li>
+<li><span class="time">17.00-18.00</span><span>Ben Bilmem Eşim Bilir</span></li>
+<li><span class="time">18.00-19.00</span><span>Geniş Aile</span></li>
+<li><span class="time">19.00-20.00</span><span>Çok Gezenti</span></li>
+<li><span class="time">20.00-22.00</span><span>Annem Ankara (Ana Yayın)</span></li>
+<li><span class="time">22.00-23.00</span><span>Kanıt</span></li>
+<li><span class="time">23.00-24.00</span><span>Criminal Minds</span></li>
+</ul>
+</div>
+<!-- Salı -->
+<div class="tab-content" id="sali">
+<ul class="schedule-list">
+<li><span class="time">00.00-02.00</span><span>Yargı (Tekrar)</span></li>
+<li><span class="time">02.00-04.00</span><span>Arka Sokaklar (Tekrar)</span></li>
+<li><span class="time">04.00-06.00</span><span>Geniş Aile (Tekrar)</span></li>
+<li><span class="time">06.00-07.00</span><span>Çok Gezenti</span></li>
+<li><span class="time">07.00-08.00</span><span>Çocuklar Duymasın</span></li>
+<li><span class="time">08.00-09.00</span><span>Sihirli Annem</span></li>
+<li><span class="time">09.00-10.00</span><span>Hayat Bilgisi</span></li>
+<li><span class="time">10.00-11.00</span><span>Mutfağım</span></li>
+<li><span class="time">11.00-12.00</span><span>Akasya Durağı</span></li>
+<li><span class="time">12.00-13.00</span><span>Kelime Oyunu</span></li>
+<li><span class="time">13.00-15.00</span><span>Kavak Yelleri</span></li>
+<li><span class="time">15.00-16.00</span><span>Geniş Aile</span></li>
+<li><span class="time">16.00-17.00</span><span>Sihirli Annem</span></li>
+<li><span class="time">17.00-18.00</span><span>Ben Bilmem Eşim Bilir</span></li>
+<li><span class="time">18.00-19.00</span><span>Ankara'nın Dikmeni</span></li>
+<li><span class="time">19.00-20.00</span><span>Rehber</span></li>
+<li><span class="time">20.00-22.00</span><span>Yargı (Ana Yayın)</span></li>
+<li><span class="time">22.00-23.00</span><span>Kanıt</span></li>
+<li><span class="time">23.00-24.00</span><span>Criminal Minds</span></li>
+</ul>
+</div>
+<!-- Çarşamba -->
+<div class="tab-content" id="carsamba">
+<ul class="schedule-list">
+<li><span class="time">00.00-02.00</span><span>Hanımın Çiftliği (Tekrar)</span></li>
+<li><span class="time">02.00-04.00</span><span>Arka Sokaklar (Tekrar)</span></li>
+<li><span class="time">04.00-06.00</span><span>Ankara'nın Dikmeni (Tekrar)</span></li>
+<li><span class="time">06.00-07.00</span><span>Rehber</span></li>
+<li><span class="time">07.00-08.00</span><span>Çocuklar Duymasın</span></li>
+<li><span class="time">08.00-09.00</span><span>Sihirli Annem</span></li>
+<li><span class="time">09.00-10.00</span><span>Hayat Bilgisi</span></li>
+<li><span class="time">10.00-11.00</span><span>Mutfağım</span></li>
+<li><span class="time">11.00-12.00</span><span>Akasya Durağı</span></li>
+<li><span class="time">12.00-13.00</span><span>Kelime Oyunu</span></li>
+<li><span class="time">13.00-15.00</span><span>Annem Ankara</span></li>
+<li><span class="time">15.00-16.00</span><span>Ankara'nın Dikmeni</span></li>
+<li><span class="time">16.00-17.00</span><span>Sihirli Annem</span></li>
+<li><span class="time">17.00-18.00</span><span>Ben Bilmem Eşim Bilir</span></li>
+<li><span class="time">18.00-19.00</span><span>Çocuklar Duymasın</span></li>
+<li><span class="time">19.00-20.00</span><span>Çok Gezenti</span></li>
+<li><span class="time">20.00-22.00</span><span>Hanımın Çiftliği (Ana Yayın)</span></li>
+<li><span class="time">22.00-23.00</span><span>Kanıt</span></li>
+<li><span class="time">23.00-24.00</span><span>Criminal Minds</span></li>
+</ul>
+</div>
+<!-- Perşembe -->
+<div class="tab-content" id="persembe">
+<ul class="schedule-list">
+<li><span class="time">00.00-02.00</span><span>Kavak Yelleri (Tekrar)</span></li>
+<li><span class="time">02.00-04.00</span><span>Arka Sokaklar (Tekrar)</span></li>
+<li><span class="time">04.00-06.00</span><span>Çocuklar Duymasın (Tekrar)</span></li>
+<li><span class="time">06.00-07.00</span><span>Çok Gezenti</span></li>
+<li><span class="time">07.00-08.00</span><span>Çocuklar Duymasın</span></li>
+<li><span class="time">08.00-09.00</span><span>Sihirli Annem</span></li>
+<li><span class="time">09.00-10.00</span><span>Hayat Bilgisi</span></li>
+<li><span class="time">10.00-11.00</span><span>Mutfağım</span></li>
+<li><span class="time">11.00-12.00</span><span>Akasya Durağı</span></li>
+<li><span class="time">12.00-13.00</span><span>Kelime Oyunu</span></li>
+<li><span class="time">13.00-15.00</span><span>Yargı</span></li>
+<li><span class="time">15.00-16.00</span><span>Çocuklar Duymasın</span></li>
+<li><span class="time">16.00-17.00</span><span>Sihirli Annem</span></li>
+<li><span class="time">17.00-18.00</span><span>Ben Bilmem Eşim Bilir</span></li>
+<li><span class="time">18.00-19.00</span><span>Akasya Durağı</span></li>
+<li><span class="time">19.00-20.00</span><span>Rehber</span></li>
+<li><span class="time">20.00-22.00</span><span>Kavak Yelleri (Ana Yayın)</span></li>
+<li><span class="time">22.00-23.00</span><span>Kanıt</span></li>
+<li><span class="time">23.00-24.00</span><span>Criminal Minds</span></li>
+</ul>
+</div>
+<!-- Cuma -->
+<div class="tab-content" id="cuma">
+<ul class="schedule-list">
+<li><span class="time">00.00-02.00</span><span>Arka Sokaklar (Tekrar)</span></li>
+<li><span class="time">02.00-04.00</span><span>Arka Sokaklar (Tekrar)</span></li>
+<li><span class="time">04.00-06.00</span><span>Akasya Durağı (Tekrar)</span></li>
+<li><span class="time">06.00-07.00</span><span>Rehber</span></li>
+<li><span class="time">07.00-08.00</span><span>Çocuklar Duymasın</span></li>
+<li><span class="time">08.00-09.00</span><span>Sihirli Annem</span></li>
+<li><span class="time">09.00-10.00</span><span>Hayat Bilgisi</span></li>
+<li><span class="time">10.00-11.00</span><span>Mutfağım</span></li>
+<li><span class="time">11.00-12.00</span><span>Akasya Durağı</span></li>
+<li><span class="time">12.00-13.00</span><span>Kelime Oyunu</span></li>
+<li><span class="time">13.00-15.00</span><span>Hanımın Çiftliği</span></li>
+<li><span class="time">15.00-16.00</span><span>Akasya Durağı</span></li>
+<li><span class="time">16.00-17.00</span><span>Sihirli Annem</span></li>
+<li><span class="time">17.00-18.00</span><span>Ben Bilmem Eşim Bilir</span></li>
+<li><span class="time">18.00-19.00</span><span>Yalan Dünya</span></li>
+<li><span class="time">19.00-20.00</span><span>Rehber</span></li>
+<li><span class="time">20.00-22.00</span><span>Arka Sokaklar (Ana Yayın)</span></li>
+<li><span class="time">22.00-23.00</span><span>Kanıt</span></li>
+<li><span class="time">23.00-24.00</span><span>Criminal Minds</span></li>
+</ul>
+</div>
+<!-- Cumartesi -->
+<div class="tab-content" id="cumartesi">
+<ul class="schedule-list">
+<li><span class="time">00.00-02.00</span><span>Attack on Titan (4 Bölüm / Tekrar)</span></li>
+<li><span class="time">02.00-04.00</span><span>Demon Slayer (4 Bölüm / Tekrar)</span></li>
+<li><span class="time">04.00-06.00</span><span>Evangelion (4 Bölüm / Tekrar)</span></li>
+<li><span class="time">06.00-08.00</span><span>Naruto (4 Bölüm)</span></li>
+<li><span class="time">08.00-10.00</span><span>Naruto: Shippuden (4 Bölüm)</span></li>
+<li><span class="time">10.00-12.00</span><span>Boruto: Naruto Gelecek Nesiller (4 Bölüm)</span></li>
+<li><span class="time">12.00-14.00</span><span>My Hero Academia (4 Bölüm)</span></li>
+<li><span class="time">14.00-16.00</span><span>JoJo's Bizarre Adventure (4 Bölüm)</span></li>
+<li><span class="time">16.00-18.00</span><span>Jujutsu Kaisen (4 Bölüm)</span></li>
+<li><span class="time">18.00-20.00</span><span>Demon Slayer (4 Bölüm)</span></li>
+<li><span class="time">20.00-22.00</span><span>Attack on Titan (Ana Yayın)</span></li>
+<li><span class="time">22.00-24.00</span><span>Evangelion (4 Bölüm)</span></li>
+</ul>
+</div>
+<!-- Pazar -->
+<div class="tab-content" id="pazar">
+<ul class="schedule-list">
+<li><span class="time">00.00-02.00</span><span>Jujutsu Kaisen (4 Bölüm / Tekrar)</span></li>
+<li><span class="time">02.00-04.00</span><span>Attack on Titan (4 Bölüm / Tekrar)</span></li>
+<li><span class="time">04.00-06.00</span><span>JoJo's Bizarre Adventure (4 Bölüm)</span></li>
+<li><span class="time">06.00-08.00</span><span>Naruto (4 Bölüm)</span></li>
+<li><span class="time">08.00-10.00</span><span>Naruto: Shippuden (4 Bölüm)</span></li>
+<li><span class="time">10.00-12.00</span><span>Boruto (4 Bölüm)</span></li>
+<li><span class="time">12.00-14.00</span><span>My Hero Academia (4 Bölüm)</span></li>
+<li><span class="time">14.00-16.00</span><span>Evangelion (4 Bölüm)</span></li>
+<li><span class="time">16.00-18.00</span><span>JoJo's Bizarre Adventure (4 Bölüm)</span></li>
+<li><span class="time">18.00-20.00</span><span>Jujutsu Kaisen (4 Bölüm)</span></li>
+<li><span class="time">20.00-22.00</span><span>Demon Slayer (Ana Yayın)</span></li>
+<li><span class="time">22.00-24.00</span><span>Attack on Titan (4 Bölüm)</span></li>
+</ul>
+</div>
+</section>
+<!-- DİZİLER SEKMESİ -->
+<section id="diziler">
+<h2>Dizilerimiz</h2>
+<div class="series-grid">
+<div class="series-card">
+<img alt="Geniş Aile" src="https://m.media-amazon.com/images/M/MV5BZDdiYWJhYTctNzRiMi00NDQ0LTk5MGItNjVlZDY0ZWIzYjcwXkEyXkFqcGc@._V1_.jpg"/>
+<div class="series-info">
+<h3>Geniş Aile</h3>
+<button class="series-btn" onclick="openModal('Geniş Aile', 'PLYVqqADp1dDyUFFEmHB3DJcfZmIRZIwH1', 108, 59, true)">Bölümleri İzle</button>
+</div>
+</div>
+<div class="series-card">
+<img alt="Akasya Durağı" src="https://tr.web.img4.acsta.net/r_512_288/medias/nmedia/18/84/95/44/20082520.jpg"/>
+<div class="series-info">
+<h3>Akasya Durağı</h3>
+<button class="series-btn" onclick="openModal('Akasya Durağı', 'PLi2r1zb7ivLwSEZ_saUimVKp2BrU4Au8k', 1, 174, false)">Bölümleri İzle</button>
+</div>
+</div>
+</div>
+</section>
+<!-- KURUMSAL SEKMESİ -->
+<section id="kurumsal">
+<h2>Kurumsal ve İletişim Bilgileri</h2>
+<div class="contact-grid">
+<div class="contact-card">
+<div class="contact-card-header">
+<img alt="Aeris Logo" class="contact-logo" src="https://i.ibb.co/8g2szRdK/n-Shot-20260721-130130721.jpg"/>
+<h3>İskenderun Stüdyoları</h3>
+</div>
+<div class="company-title">AERİS RADYO TELEVİZYON A.Ş.</div>
+<div class="contact-info">
+<p><strong>Adres:</strong> KARAAĞAÇ ÖVÜNDÜK MH, UĞUR MUMCU CD, KOÇ GREENPARK SİTESİ A2 BLOK 31290 İSKENDERUN</p>
+<p><strong>GSM:</strong> 0531 599 4001</p>
+<p><strong>WhatsApp:</strong> 0533 330 0010</p>
+<p><strong>İzleyici Temsilcisi:</strong> Ahmet Sıtkı Beker</p>
+</div>
+</div>
+<div class="contact-card">
+<div class="contact-card-header">
+<img alt="Resurrection Logo" class="contact-logo" src="https://i.ibb.co/Pv1KYNpj/n-Shot-20260721-130056671.jpg"/>
+<h3>Ankara Stüdyosu Merkez</h3>
+</div>
+<div class="company-title">RESURRECTION FAMILY YAYINCILIK LTD. ŞTİ.</div>
+<div class="contact-info">
+<p><strong>Adres:</strong> AHMED TANER KIŞLALI MAHALLESİ, DOĞAN TAŞDELEN BULVARI, 06810 ÇANKAYA/ANKARA</p>
+<p><strong>İletişim:</strong> 0505 815 60 85</p>
+<p><strong>İzleyici Temsilcisi:</strong> Göktuğ Mirza Artam</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer>
+<p>© 2026 teleZEN TV. Tüm Hakları Saklıdır.</p>
+</footer>
+<!-- MODAL -->
+<div aria-labelledby="modalTitle" aria-modal="true" class="modal" id="seriesModal" role="dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h3 id="modalTitle">Dizi Adı</h3>
+<button aria-label="Pencereyi kapat" class="close-btn" onclick="closeModal()">×</button>
+</div>
+<div class="modal-body">
+<div class="video-wrapper">
+<iframe allow="autoplay; fullscreen; picture-in-picture; encrypted-media" allowfullscreen="" id="modalPlayer" src="about:blank" title="Dizi oynatıcısı"></iframe>
+</div>
+<div class="episodes-container">
+<div style="color:#b3b3b3; margin-top:15px; font-weight: 600;">Bölüm Seçin:</div>
+<div class="episodes-grid" id="episodesGrid"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- JAVASCRIPT -->
+<script>'use strict';
+const targetStreamUrl = 'https://kick-to-m3u8.onrender.com/stream/telezentvchannel';
+const workerProxyUrl = 'https://proxy.umittv.workers.dev/?url=' + encodeURIComponent(targetStreamUrl);
+
+// Proxy üzerinden temizlenmiş M3U8 akışını arka planda işleyen fonksiyon
+async function fetchAndProcessM3u8(url) {
+  try {
+    const response = await fetch(workerProxyUrl);
+    if (!response.ok) throw new Error("M3U8 dosyası indirilemedi.");
+    
+    const text = await response.text();
+    let rawLines = text.split('\n');
+    let processedLines = [];
+    let m3u8Urls = [];
+
+    for (let i = 0; i < rawLines.length; i++) {
+      let line = rawLines[i].trim();
+      if (line.startsWith('#EXT-X-SESSION')) {
+        continue;
+      }
+      processedLines.push(line);
+      if (line && !line.startsWith('#')) {
+        m3u8Urls.push(line);
+      }
+    }
+    console.log("Bulunan M3U8 URL'leri:", m3u8Urls);
+  } catch (error) {
+    console.error("M3U8 İşleme Hatası:", error);
+  }
+}
+
+const streamUrl1 = workerProxyUrl; // Mevcut oynatıcı worker proxy üzerinden beslenir
+const kickPlayerUrl = 'https://player.kick.com/telezentvchannel?autoplay=true&muted=true';
+const kickChatUrl = 'https://kick.com/popout/telezentvchannel/chat';
+const hlsPlayers = new Map();
+const modal = document.getElementById('seriesModal');
+const mPlayer = document.getElementById('modalPlayer');
+const eGrid = document.getElementById('episodesGrid');
+let returnFocus = null;
+let loadedDay = '';
+let scheduleChosen = false;
+
+function playerStatus(video, text) {
+    video.closest('.player-tab-pane').querySelector('.player-status').textContent = text;
+}
+function isVisiblePlayer(video) {
+    return video.closest('section').classList.contains('active') && video.closest('.player-tab-pane').classList.contains('active') && !modal.classList.contains('show');
+}
+function playVisible(video) {
+    if (isVisiblePlayer(video)) video.play().catch(() => {
+        if (isVisiblePlayer(video)) playerStatus(video, 'Yayını başlatmak için oynat düğmesine dokunun.');
+    });
+}
+const retryTimers = new Map();
+function retryStream(videoId) {
+    const video = document.getElementById(videoId);
+    clearTimeout(retryTimers.get(videoId)); retryTimers.delete(videoId);
+    const old = hlsPlayers.get(videoId);
+    if (old) { old.destroy(); hlsPlayers.delete(videoId); }
+    video.pause(); video.removeAttribute('src'); video.load();
+    delete video.dataset.initialized; video.dataset.retries = '0';
+    if (isVisiblePlayer(video)) setupHls(video, true);
+}
+function setupHls(video, fresh = false) {
+    if (video.dataset.initialized) {
+        const hls = hlsPlayers.get(video.id);
+        if (hls) hls.startLoad(-1);
+        playVisible(video);
+        return;
+    }
+    clearTimeout(retryTimers.get(video.id)); retryTimers.delete(video.id);
+    video.dataset.initialized = 'true';
+    playerStatus(video, 'Yayın yükleniyor…');
+    video.onplaying = () => { video.dataset.retries = '0'; playerStatus(video, ''); };
+    const source = fresh ? streamUrl1 + '&t=' + Date.now() : streamUrl1;
+    function failed(detail) {
+        const hls = hlsPlayers.get(video.id);
+        if (hls) { hls.destroy(); hlsPlayers.delete(video.id); }
+        delete video.dataset.initialized;
+        const attempts = Number(video.dataset.retries || 0);
+        if (attempts < 2 && isVisiblePlayer(video)) {
+            video.dataset.retries = String(attempts + 1);
+            playerStatus(video, 'Yayın bağlantısı yenileniyor…');
+            retryTimers.set(video.id, setTimeout(() => {
+                retryTimers.delete(video.id);
+                if (isVisiblePlayer(video)) setupHls(video, true);
+            }, 2000 * (attempts + 1)));
+        } else {
+            playerStatus(video, 'Yayın kaynağı yüklenemedi' + (detail ? ' (' + detail + ')' : '') + '. Yeniden dene düğmesini veya Kick sekmesini kullanın.');
+        }
+    }
+    video.onerror = () => failed('medya hatası');
+    
+    if (window.Hls && Hls.isSupported()) {
+        const hls = new Hls();
+        let mediaRecovered = false;
+        hlsPlayers.set(video.id, hls);
+        hls.on(Hls.Events.MEDIA_ATTACHED, () => hls.loadSource(source));
+        hls.on(Hls.Events.MANIFEST_PARSED, () => playVisible(video));
+        hls.on(Hls.Events.ERROR, (_, data) => {
+            if (!data.fatal) return;
+            if (data.type === Hls.ErrorTypes.MEDIA_ERROR && !mediaRecovered) {
+                mediaRecovered = true; hls.recoverMediaError(); return;
+            }
+            const code = data.response && data.response.code;
+            failed(code ? 'HTTP ' + code : 'bağlantı hatası');
+        });
+        hls.attachMedia(video);
+    } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+        video.src = source;
+        video.load(); playVisible(video);
+    } else {
+        delete video.dataset.initialized;
+        playerStatus(video, 'Oynatıcı bu tarayıcıda yüklenemedi. Kick sekmesini kullanın.');
+    }
+}
+function syncPlayers() {
+    document.querySelectorAll('video').forEach(video => {
+        if (isVisiblePlayer(video)) setupHls(video);
+        else { clearTimeout(retryTimers.get(video.id)); retryTimers.delete(video.id); video.pause(); const hls = hlsPlayers.get(video.id); if (hls) hls.stopLoad(); }
+    });
+    ['homeKickIframe','kickIframe1'].forEach(id => {
+        const frame = document.getElementById(id);
+        const active = frame.closest('section').classList.contains('active') && frame.closest('.player-tab-pane').classList.contains('active') && !modal.classList.contains('show');
+        const url = active ? kickPlayerUrl : 'about:blank';
+        if (frame.getAttribute('src') !== url) frame.src = url;
+    });
+    const chat = document.getElementById('kickChat');
+    const chatUrl = document.getElementById('canli-yayin').classList.contains('active') ? kickChatUrl : 'about:blank';
+    if (chat.getAttribute('src') !== chatUrl) chat.src = chatUrl;
+}
+function selectPlayerTab(evt, paneId, sectionId) {
+    const section = document.getElementById(sectionId);
+    section.querySelectorAll('.player-tab-pane').forEach(pane => pane.classList.toggle('active', pane.id === paneId));
+    section.querySelectorAll('.player-tab-btn').forEach(btn => { btn.classList.toggle('active', btn === evt.currentTarget); btn.setAttribute('aria-pressed', String(btn === evt.currentTarget)); });
+    syncPlayers();
+}
+function openHomePlayerTab(evt, paneId) { selectPlayerTab(evt, paneId, 'ana-sayfa'); }
+function openPlayerTab(evt, paneId) { selectPlayerTab(evt, paneId, 'canli-yayin'); }
+function setMenu(open) {
+    document.getElementById('mainNav').classList.toggle('open', open);
+    const button = document.getElementById('menuToggleBtn');
+    button.textContent = open ? '✕' : '☰';
+    button.setAttribute('aria-expanded', String(open));
+    button.setAttribute('aria-label', open ? 'Menüyü kapat' : 'Menüyü aç');
+}
+function toggleMenu() { setMenu(!document.getElementById('mainNav').classList.contains('open')); }
+function showSection(sectionId, updateHash = true) {
+    if (!document.querySelector('main > section#' + CSS.escape(sectionId))) return;
+    document.querySelectorAll('main > section').forEach(section => section.classList.toggle('active', section.id === sectionId));
+    document.querySelectorAll('.nav-link').forEach(link => {
+        const active = link.id === 'nav-' + sectionId;
+        link.classList.toggle('active', active);
+        if (active) link.setAttribute('aria-current','page'); else link.removeAttribute('aria-current');
+    });
+    setMenu(false);
+    if (updateHash && location.hash !== '#' + sectionId) history.pushState(null,'','#' + sectionId);
+    document.title = 'teleZEN TV - ' + document.getElementById('nav-' + sectionId).textContent;
+    window.scrollTo({top:0, behavior:'instant'});
+    syncPlayers();
+}
+function setScheduleDay(day) {
+    document.querySelectorAll('#yayin-akisi .tab-content').forEach(tab => tab.classList.toggle('active',tab.id === day));
+    document.querySelectorAll('#yayin-akisi .tab-btn').forEach(btn => {
+        const active = btn.getAttribute('onclick').includes("'" + day + "'");
+        btn.classList.toggle('active',active); btn.setAttribute('aria-pressed',String(active));
+    });
+}
+function openTab(evt, day) { scheduleChosen = true; setScheduleDay(day); }
+function loadTodaySchedule() {
+    const date = new Date();
+    const parts = Object.fromEntries(new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Istanbul',weekday:'short',hour:'2-digit',minute:'2-digit',hourCycle:'h23'}).formatToParts(date).map(p => [p.type,p.value]));
+    const day = {Sun:'pazar',Mon:'pazartesi',Tue:'sali',Wed:'carsamba',Thu:'persembe',Fri:'cuma',Sat:'cumartesi'}[parts.weekday];
+    const minutes = Number(parts.hour)*60+Number(parts.minute);
+    if (loadedDay !== day) {
+        document.getElementById('homeTodayList').innerHTML = document.querySelector('#' + day + ' .schedule-list').innerHTML;
+        document.getElementById('todayTitle').textContent = 'Bugünün Akışı • ' + new Intl.DateTimeFormat('tr-TR',{timeZone:'Europe/Istanbul',weekday:'long'}).format(date);
+        if (!scheduleChosen) setScheduleDay(day);
+        loadedDay = day;
+    }
+    document.querySelectorAll('.schedule-list > li').forEach(li => {
+        const [start,end] = li.querySelector('.time').textContent.split('-').map(time => { const [h,m]=time.split('.').map(Number); return h*60+m; });
+        const isToday = li.parentElement.id === 'homeTodayList' || li.closest('.tab-content')?.id === day;
+        const current = isToday && minutes >= start && minutes < end;
+        li.classList.toggle('on-air',current);
+        if (current) li.setAttribute('aria-current','true'); else li.removeAttribute('aria-current');
+    });
+}
+function openModal(title, playlistId, startEp, endEp, isReverse) {
+    returnFocus = document.activeElement;
+    document.getElementById('modalTitle').textContent = title;
+    eGrid.replaceChildren();
+    const count = Math.min(300, Math.abs(endEp-startEp)+1);
+    for (let index=0; index<count; index++) {
+        const episode = startEp + (isReverse ? -index : index);
+        const button = document.createElement('button');
+        button.className = 'episode-btn'; button.textContent = episode + '. Bölüm';
+        button.onclick = () => {
+            eGrid.querySelectorAll('button').forEach(b => { b.classList.toggle('active',b === button); b.setAttribute('aria-pressed',String(b === button)); });
+            mPlayer.src = 'https://www.youtube.com/embed/videoseries?list=' + encodeURIComponent(playlistId) + '&index=' + index + '&autoplay=1';
+        };
+        eGrid.appendChild(button);
+    }
+    modal.classList.add('show'); document.body.style.overflow='hidden';
+    document.querySelector('main').inert=true; document.querySelector('header').inert=true; document.querySelector('footer').inert=true;
+    syncPlayers(); eGrid.firstElementChild?.click(); modal.querySelector('.close-btn').focus();
+}
+function closeModal() {
+    if (!modal.classList.contains('show')) return;
+    modal.classList.remove('show'); mPlayer.src='about:blank'; document.body.style.overflow='';
+    document.querySelector('main').inert=false; document.querySelector('header').inert=false; document.querySelector('footer').inert=false;
+    returnFocus?.focus(); syncPlayers();
+}
+modal.addEventListener('click', event => { if (event.target === modal) closeModal(); });
+document.addEventListener('click', event => { if (!event.target.closest('header')) setMenu(false); });
+document.addEventListener('keydown', event => {
+    if (event.key === 'Escape') { closeModal(); setMenu(false); }
+    if (event.key === 'Tab' && modal.classList.contains('show')) {
+        const items=modal.querySelectorAll('button,iframe'); const first=items[0], last=items[items.length-1];
+        if (event.shiftKey && document.activeElement===first) { event.preventDefault(); last.focus(); }
+        else if (!event.shiftKey && document.activeElement===last) { event.preventDefault(); first.focus(); }
+    }
+});
+window.addEventListener('hashchange', () => showSection(location.hash.slice(1) || 'ana-sayfa',false));
+
+// Başlangıç tetiklemeleri
+fetchAndProcessM3u8(targetStreamUrl);
+loadTodaySchedule(); 
+setInterval(loadTodaySchedule,30000);
+showSection(document.getElementById(location.hash.slice(1))?.matches('main > section') ? location.hash.slice(1) : 'ana-sayfa',false);
+</script>
+</body>
+</html>
