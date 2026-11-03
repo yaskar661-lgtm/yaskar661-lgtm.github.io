@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <title>Çoklu Kanal Universal HLS Oynatıcı & M3U8 Önbellek</title>
+  <style>
+    body { font-family: sans-serif; margin: 20px; background: #fafafa; color: #333; }
+    .container { max-width: 800px; margin: auto; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    select, button { padding: 8px 12px; font-size: 14px; margin-bottom: 15px; cursor: pointer; }
+    video { background: #000; border-radius: 4px; width: 100%; max-width: 640px; height: auto; }
+    #qualities button { margin-right: 5px; margin-top: 5px; }
+    pre { background: #f4f4f4; padding: 10px; border: 1px solid #ccc; max-height: 200px; overflow: auto; font-size: 12px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h3>Çoklu Kanal HLS Oynatıcı & M3U8 Önbellek Sistemi</h3>
+    
+    <!-- Kanal Seçimi -->
+    <div>
+      <label for="channelSelect"><b>Kanal Seçin:</b></label><br>
+      <select id="channelSelect" style="width: 100%; max-width: 400px;">
+        <option value="">Kanallar yükleniyor...</option>
+      </select>
+    </div>
+
+    <!-- Video Oynatıcı -->
+    <div>
+      <video id="video" controls autoplay playsinline></video>
+    </div>
+    <div id="qualities"></div>
+    
+    <hr style="margin: 20px 0;">
+    
+    <h4>Temizlenmiş M3U8 Çıktısı (Cache Durumu: <span id="cacheStatus">Kontrol ediliyor...</span>)</h4>
+    <pre id="output">Henüz veri yüklenmedi.</pre>
+  </div>
+
+  <!-- HLS.js Kütüphanesi -->
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+  
+  <script>
+    const API_URL = "http://palxlendimgaliba1010.mywire.org/proxy.php?url=https://shoofapi.alkass.net/Shoof/liveV3.php";
+    const PROXY_BASE = "http://palxlendimgaliba1010.mywire.org/proxy.php?url=";
+    const WORKER_PROXY = "https://guard.sekobes.workers.dev/?url=";
+
+    const video = document.getElementById('video');
+    const qualityContainer = document.getElementById('qualities');
+    const channelSelect = document.getElementById('channelSelect');
+    const outputPre = document.getElementById('output');
+    const cacheStatusSpan = document.getElementById('cacheStatus');
+
+    let hlsInstance = null;
+    const CACHE_DURATION_MS = 35 * 60 * 1000; // 35 Dakika
+
+    // Python kodundaki get_base_url mantığının JavaScript uyarlaması
+    function getBaseUrl(m3u8Url) {
+      try {
+        let urlObj = new URL(m3u8Url);
+        let path = urlObj.pathname;
+        if (path.includes("/main.m3u8")) {
+          path = path.split("/main.m3u8")[0] + "/";
+        } else if (path.includes("/master.m3u8")) {
+          path = path.split("/master.m3u8")[0] + "/";
+        } else {
+          path = path.substring(0, path.lastIndexOf("/")) + "/";
+        }
+        return urlObj.origin + path;
+      } catch (e) {
+        return "";
+      }
+    }
+
+    // Göreceli (relative) linkleri mutlak (absolute) linklere çevirme ve temizleme
+    function processM3u8Content(text, baseUrl) {
+      let rawLines = text.split('\n');
+      let processedLines = [];
+      let m3u8Urls = [];
+
+      for (let i = 0; i < rawLines.length; i++) {
+        let line = rawLines[i].trim();
+        
+        if (line.startsWith('#EXT-X-SESSION')) {
+          continue;
+        }
+        
+        if (line && !line.startsWith('#')) {
+          // Absolute URL oluştur (Python'daki urljoin karşılığı)
+          try {
+            line = new URL(line, baseUrl).href;
+          } catch (e) {}
+          m3u8Urls.push(line);
+        }
+        
+        processedLines.push(line);
+      }
+
+      return {
+        cleanedM3u8: processedLines.join('\n'),
+        m3u8Urls: m3u8Urls
+      };
+    }
+
+    // Kanalları API'den çek
+    async function loadChannels() {
+      try {
+        const response = await fetch(PROXY_BASE + encodeURIComponent("https://shoofapi.alkass.net/Shoof/liveV3.php"));
+        if (!response.ok) throw new Error("API listesi alınamadı.");
+        const channels = await response.json();
+        
+        channelSelect.innerHTML = '<option value="">-- Kanal Seçiniz --</option>';
+        channels.forEach((ch, index) => {
+          let title = ch.title ? ch.title.trim() : `Kanal ${index}`;
+          let body = ch.body ? ch.body.trim() : "";
+          if (body) {
+            let opt = document.createElement('option');
+            opt.value = body;
+            opt.textContent = title;
+            channelSelect.appendChild(opt);
+          }
+        });
+
+        // localStorage'da kayıtlı son seçilen kanal varsa onu seç
+        let savedChannel = localStorage.getItem('selected_channel');
+        if (savedChannel && channelSelect.querySelector(`[value="${savedChannel}"]`)) {
+          channelSelect.value = savedChannel;
+          processSelectedChannel(savedChannel, false); // Cache kontrolü ile yükle
+        }
+      } catch (error) {
+        console.error("API Hatası:", error);
+        channelSelect.innerHTML = '<option value="">Kanallar yüklenirken hata oluştu</option>';
+      }
+    }
+
+    // Kanal seçildiğinde veya önbellekten çalıştırıldığında
+    async function processSelectedChannel(channelBodyUrl, forceRefresh = false) {
+      if (!channelBodyUrl) return;
+      localStorage.setItem('selected_channel', channelBodyUrl);
+
+      const cacheKey = 'cache_' + channelBodyUrl;
+      const cacheTimeKey = 'time_' + channelBodyUrl;
+      
+      let cachedData = localStorage.getItem(cacheKey);
+      let cachedTime = localStorage.getItem(cacheTimeKey);
+      let now = new Date().getTime();
+
+      let useCache = false;
+      if (!forceRefresh && cachedData && cachedTime) {
+        let age = now - parseInt(cachedTime);
+        if (age < CACHE_DURATION_MS) {
+          useCache = true;
+          let remainingMin = Math.round((CACHE_DURATION_MS - age) / 60000);
+          cacheStatusSpan.textContent = `Önbellekten yüklendi (${remainingMin} dk kaldı)`;
+        }
+      }
+
+      let finalStreamUrl = "";
+
+      if (useCache) {
+        // Cache geçerli, doğrudan kullan
+        let cacheObj = JSON.parse(cachedData);
+        displayOutput(cacheObj.m3u8Urls, cacheObj.cleanedM3u8);
+        finalStreamUrl = cacheObj.proxyStreamUrl;
+        initPlayer(finalStreamUrl);
+      } else {
+        // Süre dolmuş veya cache yok, taze çek
+        cacheStatusSpan.textContent = "Güncelleniyor (API'den çekiliyor)...";
+        try {
+          let targetStreamUrl = PROXY_BASE + channelBodyUrl;
+          let workerUrl = WORKER_PROXY + encodeURIComponent(targetStreamUrl);
+          
+          const response = await fetch(workerUrl);
+          if (!response.ok) throw new Error("M3U8 akışı indirilemedi.");
+          
+          const text = await response.text();
+          let baseUrl = getBaseUrl(targetStreamUrl);
+          let processed = processM3u8Content(text, baseUrl);
+
+          displayOutput(processed.m3u8Urls, processed.cleanedM3u8);
+
+          // Cache'e kaydet
+          let cacheObj = {
+            m3u8Urls: processed.m3u8Urls,
+            cleanedM3u8: processed.cleanedM3u8,
+            proxyStreamUrl: targetStreamUrl
+          };
+          localStorage.setItem(cacheKey, JSON.stringify(cacheObj));
+          localStorage.setItem(cacheTimeKey, now.toString());
+          cacheStatusSpan.textContent = "Yeni veri önbelleğe kaydedildi (Süre: 35 dk)";
+
+          initPlayer(targetStreamUrl);
+        } catch (error) {
+          console.error("İşleme Hatası:", error);
+          outputPre.textContent = "Hata oluştu: " + error.message;
+          cacheStatusSpan.textContent = "Hata!";
+        }
+      }
+    }
+
+    function displayOutput(urls, cleanedText) {
+      outputPre.textContent = 
+        "--- BULUNAN URL'LER ---\n" + 
+        JSON.stringify(urls, null, 2) + 
+        "\n\n--- TEMİZLENMİŞ M3U8 ---\n" + 
+        cleanedText;
+    }
+
+    function initPlayer(url) {
+      console.log("Kaynak yükleniyor:", url);
+      let proxyTarget = WORKER_PROXY + encodeURIComponent(url);
+
+      if (Hls.isSupported()) {
+        if (hlsInstance) {
+          hlsInstance.destroy();
+        }
+        hlsInstance = new Hls({
+          manifestLoadingTimeOut: 30000,
+          levelLoadingTimeOut: 30000
+        });
+
+        hlsInstance.loadSource(proxyTarget);
+        hlsInstance.attachMedia(video);
+
+        hlsInstance.on(Hls.Events.MANIFEST_PARSED, function (event, data) {
+          buildQualityButtons(hlsInstance);
+          video.play().catch(e => console.log("Otomatik oynatma engellendi:", e));
+        });
+
+        hlsInstance.on(Hls.Events.ERROR, function (event, data) {
+          if (data.fatal) {
+            if (data.type === Hls.ErrorTypes.NETWORK_ERROR) {
+              hlsInstance.startLoad();
+            } else {
+              console.error("Kritik HLS hatası:", data);
+            }
+          }
+        });
+      } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+        video.src = proxyTarget;
+        video.addEventListener('loadedmetadata', function () {
+          video.play();
+        });
+      }
+    }
+
+    function buildQualityButtons(hls) {
+      qualityContainer.innerHTML = '<b>Kaliteler: </b>';
+      
+      let autoBtn = document.createElement('button');
+      autoBtn.innerText = 'Auto';
+      autoBtn.onclick = function() { hls.currentLevel = -1; };
+      qualityContainer.appendChild(autoBtn);
+
+      hls.levels.forEach((level, index) => {
+        let btn = document.createElement('button');
+        btn.innerText = level.height ? level.height + 'p' : 'Seviye ' + index;
+        btn.onclick = function() { hls.currentLevel = index; };
+        qualityContainer.appendChild(btn);
+      });
+    }
+
+    // Olay Dinleyicileri
+    channelSelect.addEventListener('change', function() {
+      if (this.value) {
+        processSelectedChannel(this.value, false);
+      }
+    });
+
+    // Sayfa açıldığında kanalları yükle
+    loadChannels();
+  </script>
+</body>
+</html>
