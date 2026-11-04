@@ -2,17 +2,19 @@
 <html lang="tr">
 <head>
   <meta charset="utf-8">
-  <title>Çoklu Kanal Mako HLS Oynatıcı</title>
+  <title>Çoklu Kanal Mako HLS Oynatıcı (Cache Ticket)</title>
   <style>
     body { font-family: sans-serif; background: #111; color: #fff; padding: 20px; }
     select, button { padding: 10px; font-size: 16px; margin-bottom: 15px; border-radius: 5px; }
     video { width: 100%; max-width: 800px; background: #000; border-radius: 8px; }
     .container { max-width: 800px; margin: 0 auto; }
+    #status { font-size: 14px; color: #aaa; margin-bottom: 10px; }
   </style>
 </head>
 <body>
   <div class="container">
     <h2>Mako Çoklu Kanal Canlı Yayın</h2>
+    <div id="status">Ticket durumu: Bekleniyor...</div>
     
     <!-- Kanal Seçim Menüsü -->
     <label for="channelSelect">Kanal Seçin:</label><br>
@@ -37,7 +39,6 @@
   <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
   
   <script>
-    // Python scriptindeki kanalların tam path ve master URL sözlüğü
     const channels = {
       "k12": {
         "path": "/stream/hls/live/2033791/k12/index.m3u8",
@@ -87,35 +88,48 @@
 
     const video = document.getElementById('video');
     const channelSelect = document.getElementById('channelSelect');
+    const statusDiv = document.getElementById('status');
     const streamBaseUrl = 'https://mako-streaming.akamaized.net';
     
     let hls = null;
-    let refreshTimer = null;
+    let cachedTicket = null; // Ticket'ı hafızada tutacağımız değişken
+    let refreshInterval = null;
 
-    // Ticket alma fonksiyonu (Seçilen kanalın path değerini kullanarak)
-    async function fetchTicket(channelPath) {
+    // Ticket alma fonksiyonu (Varsayılan olarak k12 path'ini referans alabilir veya dinamik kullanılabilir)
+    async function fetchAndCacheTicket() {
       try {
-        const entitlementUrl = `https://mass.mako.co.il/ClicksStatistics/entitlementsServicesV2.jsp?et=ngt&lp=${encodeURIComponent(channelPath)}?as=1&rv=AKAMAI`;
+        // Genellikle herhangi geçerli bir path ticket almak için yeterlidir, burada k12 kullanıyoruz:
+        const samplePath = channels["k12"].path;
+        const entitlementUrl = `https://mass.mako.co.il/ClicksStatistics/entitlementsServicesV2.jsp?et=ngt&lp=${encodeURIComponent(samplePath)}?as=1&rv=AKAMAI`;
+        
         const response = await fetch(entitlementUrl);
         const data = await response.json();
-        return data.tickets[0].ticket;
+        
+        if (data && data.tickets && data.tickets[0].ticket) {
+          cachedTicket = data.tickets[0].ticket;
+          statusDiv.innerText = `Ticket durumu: Güncellendi (${new Date().toLocaleTimeString()})`;
+          console.log("Yeni ticket cache'lendi:", cachedTicket);
+        }
       } catch (error) {
         console.error("Ticket alınamadı:", error);
-        return null;
+        statusDiv.innerText = "Ticket durumu: Alınamadı, tekrar denenecek...";
       }
     }
 
-    // Oynatıcıyı yükleme/güncelleme ana fonksiyonu
-    async function loadPlayer() {
+    // Oynatıcıyı yükleme fonksiyonu (Cache'deki ticket'ı kullanır)
+    function loadPlayer() {
       const selectedKey = channelSelect.value;
       const channelInfo = channels[selectedKey];
       if (!channelInfo) return;
 
-      console.log(`[${selectedKey}] için güncel ticket isteniyor...`);
-      const ticket = await fetchTicket(channelInfo.path);
-      if (!ticket) return;
+      // Eğer henüz ticket çekilmediyse oynatıcıyı başlatma
+      if (!cachedTicket) {
+        console.warn("Cache'de henüz ticket yok, bekleniyor...");
+        return;
+      }
 
-      const videoSrc = `${streamBaseUrl}${channelInfo.path}?${ticket}`;
+      const videoSrc = `${streamBaseUrl}${channelInfo.path}?${cachedTicket}`;
+      console.log(`[${selectedKey}] kanalı yükleniyor (Cache ticket ile)...`);
 
       if (Hls.isSupported()) {
         if (hls) {
@@ -126,17 +140,13 @@
         hls.loadSource(videoSrc);
         hls.attachMedia(video);
         
-        hls.on(Hls.Events.ERROR, async function (event, data) {
+        hls.on(Hls.Events.ERROR, function (event, data) {
           if (data.fatal) {
             switch (data.fatal) {
               case Hls.ErrorTypes.NETWORK_ERROR:
               case Hls.ErrorTypes.MEDIA_ERROR:
-                console.warn("Hata yakalandı, ticket yenilenip kurtarılıyor...");
-                const freshTicket = await fetchTicket(channelInfo.path);
-                if (freshTicket) {
-                  hls.loadSource(`${streamBaseUrl}${channelInfo.path}?${freshTicket}`);
-                  hls.startLoad();
-                }
+                console.warn("Oynatma hatası yakalandı, mevcut cache ticket tekrar deneniyor...");
+                hls.startLoad();
                 break;
               default:
                 hls.destroy();
@@ -150,19 +160,27 @@
       }
     }
 
-    // Kanal değiştirildiğinde tetiklenen fonksiyon
+    // Kanal değiştirildiğinde çağrılacak fonksiyon (Artık istek atmaz, direkt cache kullanır)
     function changeChannel() {
-      // Zamanlayıcıyı sıfırla ki anında yeni kanalın ticket'ı çekilsin
-      if (refreshTimer) clearInterval(refreshTimer);
-      
       loadPlayer();
-      
-      // 5 dakikada bir güncel kanalı yenileyecek döngüyü yeniden başlat
-      refreshTimer = setInterval(loadPlayer, 5 * 60 * 1000);
     }
 
-    // Sayfa açıldığında ilk başlatma
-    changeChannel();
+    // Uygulama Başlangıcı
+    async function init() {
+      // 1. İlk açılışta hemen bir ticket al ve cache'le
+      await fetchAndCacheTicket();
+      
+      // 2. İlk ticket alındıktan sonra oynatıcıyı başlat
+      loadPlayer();
+
+      // 3. Her 5 dakikada bir (300.000 ms) arka planda ticket'ı güncelle
+      refreshInterval = setInterval(async () => {
+        console.log("5 dakikalık periyodik ticket yenilemesi tetiklendi...");
+        await fetchAndCacheTicket();
+      }, 5 * 60 * 1000);
+    }
+
+    init();
   </script>
 </body>
 </html>
