@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <title>Turkuvaz Çoklu Kanal HLS Oynatıcı (ErCDN & Daion Destekli)</title>
+  <style>
+    body { font-family: sans-serif; background: #111; color: #fff; padding: 20px; }
+    select, button { padding: 10px; font-size: 16px; margin-bottom: 15px; border-radius: 5px; background: #222; color: #fff; border: 1px solid #444; }
+    button { cursor: pointer; }
+    button:hover { background: #333; }
+    video { width: 100%; max-width: 900px; background: #000; border-radius: 8px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    #status { font-size: 14px; color: #aaa; margin-bottom: 10px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Turkuvaz Çoklu Kanal Canlı Yayın Oynatıcı</h2>
+    <div id="status">Durum: Başlatılıyor...</div>
+    
+    <!-- Kanal Seçim Menüsü -->
+    <label for="channelSelect">Kanal Seçin:</label><br>
+    <select id="channelSelect" onchange="changeChannel()">
+      <!-- Daion Kanalları (Token Gerektirebilir) -->
+      <option value="atvdai">ATV (Daion)</option>
+      <option value="aspordai">A Spor (Daion)</option>
+      <option value="a2tvdai">A2 TV (Daion)</option>
+      <option value="minikagodai">Minika GO (Daion)</option>
+      <option value="minikagococukdai">Minika Çocuk (Daion)</option>
+      
+      <!-- ErCDN Kanalları (Genellikle Doğrudan Çalışır) -->
+      <option value="a2tv">A2 TV (ErCDN)</option>
+      <option value="minikago">Minika GO (ErCDN)</option>
+      <option value="minikagococuk">Minika Çocuk (ErCDN)</option>
+      <option value="atvavrupa">ATV Avrupa (ErCDN)</option>
+      <option value="ahaberhd">A Haber HD (ErCDN)</option>
+      <option value="anewshd">A News HD (ErCDN)</option>
+      <option value="aparahd">A Para HD (ErCDN)</option>
+      <option value="vavtv">Vav TV (ErCDN)</option>
+    </select>
+    <button onclick="forceRefreshCurrentChannel()">Seçili Kanalı Yenile</button>
+    <br>
+
+    <video id="video" controls autoplay playsinline></video>
+  </div>
+
+  <!-- HLS.js Kütüphanesi -->
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+  
+  <script>
+    const channels = {
+      "atvdai": "https://trkvz.daioncdn.net/atv/atv.m3u8?ce=3&app=d1ce2d40-5256-4550-b02e-e73c185a314e",
+      "aspordai": "https://trkvz.daioncdn.net/aspor/aspor.m3u8?ce=3&app=45f847c4-04e8-419a-a561-2ebf87084765",
+      "a2tvdai": "https://trkvz.daioncdn.net/a2tv/a2tv.m3u8?ce=3&app=59363a60-be96-4f73-9eff-355d0ff2c758",
+      "minikagodai": "https://trkvz.daioncdn.net/minikago/minikago.m3u8?app=web&ce=3",
+      "minikagococukdai": "https://trkvz.daioncdn.net/minikago_cocuk/minikago_cocuk.m3u8?app=web&ce=3",
+      
+      "a2tv": "https://trkvz-live.ercdn.net/a2tv/a2tv.m3u8",
+      "minikago": "https://trkvz-live.ercdn.net/minikago/minikago.m3u8",
+      "minikagococuk": "https://trkvz-live.ercdn.net/minikagococuk/minikagococuk.m3u8",
+      "atvavrupa": "https://trkvz-live.ercdn.net/atvavrupa/atvavrupa.m3u8",
+      "ahaberhd": "https://trkvz-live.ercdn.net/ahaberhd/ahaberhd.m3u8",
+      "anewshd": "https://trkvz-live.ercdn.net/anewshd/anewshd.m3u8",
+      "aparahd": "https://trkvz-live.ercdn.net/aparahd/aparahd.m3u8",
+      "vavtv": "https://trkvz-live.ercdn.net/vavtv/vavtv.m3u8"
+    };
+
+    const video = document.getElementById('video');
+    const channelSelect = document.getElementById('channelSelect');
+    const statusDiv = document.getElementById('status');
+    
+    let hls = null;
+    const streamCache = {};
+    const CACHE_DURATION = 15 * 60 * 1000; 
+
+    // Token ve URL Çözümleme Mantığı
+    async function fetchSecureStreamUrl(rawUrl, channelName) {
+      // ErCDN linkleri genellikle token istemez, doğrudan ham link dönebiliriz.
+      if (rawUrl.includes("ercdn.net")) {
+        return rawUrl;
+      }
+
+      const isDaion = rawUrl.toLowerCase().includes("daioncdn") || rawUrl.includes("app=");
+      const randNum = Math.floor(Math.random() * 1000000);
+      const secureApi = `https://securevideotoken.tmgrup.com.tr/webtv/secure?${randNum}`;
+      const targetUrl = `${secureApi}&url=${encodeURIComponent(rawUrl)}`;
+
+      try {
+        const response = await fetch(targetUrl, {
+          method: 'GET',
+          headers: { "Referer": "https://www.atv.com.tr/" }
+        });
+        const responseData = await response.json();
+        const urlKey = Object.keys(responseData).find(k => k.toLowerCase() === 'url');
+        if (urlKey && responseData[urlKey]) {
+          return responseData[urlKey];
+        }
+      } catch (err) {
+        console.warn(`[${channelName}] Doğrudan token alınamadı, ham linke düşülüyor.`);
+      }
+
+      return rawUrl; 
+    }
+
+    async function getCachedOrFreshStreamUrl(channelName, forceRefresh = false) {
+      const now = Date.now();
+      const cached = streamCache[channelName];
+
+      if (!forceRefresh && cached && (now - cached.timestamp < CACHE_DURATION)) {
+        return cached.url;
+      }
+
+      statusDiv.innerText = `Durum: [${channelName}] hazırlanıyor...`;
+      const rawUrl = channels[channelName];
+      const freshUrl = await fetchSecureStreamUrl(rawUrl, channelName);
+
+      streamCache[channelName] = {
+        url: freshUrl,
+        timestamp: now
+      };
+
+      return freshUrl;
+    }
+
+    async function loadPlayer() {
+      const selectedKey = channelSelect.value;
+      if (!channels[selectedKey]) return;
+
+      statusDiv.innerText = `Durum: [${selectedKey}] yükleniyor...`;
+      const finalVideoSrc = await getCachedOrFreshStreamUrl(selectedKey, false);
+
+      if (Hls.isSupported()) {
+        if (hls) {
+          hls.destroy();
+        }
+        
+        // Hls.js yapılandırması ve xhrSetup desteği
+        hls = new Hls({
+          xhrSetup: function (xhr, url) {
+            // İhtiyaç halinde segment isteklerine özel referer enjekte edilebilir
+            // xhr.setRequestHeader('Referer', 'https://www.atv.com.tr/');
+          }
+        });
+
+        hls.loadSource(finalVideoSrc);
+        hls.attachMedia(video);
+        
+        statusDiv.innerText = `Durum: [${selectedKey}] Oynatılıyor.`;
+
+        hls.on(Hls.Events.ERROR, async function (event, data) {
+          if (data.fatal) {
+            switch (data.fatal) {
+              case Hls.ErrorTypes.NETWORK_ERROR:
+                statusDiv.innerText = `Durum: Ağ hatası, yenileniyor...`;
+                await forceRefreshCurrentChannel();
+                break;
+              case Hls.ErrorTypes.MEDIA_ERROR:
+                hls.recoverMediaError();
+                break;
+              default:
+                hls.destroy();
+                loadPlayer();
+                break;
+            }
+          }
+        });
+
+      } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+        video.src = finalVideoSrc;
+      }
+    }
+
+    async function forceRefreshCurrentChannel() {
+      const selectedKey = channelSelect.value;
+      statusDiv.innerText = `Durum: [${selectedKey}] önbelleği temizleniyor...`;
+      await getCachedOrFreshStreamUrl(selectedKey, true);
+      loadPlayer();
+    }
+
+    function changeChannel() {
+      loadPlayer();
+    }
+
+    window.onload = async () => {
+      loadPlayer();
+    };
+  </script>
+</body>
+</html>
