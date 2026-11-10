@@ -65,8 +65,6 @@ https://yt1-m3u8-redirect.onrender.com/yt1/filmatolyesi.m3u8
 https://yt1-m3u8-redirect.onrender.com/yt1/gg.m3u8
 #EXTINF:-1,SEALOOK
 https://yt1-m3u8-redirect.onrender.com/yt1/seal.m3u8
-#EXTINF:-1,Yu-Gi-Oh
-https://yt1-m3u8-redirect.onrender.com/yt1/yugioh.m3u8
 #EXTINF:-1,Tom Jerry
 https://yt1-m3u8-redirect.onrender.com/yt1/tj.m3u8
 #EXTINF:-1,Warner Bros. Classics
@@ -113,8 +111,6 @@ https://yt1-m3u8-redirect.onrender.com/yt1/gumball3.m3u8
 https://yt1-m3u8-redirect.onrender.com/yt1/cicektaksi.m3u8
 #EXTINF:-1,Seksenler
 https://yt1-m3u8-redirect.onrender.com/yt1/Seksenler.m3u8
-#EXTINF:-1,Yalan Dünya
-https://yt1-m3u8-redirect.onrender.com/yt1/yalandunya.m3u8
 #EXTINF:-1,Avrupa Yakası
 https://yt1-m3u8-redirect.onrender.com/yt1/avrupayakasi.m3u8
 #EXTINF:-1,Rafadan Tayfa
@@ -141,22 +137,14 @@ https://yt1-m3u8-redirect.onrender.com/yt1/flashtvmedya.m3u8
 https://yt1-m3u8-redirect.onrender.com/yt1/abb.m3u8
 #EXTINF:-1,Selena
 https://yt1-m3u8-redirect.onrender.com/yt1/selena.m3u8
-#EXTINF:-1,Kuzey Güney
-https://yt1-m3u8-redirect.onrender.com/yt1/kuzeyguney.m3u8
 #EXTINF:-1,Classic Mr Bean
 https://yt1-m3u8-redirect.onrender.com/yt1/mrbean.m3u8
-#EXTINF:-1,Sihirli Annem
-https://yt1-m3u8-redirect.onrender.com/yt1/sihirliannem.m3u8
 #EXTINF:-1,Mr Bean LIVE
 https://yt1-m3u8-redirect.onrender.com/yt1/mrbean1.m3u8
 #EXTINF:-1,Tolgshow Yıldızlar
 https://yt1-m3u8-redirect.onrender.com/yt1/tolgashow.m3u8
 #EXTINF:-1,İbrahim Selim ile Bu Gece
 https://yt1-m3u8-redirect.onrender.com/yt1/ibrahim.m3u8
-#EXTINF:-1,Medcezir
-https://yt1-m3u8-redirect.onrender.com/yt1/medcezir.m3u8
-#EXTINF:-1,Fatmagül'ün Suçu Ne
-https://yt1-m3u8-redirect.onrender.com/yt1/fatmagul.m3u8
 #EXTINF:-1,Mehmed: Fetihler Sultanı
 https://yt1-m3u8-redirect.onrender.com/yt1/fetihlersultani.m3u8
 #EXTINF:-1,EYS TV
@@ -165,3 +153,11 @@ https://yt1-m3u8-redirect.onrender.com/yt1/eystv.m3u8
 https://yt1-m3u8-redirect.onrender.com/yt1/tvnet.m3u8
 #EXTINF:-1,İkinci El Kralları
 https://yt1-m3u8-redirect.onrender.com/yt1/2el.m3u8
+#EXTINF:-1,Kanal D Arşiv
+https://yt1-m3u8-redirect.onrender.com/yt1/kanald.m3u8
+#EXTINF:-1,Diriliş Ertuğrul
+https://yt1-m3u8-redirect.onrender.com/yt1/dirilis.m3u8
+#EXTINF:-1,Mucize Doktor
+https://yt1-m3u8-redirect.onrender.com/yt1/mucize.m3u8
+#EXTINF:-1,Adanalı
+https://yt1-m3u8-redirect.onrender.com/yt1/adanali.m3u8
