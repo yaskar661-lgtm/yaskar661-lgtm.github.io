@@ -63,7 +63,7 @@
                     console.log('🎬 Stream URL:', streamUrl);
                     
                     // Stream URL'sini Worker'a gönder (parametre olarak)
-                    const redirectUrl = baseUrl + '?stream=' + encodeURIComponent(streamUrl);
+                    const redirectUrl = streamUrl;
                     console.log('🔄 Yönlendiriliyor:', redirectUrl);
                     
                     // Hemen yönlendir
