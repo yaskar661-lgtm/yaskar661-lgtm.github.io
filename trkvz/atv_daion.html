@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>HLS Test</title>
+</head>
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+  
+  <video id="video" controls autoplay playsinline width="640"></video>
+  
+  <script>
+    var video = document.getElementById('video');
+    var videoSrc = 'https://tv.sunarproje.com.tr/atv';
+
+    if (Hls.isSupported()) {
+      // 1. Durum: hls.js destekleniyor (Chrome, Firefox, Edge vb.)
+      var hls = new Hls();
+      hls.loadSource(videoSrc);
+      hls.attachMedia(video);
+      
+      hls.on(Hls.Events.ERROR, function (event, data) {
+        if (data.fatal) {
+          switch (data.fatal) {
+            case Hls.ErrorTypes.NETWORK_ERROR:
+              console.error("Ağ hatası oluştu, yeniden deneniyor...");
+              hls.startLoad();
+              break;
+            case Hls.ErrorTypes.MEDIA_ERROR:
+              console.error("Medya hatası oluştu, kurtarılıyor...");
+              hls.recoverMediaError();
+              break;
+            default:
+              // Kurtarılamaz hata durumunda yedek yönteme/yönlendirmeye geç
+              fallbackAction();
+              break;
+          }
+        }
+      });
+
+    } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+      // 2. Durum: Safari / iOS (Yerel HLS desteği var)
+      video.src = videoSrc;
+      video.addEventListener('error', function() {
+        // Yerel oynatıcıda hata çıkarsa yönlendirme yap
+        fallbackAction();
+      });
+
+    } else {
+      // 3. Durum: Ne hls.js ne de Safari desteği var -> Doğrudan yönlendir
+      fallbackAction();
+    }
+
+    function fallbackAction() {
+      console.warn("HLS oynatılamadı, alternatif yönlendirme başlatılıyor...");
+      
+      // Örnek 1: Kullanıcıya alternatif bir oynatıcı veya canlı yayın linkine yönlendirme
+      // window.location.href = "https://ornek.com/yedek-oynatici?url=" + encodeURIComponent(videoSrc);
+      
+      // Örnek 2: Sayfaya uyarı yazısı koymak veya doğrudan m3u8 adresine yönlendirmek
+     // window.location.href = videoSrc;
+    }
+  </script>
+</body>
+</html>
