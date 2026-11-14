@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Turkuvaz Medya Stream</title>
+    <style>
+        /* Gizli sayfa - hiçbir şey görünmez */
+        body { 
+            background: transparent; 
+            margin: 0; 
+            padding: 0; 
+            opacity: 0;
+            visibility: hidden;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="status"></div>
+    
+    <script>
+        (function() {
+            // Ham m3u8 URL'si (Örn: atv, ahaber, ahaber vb.)
+            const rawUrl = "https://trkvz-live.ercdn.net/atvhd/atvhd.m3u8";
+            const currentUrl = window.location.href;
+            
+            // Senin Cloudflare Worker adresin (CNN kodundaki baseUrl mantığı)
+            const workerBaseUrl = "https://cnn.impresents.workers.dev/canli-yayin.m3u8";
+            
+            console.log('🚀 Turkuvaz Stream başlatıldı (Gizli mod)');
+            console.log('📌 Ham URL:', rawUrl);
+            
+            async function getSecureStream() {
+                try {
+                    // 1. Rastgele sayı üretimi (Turkuvaz API gereksinimi)
+                    const randNum = Math.floor(Math.random() * 900000) + 100000;
+                    
+                    // 2. Turkuvaz Secure Token API adresi
+                    const secureApi = `https://securevideotoken.tmgrup.com.tr/webtv/secure?${randNum}&url=${encodeURIComponent(rawUrl)}`;
+                    console.log('🌐 Token API isteği:', secureApi);
+                    
+                    const response = await fetch(secureApi, {
+                        method: 'GET',
+                        headers: {
+                            'Accept': 'application/json, text/javascript, */*; q=0.01',
+                            'X-Requested-With': 'XMLHttpRequest',
+                            'Referer': 'https://www.atv.com.tr/'
+                        },
+                        mode: 'cors'
+                    });
+                    
+                    if (!response.ok) {
+                        throw new Error('Token API hatası: ' + response.status);
+                    }
+                    
+                    const data = await response.json();
+                    let finalStreamUrl = data.Url || data.url || data.SecureUrl;
+                    
+                    if (!finalStreamUrl) {
+                        throw new Error("API yanıtından token'lı akış URL'si çıkarılamadı.");
+                    }
+                    
+                    console.log('🎬 Güvenli Stream URL:', finalStreamUrl);
+                    
+                    // 3. CNN kodundaki gibi Worker veya yönlendirme adresine parametre olarak ekle
+                    const redirectUrl = workerBaseUrl + '?stream=' + encodeURIComponent(finalStreamUrl);
+                    console.log('🔄 Yönlendiriliyor:', redirectUrl);
+                    
+                    // Hemen yönlendir
+                    window.location.replace(redirectUrl);
+                    
+                } catch (error) {
+                    console.error('❌ Hata:', error.message);
+                    
+                    // Hata durumunda sayfayı görünür yap ve hatayı bas (Hata ayıklamak için)
+                    document.body.style.opacity = '1';
+                    document.body.style.visibility = 'visible';
+                    document.body.style.display = 'block';
+                    document.body.innerHTML = `
+                        <div style="font-family:Arial;padding:20px;text-align:center;background:#1a1a1a;color:white;height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">
+                            <h2 style="color:#e74c3c;">❌ Turkuvaz Token Hatası</h2>
+                            <p>${error.message}</p>
+                            <p style="font-size:12px;color:#888;margin-top:20px;">CORS engeline takılmış olabilirsiniz. Worker üzerinden istek atmayı deneyin.</p>
+                        </div>
+                    `;
+                }
+            }
+            
+            // Sayfa yüklendiğinde çalıştır
+            if (document.readyState === 'complete' || document.readyState === 'interactive') {
+                getSecureStream();
+            } else {
+                document.addEventListener('DOMContentLoaded', getSecureStream);
+            }
+        })();
+    </script>
+</body>
+</html>
