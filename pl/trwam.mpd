@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MPD xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:mpeg:dash:schema:mpd:2011" xsi:schemaLocation="urn:mpeg:dash:schema:mpd:2011 http://standards.iso.org/ittf/PubliclyAvailableStandards/MPEG-DASH_schema_files/DASH-MPD.xsd" id="201" type="dynamic" publishTime="2026-11-14T09:23:20+00:00" minimumUpdatePeriod="PT15S" availabilityStartTime="2023-10-30T16:34:58.192000+00:00" minBufferTime="PT30S" suggestedPresentationDelay="PT25.000S" timeShiftBufferDepth="PT7199.000S" profiles="urn:mpeg:dash:profile:isoff-live:2011">
+  <Period start="PT0.000S" id="1">
+    <AdaptationSet id="1485523442" mimeType="video/mp4" segmentAlignment="true" startWithSAP="1" subsegmentAlignment="true" subsegmentStartsWithSAP="1" bitstreamSwitching="true">
+      <InbandEventStream schemeIdUri="https://aomedia.org/emsg/ID3" value="0"/>
+      
+      <!-- 1080p -->
+      <Representation id="1" width="1920" height="1080" frameRate="25/1" bandwidth="5600000" codecs="avc1.640028">
+        <SegmentTemplate timescale="25000" duration="50000" media="trwamtv-live-ch1_video_1_0_$Number$.mp4?m=1698914864" initialization="trwamtv-live-ch1_video_1_0_init.mp4?m=1698914864" startNumber="39436115"/>
+      </Representation>
+      
+      <!-- 720p -->
+      <Representation id="2" width="1280" height="720" frameRate="25/1" bandwidth="2299968" codecs="avc1.64001F">
+        <SegmentTemplate timescale="25000" duration="50000" media="trwamtv-live-ch1_video_3_0_$Number$.mp4?m=1698914864" initialization="trwamtv-live-ch1_video_3_0_init.mp4?m=1698914864" startNumber="39436115"/>
+      </Representation>
+      
+      <!-- 480p -->
+      <Representation id="3" width="854" height="480" frameRate="25/1" bandwidth="1600000" codecs="avc1.4D401E">
+        <SegmentTemplate timescale="25000" duration="50000" media="trwamtv-live-ch1_video_5_0_$Number$.mp4?m=1698914864" initialization="trwamtv-live-ch1_video_5_0_init.mp4?m=1698914864" startNumber="39436115"/>
+      </Representation>
+      
+      <!-- 360p -->
+      <Representation id="4" width="640" height="360" frameRate="25/1" bandwidth="1000000" codecs="avc1.4D401E">
+        <SegmentTemplate timescale="25000" duration="50000" media="trwamtv-live-ch1_video_7_0_$Number$.mp4?m=1698914864" initialization="trwamtv-live-ch1_video_7_0_init.mp4?m=1698914864" startNumber="39436115"/>
+      </Representation>
+      
+      <!-- 240p -->
+      <Representation id="5" width="426" height="240" frameRate="25/1" bandwidth="459968" codecs="avc1.4D4015">
+        <SegmentTemplate timescale="25000" duration="50000" media="trwamtv-live-ch1_video_9_0_$Number$.mp4?m=1698914864" initialization="trwamtv-live-ch1_video_9_0_init.mp4?m=1698914864" startNumber="39436115"/>
+      </Representation>
+    </AdaptationSet>
+    
+    <!-- Audio (Ses) Akışı -->
+    <AdaptationSet id="2083690061" mimeType="audio/mp4" segmentAlignment="true" startWithSAP="1" lang="und" bitstreamSwitching="true">
+      <Label>und</Label>
+      <Representation id="6" bandwidth="192000" audioSamplingRate="48000" codecs="mp4a.40.2">
+        <AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2"/>
+        <SegmentTemplate timescale="48000" duration="96000" media="trwamtv-live-ch1_audio_2_0_$Number$.mp4?m=1698914864" initialization="trwamtv-live-ch1_audio_2_0_init.mp4?m=1698914864" startNumber="39436115"/>
+      </Representation>
+    </AdaptationSet>
+  </Period>
+</MPD>
