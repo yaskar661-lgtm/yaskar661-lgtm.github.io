@@ -49,3 +49,11 @@ https://d15aro46bnpfm8.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68
 https://d16zzycxcd0m0r.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-hixvx5kymecr9/RMC_Decouverte_FR.m3u8
 #EXTINF:-1 tvg-logo="https://www.callofliberty.fr/tv/25-RMCLIFE/25-RMCLIFE.png",RMC Life
 https://d3dcdjv6dx07iz.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-eaaww2dyp3iih/RMC_Life_FR.m3u8
+#EXTINF:-1 tvg-logo="https://www.callofliberty.fr/tv/26-PARISPREMIERE/26-PARISPREMIERE.png",Paris Premiere
+https://r.eu.cdn-redge.media/livehls/oeu/mt/live/paris_premiere/live.livx/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://www.callofliberty.fr/tv/27-france.tvdocs/27-france.tvdocs.png",France TV Docs
+https://raw.githubusercontent.com/Paradise-91/ParaTV/refs/heads/main/streams/francetv/documentaire.m3u8
+#EXTINF:-1 tvg-logo="https://www.callofliberty.fr/tv/28-france.tvseries/28-france.tvseries.png",France TV Séries
+https://raw.githubusercontent.com/Paradise-91/ParaTV/refs/heads/main/streams/francetv/serie.m3u8
+#EXTINF:-1 tvg-logo="https://www.callofliberty.fr/tv/29-france.tvsport/29-france.tvsport.png",France TV Sport
+https://raw.githubusercontent.com/Paradise-91/ParaTV/refs/heads/main/streams/francetv/sport.m3u8
