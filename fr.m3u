@@ -1,0 +1,51 @@
+#EXTM3U
+#EXTINF:-1 tvg-logo="https://www.callofliberty.fr/tv/1-TF1/1-TF1.png",TF1
+https://r.eu.cdn-redge.media/livehls/oeu/mt/live/tf1/live.livx/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://www.callofliberty.fr/tv/2-france.2/2-france.2.png",France 2
+https://r.eu.cdn-redge.media/livehls/oeu/mt/live/france_2/live.livx/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://www.callofliberty.fr/tv/3-france.3/3-france.3.png",France 3
+https://r.eu.cdn-redge.media/livehls/oeu/mt/live/france_3/live.livx/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://www.callofliberty.fr/tv/4-france.4/4-france.4.png",France 4
+https://r.eu.cdn-redge.media/livehls/oeu/mt/live/france_4/live.livx/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://www.callofliberty.fr/tv/5-france.5/5-france.5.png",France 5
+https://r.eu.cdn-redge.media/livehls/oeu/mt/live/france_5/live.livx/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://www.callofliberty.fr/tv/6-M6/6-M6.png",M6
+https://r.eu.cdn-redge.media/livehls/oeu/mt/live/m6_fr/live.livx/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://www.callofliberty.fr/tv/7-ARTE/7-ARTE.png",Arte
+https://r.eu.cdn-redge.media/livehls/oeu/mt/live/arte_fr/live.livx/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://www.callofliberty.fr/tv/8-LCP-PS/8-LCP-PS.png",LCP/Public Sènat
+https://r.eu.cdn-redge.media/livehls/oeu/mt/live/lcp_fr/live.livx/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://www.callofliberty.fr/tv/9-W9/9-W9.png",W9
+https://r.eu.cdn-redge.media/livehls/oeu/mt/live/w9_fr/live.livx/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://www.callofliberty.fr/tv/10-TMC/10-TMC.png",TMC
+https://r.eu.cdn-redge.media/livehls/oeu/mt/live/tmc_fr/live.livx/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://www.callofliberty.fr/tv/11-TFX/11-TFX.png",TFX
+https://r.eu.cdn-redge.media/livehls/oeu/mt/live/tfx_fr/live.livx/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://www.callofliberty.fr/tv/12-Gulli/12-Gulli.png",Gulli
+https://sr-m6web.live.6cloud.fr/out/v1/6play/6play-gulli/cmaf_q2hyb21h/hls-short-sd.m3u8
+#EXTINF:-1 tvg-logo="https://www.callofliberty.fr/tv/13-BFMTV/13-BFMTV.png",BFM TV
+https://ncdn-live-bfm.pfd.sfr.net/shls/LIVE$BFM_TV/index.m3u8?end=END&start=LIVE
+#EXTINF:-1 tvg-logo="https://www.callofliberty.fr/tv/14-CNEWS/14-CNEWS.png",CNews
+https://hls-m015-live-aka-canalplus.akamaized.net/live/disk/cnews-clair-hd/hls-v3-hd-clair/cnews-clair-hd.m3u8
+#EXTINF:-1 tvg-logo="https://www.callofliberty.fr/tv/15-LCI/15-LCI.png",LCI
+https://r.eu.cdn-redge.media/livehls/oeu/mt/live/lci/live.livx/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://www.callofliberty.fr/tv/16-franceinfo/16-franceinfo.png",franceinfo:
+https://r.eu.cdn-redge.media/livehls/oeu/mt/live/france_info/live.livx/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://www.callofliberty.fr/tv/17-CSTAR/17-CSTAR.png",CStar
+https://r.eu.cdn-redge.media/livehls/oeu/mt/live/cstar/live.livx/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://www.callofliberty.fr/tv/18-T18/18-T18.png",T18
+https://raw.githubusercontent.com/Paradise-91/ParaTV/main/streams/t18/t18-dm.m3u8
+#EXTINF:-1 tvg-logo="https://www.callofliberty.fr/tv/19-NOVO19/19-NOVO19.png",Novo19
+https://r.eu.cdn-redge.media/livehls/oeu/mt/live/novo_19/live.livx/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://www.callofliberty.fr/tv/20-TF1SERIESFILMS/20-TF1SERIESFILMS.png",TF1 Series Films
+https://r.eu.cdn-redge.media/livehls/oeu/mt/live/tf1_series_films/live.livx/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://www.callofliberty.fr/tv/21-LEQUIPE/21-LEQUIPE.png",Le'Equipe
+https://algerian-tv-relay-2026.espiiem.chatgpt.site/api/linear/france/lequipe/live.m3u8
+#EXTINF:-1 tvg-logo="https://www.callofliberty.fr/tv/22-6ter/22-6ter.png",6ter
+https://r.eu.cdn-redge.media/livehls/oeu/mt/live/6ter_fr/live.livx/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://www.callofliberty.fr/tv/23-RMCSTORY/23-RMCSTORY.png",RMC Story
+https://d15aro46bnpfm8.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-fqkqiax1078up/RMC_Story_FR.m3u8
+#EXTINF:-1 tvg-logo="https://www.callofliberty.fr/tv/24-RMCDECOUVERTE/24-RMCDECOUVERTE.png",RMC Découverte
+https://d16zzycxcd0m0r.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-hixvx5kymecr9/RMC_Decouverte_FR.m3u8
+#EXTINF:-1 tvg-logo="https://www.callofliberty.fr/tv/25-RMCLIFE/25-RMCLIFE.png",RMC Life
+https://d3dcdjv6dx07iz.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-eaaww2dyp3iih/RMC_Life_FR.m3u8
