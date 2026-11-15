@@ -1,65 +1,54 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>HLS Test</title>
-</head>
-<body>
-  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-  
-  <video id="video" controls autoplay playsinline width="640"></video>
-  
-  <script>
-    var video = document.getElementById('video');
-    var videoSrc = 'https://r.eu.cdn-redge.media/livehls/oeu/mt/live/tf1/live.livx/playlist.m3u8';
-
-    if (Hls.isSupported()) {
-      // 1. Durum: hls.js destekleniyor (Chrome, Firefox, Edge vb.)
-      var hls = new Hls();
-      hls.loadSource(videoSrc);
-      hls.attachMedia(video);
-      
-      hls.on(Hls.Events.ERROR, function (event, data) {
-        if (data.fatal) {
-          switch (data.fatal) {
-            case Hls.ErrorTypes.NETWORK_ERROR:
-              console.error("Ağ hatası oluştu, yeniden deneniyor...");
-              hls.startLoad();
-              break;
-            case Hls.ErrorTypes.MEDIA_ERROR:
-              console.error("Medya hatası oluştu, kurtarılıyor...");
-              hls.recoverMediaError();
-              break;
-            default:
-              // Kurtarılamaz hata durumunda yedek yönteme/yönlendirmeye geç
-              fallbackAction();
-              break;
-          }
-        }
-      });
-
-    } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-      // 2. Durum: Safari / iOS (Yerel HLS desteği var)
-      video.src = videoSrc;
-      video.addEventListener('error', function() {
-        // Yerel oynatıcıda hata çıkarsa yönlendirme yap
-        fallbackAction();
-      });
-
-    } else {
-      // 3. Durum: Ne hls.js ne de Safari desteği var -> Doğrudan yönlendir
-      fallbackAction();
-    }
-
-    function fallbackAction() {
-      console.warn("HLS oynatılamadı, alternatif yönlendirme başlatılıyor...");
-      
-      // Örnek 1: Kullanıcıya alternatif bir oynatıcı veya canlı yayın linkine yönlendirme
-      // window.location.href = "https://ornek.com/yedek-oynatici?url=" + encodeURIComponent(videoSrc);
-      
-      // Örnek 2: Sayfaya uyarı yazısı koymak veya doğrudan m3u8 adresine yönlendirmek
-     // window.location.href = videoSrc;
-    }
-  </script>
-</body>
+<html lang="fr-FR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="robots" content="noindex">
+        <meta name="robots" content="noarchive">
+        <meta name="robots" content="nosnippet">
+        <meta name="robots" content="noodp">
+        <title>CallOfLiberty TV TF1</title>
+        <link rel="shortcut icon" type="image/x-icon" src="https://www.callofliberty.fr/favicon.ico">
+                    <div class="center"><div id="player"></div></div>
+                    <script src="https://www.callofliberty.fr/tv/clappr/clappr.min.js"></script>
+                    <script src="https://www.callofliberty.fr/tv/clappr/hlsjs-playback.js"></script>
+                    <script src="https://www.callofliberty.fr/tv/clappr/audio-selector.js"></script>
+                    <script src="https://www.callofliberty.fr/tv/clappr/level-selector.js"></script>
+                    <script>
+                        var player = new Clappr.Player({
+                            plugins: [HlsjsPlayback, AudioSelector, LevelSelector],
+                            parentId: '#player',
+                            source: 'https://r.eu.cdn-redge.media/livehls/oeu/mt/live/tf1/live.livx/playlist.m3u8',
+                            poster: 'https://www.callofliberty.fr/tv/clappr/giphy.gif',
+                            width: 700,
+                            height: 394,
+                        });
+                        player.play();
+                        function maFonction1(unObjet1) {
+                            if (unObjet1.value == "Vidéo 968x544") {
+                                unObjet1.value = "Vidéo 700x394";
+                                player.resize({width: 968, height: 544});
+                            } else {
+                                unObjet1.value = "Vidéo 968x544"; 
+                                player.resize({width: 700, height: 394});
+                            }
+                        }
+                        function maFonction2(unObjet2) {
+                            if (unObjet2.value == "Black Fond") {
+                                unObjet2.value = "CallOfLiberty Fond";
+                                document.body.style.background='black';
+                            } else {
+                                unObjet2.value = "Black Fond"; 
+                                document.body.style.background='url(https://www.callofliberty.fr/bg.png)';
+                            }
+                        }
+                    </script>
+                    <br>
+                    <br>
+                    <input style="font-size:20px;color:orange" type="button" value="Retour" onclick="javascript:location.src='https://www.callofliberty.fr/tv'">
+                    <input style="font-size:20px;color:orange" type="button" value="Vidéo 968x544" onclick="maFonction1(this)">
+                    <input style="font-size:20px;color:orange" type="button" value="Black Fond" onclick="maFonction2(this)">
+                </td>
+            </tr>
+        </table>
+    </body>
 </html>
