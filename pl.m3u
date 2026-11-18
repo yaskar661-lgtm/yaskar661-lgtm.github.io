@@ -1,0 +1,1195 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVP 1 FHD" group-title="┃PL┃ OGÓLNE",┃PL┃ TVP 1 FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=227463&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVP 1 HD" group-title="┃PL┃ OGÓLNE",┃PL┃ TVP 1 HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1563255&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVP 2 FHD" group-title="┃PL┃ OGÓLNE",┃PL┃ TVP 2 FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=227462&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVP 2 HD" group-title="┃PL┃ OGÓLNE",┃PL┃ TVP 2 HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1563256&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVP 3 FHD" group-title="┃PL┃ OGÓLNE",┃PL┃ TVP 3 FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1563257&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVP 3 HD" group-title="┃PL┃ OGÓLNE",┃PL┃ TVP 3 HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=227461&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ POLSAT FHD" group-title="┃PL┃ OGÓLNE",┃PL┃ POLSAT FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=227455&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ POLSAT HD" group-title="┃PL┃ OGÓLNE",┃PL┃ POLSAT HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1563262&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ POLSAT 2 FHD" group-title="┃PL┃ OGÓLNE",┃PL┃ POLSAT 2 FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=227454&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ POLSAT 2 HD" group-title="┃PL┃ OGÓLNE",┃PL┃ POLSAT 2 HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1563263&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVN FHD" group-title="┃PL┃ OGÓLNE",┃PL┃ TVN FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=227452&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVN HD" group-title="┃PL┃ OGÓLNE",┃PL┃ TVN HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1563265&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ ITVN FHD" group-title="┃PL┃ OGÓLNE",┃PL┃ ITVN FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1724361&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ ITVN HD" group-title="┃PL┃ OGÓLNE",┃PL┃ ITVN HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1724362&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ ITVN EXTRA HD" group-title="┃PL┃ OGÓLNE",┃PL┃ ITVN EXTRA HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1724363&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVN 7 FHD" group-title="┃PL┃ OGÓLNE",┃PL┃ TVN 7 FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=227451&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVN 7 HD" group-title="┃PL┃ OGÓLNE",┃PL┃ TVN 7 HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1563266&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVN STYLE FHD" group-title="┃PL┃ OGÓLNE",┃PL┃ TVN STYLE FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=227352&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVN STYLE HD" group-title="┃PL┃ OGÓLNE",┃PL┃ TVN STYLE HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1563279&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVN TURBO FHD" group-title="┃PL┃ OGÓLNE",┃PL┃ TVN TURBO FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=227402&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVN TURBO HD" group-title="┃PL┃ OGÓLNE",┃PL┃ TVN TURBO HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1563274&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TTV FHD" group-title="┃PL┃ OGÓLNE",┃PL┃ TTV FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=227449&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TTV HD" group-title="┃PL┃ OGÓLNE",┃PL┃ TTV HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1724371&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TV4 FHD" group-title="┃PL┃ OGÓLNE",┃PL┃ TV4 FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=227459&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TV4 HD" group-title="┃PL┃ OGÓLNE",┃PL┃ TV4 HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1563259&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TV PULS FHD" group-title="┃PL┃ OGÓLNE",┃PL┃ TV PULS FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=227448&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TV PULS HD" group-title="┃PL┃ OGÓLNE",┃PL┃ TV PULS HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1563268&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TV PULS 2 FHD" group-title="┃PL┃ OGÓLNE",┃PL┃ TV PULS 2 FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1563275&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TV PULS 2 HD" group-title="┃PL┃ OGÓLNE",┃PL┃ TV PULS 2 HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=227391&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ POLSAT CAFE FHD" group-title="┃PL┃ OGÓLNE",┃PL┃ POLSAT CAFE FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=227359&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ POLSAT CAFE HD" group-title="┃PL┃ OGÓLNE",┃PL┃ POLSAT CAFE HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1563276&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ POLSAT PLAY FHD" group-title="┃PL┃ OGÓLNE",┃PL┃ POLSAT PLAY FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=227358&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ POLSAT PLAY HD" group-title="┃PL┃ OGÓLNE",┃PL┃ POLSAT PLAY HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1563277&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ POLSAT RODZINA FHD" group-title="┃PL┃ OGÓLNE",┃PL┃ POLSAT RODZINA FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1563269&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ POLSAT RODZINA HD" group-title="┃PL┃ OGÓLNE",┃PL┃ POLSAT RODZINA HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=227447&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ POLSAT GAMES HD" group-title="┃PL┃ OGÓLNE",┃PL┃ POLSAT GAMES HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1724370&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TV6 FHD" group-title="┃PL┃ OGÓLNE",┃PL┃ TV6 FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=227457&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TV6 HD" group-title="┃PL┃ OGÓLNE",┃PL┃ TV6 HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1563260&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVP FHD" group-title="┃PL┃ OGÓLNE",┃PL┃ TVP FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=227464&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVP HD" group-title="┃PL┃ OGÓLNE",┃PL┃ TVP HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1563254&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVP KOBIETA HD" group-title="┃PL┃ OGÓLNE",┃PL┃ TVP KOBIETA HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1724372&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVP ROZRYWKA" group-title="┃PL┃ OGÓLNE",┃PL┃ TVP ROZRYWKA
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=227367&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ FOOD NETWORK HD" group-title="┃PL┃ OGÓLNE",┃PL┃ FOOD NETWORK HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1724373&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ CANAL+ KUCHNIA HD" group-title="┃PL┃ OGÓLNE",┃PL┃ CANAL+ KUCHNIA HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1724374&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ CANAL+ DOMO HD" group-title="┃PL┃ OGÓLNE",┃PL┃ CANAL+ DOMO HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1724375&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ HGTV FHD" group-title="┃PL┃ OGÓLNE",┃PL┃ HGTV FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1724376&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ HGTV HD" group-title="┃PL┃ OGÓLNE",┃PL┃ HGTV HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1724377&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ HOME TV HD" group-title="┃PL┃ OGÓLNE",┃PL┃ HOME TV HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1724378&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ ACTIVE FAMILY HD" group-title="┃PL┃ OGÓLNE",┃PL┃ ACTIVE FAMILY HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1724379&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ KABARET TV HD" group-title="┃PL┃ OGÓLNE",┃PL┃ KABARET TV HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1724380&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ ANTENA TV HD" group-title="┃PL┃ OGÓLNE",┃PL┃ ANTENA TV HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1724381&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ XTREME TV HD" group-title="┃PL┃ OGÓLNE",┃PL┃ XTREME TV HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1724382&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ REMONTY TV HD" group-title="┃PL┃ OGÓLNE",┃PL┃ REMONTY TV HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1724383&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TLC HD" group-title="┃PL┃ OGÓLNE",┃PL┃ TLC HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1724384&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ SUPER POLSAT FHD" group-title="┃PL┃ OGÓLNE",┃PL┃ SUPER POLSAT FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1563264&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ SUPER POLSAT HD" group-title="┃PL┃ OGÓLNE",┃PL┃ SUPER POLSAT HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=227453&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ WP HD" group-title="┃PL┃ OGÓLNE",┃PL┃ WP HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1724385&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ ZOOM TV HD" group-title="┃PL┃ OGÓLNE",┃PL┃ ZOOM TV HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1724386&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ E! ENTERTAINMENT HD" group-title="┃PL┃ OGÓLNE",┃PL┃ E! ENTERTAINMENT HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1724387&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ NOWA TV HD" group-title="┃PL┃ OGÓLNE",┃PL┃ NOWA TV HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1724388&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVP KULTURA HD" group-title="┃PL┃ OGÓLNE",┃PL┃ TVP KULTURA HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1724390&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVP KULTURA 2 HD" group-title="┃PL┃ OGÓLNE",┃PL┃ TVP KULTURA 2 HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1724391&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVP POLONIA FHD" group-title="┃PL┃ OGÓLNE",┃PL┃ TVP POLONIA FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=227460&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVP POLONIA HD" group-title="┃PL┃ OGÓLNE",┃PL┃ TVP POLONIA HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1563258&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ POLONIA 1 FHD" group-title="┃PL┃ OGÓLNE",┃PL┃ POLONIA 1 FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=227456&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ POLONIA 1 HD" group-title="┃PL┃ OGÓLNE",┃PL┃ POLONIA 1 HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1563261&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 13.TV HD" group-title="┃PL┃ OGÓLNE",┃PL┃ 13.TV HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1724392&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TELE 5 HD" group-title="┃PL┃ OGÓLNE",┃PL┃ TELE 5 HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1724393&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TBN POLAND FHD" group-title="┃PL┃ OGÓLNE",┃PL┃ TBN POLAND FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=227370&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TBN POLSKA HD" group-title="┃PL┃ OGÓLNE",┃PL┃ TBN POLSKA HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1724394&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVC HD" group-title="┃PL┃ OGÓLNE",┃PL┃ TVC HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1724395&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVC SUPER HD" group-title="┃PL┃ OGÓLNE",┃PL┃ TVC SUPER HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1724396&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ POGODA24 TV HD" group-title="┃PL┃ OGÓLNE",┃PL┃ POGODA24 TV HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1724397&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TV TRWAM HD" group-title="┃PL┃ OGÓLNE",┃PL┃ TV TRWAM HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1724398&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ METRO HD" group-title="┃PL┃ OGÓLNE",┃PL┃ METRO HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1724389&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ EWTN POLSKA HD" group-title="┃PL┃ OGÓLNE",┃PL┃ EWTN POLSKA HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1724399&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ CTV - DLA CIEBIE HD" group-title="┃PL┃ OGÓLNE",┃PL┃ CTV - DLA CIEBIE HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1724400&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVN 24 FHD" group-title="┃PL┃ INFORMACJE",┃PL┃ TVN 24 FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=227282&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVN 24 HD" group-title="┃PL┃ INFORMACJE",┃PL┃ TVN 24 HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1563283&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVN24 BIZ FHD" group-title="┃PL┃ INFORMACJE",┃PL┃ TVN24 BIZ FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=227281&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVN24 BIZ HD" group-title="┃PL┃ INFORMACJE",┃PL┃ TVN24 BIZ HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1563284&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TV REPUBLIKA FHD" group-title="┃PL┃ INFORMACJE",┃PL┃ TV REPUBLIKA FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=227277&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TV REPUBLIKA HD" group-title="┃PL┃ INFORMACJE",┃PL┃ TV REPUBLIKA HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1563288&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ POLSAT NEWS FHD" group-title="┃PL┃ INFORMACJE",┃PL┃ POLSAT NEWS FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=227280&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ POLSAT NEWS HD" group-title="┃PL┃ INFORMACJE",┃PL┃ POLSAT NEWS HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1563285&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ POLSAT NEWS 2 FHD" group-title="┃PL┃ INFORMACJE",┃PL┃ POLSAT NEWS 2 FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=227279&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ POLSAT NEWS 2 HD" group-title="┃PL┃ INFORMACJE",┃PL┃ POLSAT NEWS 2 HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1563286&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ POLSAT NEWS POLITYKA HD" group-title="┃PL┃ INFORMACJE",┃PL┃ POLSAT NEWS POLITYKA HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1724401&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ WYDARZENIA 24 FHD" group-title="┃PL┃ INFORMACJE",┃PL┃ WYDARZENIA 24 FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1563287&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVP INFO FHD" group-title="┃PL┃ INFORMACJE",┃PL┃ TVP INFO FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=227275&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVP INFO HD" group-title="┃PL┃ INFORMACJE",┃PL┃ TVP INFO HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1563290&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ WPOLSCE 24 FHD" group-title="┃PL┃ INFORMACJE",┃PL┃ WPOLSCE 24 FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=227276&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ WPOLSCE 24 HD" group-title="┃PL┃ INFORMACJE",┃PL┃ WPOLSCE 24 HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1563289&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ ECHO 24 HD" group-title="┃PL┃ INFORMACJE",┃PL┃ ECHO 24 HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1724402&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ SUPER EXPRESS TV HD" group-title="┃PL┃ INFORMACJE",┃PL┃ SUPER EXPRESS TV HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1724403&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ NEWS 24 HD" group-title="┃PL┃ INFORMACJE",┃PL┃ NEWS 24 HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1724404&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ BIZNES 24 HD" group-title="┃PL┃ INFORMACJE",┃PL┃ BIZNES 24 HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1724405&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TV BIZNESOWA HD" group-title="┃PL┃ INFORMACJE",┃PL┃ TV BIZNESOWA HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1724406&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ SEJM RP HD" group-title="┃PL┃ INFORMACJE",┃PL┃ SEJM RP HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1724407&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVP PARLAMENT - SENAT HD" group-title="┃PL┃ INFORMACJE",┃PL┃ TVP PARLAMENT - SENAT HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1724408&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ CANAL+ PREMIUM FHD" group-title="┃PL┃ FILMOWE",┃PL┃ CANAL+ PREMIUM FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728810&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ CANAL+ PREMIUM HD" group-title="┃PL┃ FILMOWE",┃PL┃ CANAL+ PREMIUM HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728811&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ CANAL+ 1 FHD" group-title="┃PL┃ FILMOWE",┃PL┃ CANAL+ 1 FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728812&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ CANAL+ 1 HD" group-title="┃PL┃ FILMOWE",┃PL┃ CANAL+ 1 HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728813&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ CANAL+ FILM FHD" group-title="┃PL┃ FILMOWE",┃PL┃ CANAL+ FILM FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728814&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ CANAL+ FILM HD" group-title="┃PL┃ FILMOWE",┃PL┃ CANAL+ FILM HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728815&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ CANAL+ 360 FHD" group-title="┃PL┃ FILMOWE",┃PL┃ CANAL+ 360 FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728816&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ CANAL+ 360 HD" group-title="┃PL┃ FILMOWE",┃PL┃ CANAL+ 360 HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728817&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ CANAL+ SERIALE FHD" group-title="┃PL┃ FILMOWE",┃PL┃ CANAL+ SERIALE FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728818&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ CANAL+ SERIALE HD" group-title="┃PL┃ FILMOWE",┃PL┃ CANAL+ SERIALE HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728819&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ HBO FHD" group-title="┃PL┃ FILMOWE",┃PL┃ HBO FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728820&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ HBO HD" group-title="┃PL┃ FILMOWE",┃PL┃ HBO HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728821&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ HBO 2 FHD" group-title="┃PL┃ FILMOWE",┃PL┃ HBO 2 FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728822&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ HBO 2 HD" group-title="┃PL┃ FILMOWE",┃PL┃ HBO 2 HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728823&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ HBO 3 FHD" group-title="┃PL┃ FILMOWE",┃PL┃ HBO 3 FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728824&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ HBO 3 HD" group-title="┃PL┃ FILMOWE",┃PL┃ HBO 3 HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728825&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ CINEMAX FHD" group-title="┃PL┃ FILMOWE",┃PL┃ CINEMAX FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728826&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ CINEMAX HD" group-title="┃PL┃ FILMOWE",┃PL┃ CINEMAX HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728827&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ CINEMAX 2 FHD" group-title="┃PL┃ FILMOWE",┃PL┃ CINEMAX 2 FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728828&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ CINEMAX 2 HD" group-title="┃PL┃ FILMOWE",┃PL┃ CINEMAX 2 HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728829&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ FILMBOX PREMIUM FHD" group-title="┃PL┃ FILMOWE",┃PL┃ FILMBOX PREMIUM FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728830&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ FILMBOX PREMIUM HD" group-title="┃PL┃ FILMOWE",┃PL┃ FILMBOX PREMIUM HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728831&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ FILMBOX EXTRA FHD" group-title="┃PL┃ FILMOWE",┃PL┃ FILMBOX EXTRA FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728832&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ FILMBOX EXTRA HD" group-title="┃PL┃ FILMOWE",┃PL┃ FILMBOX EXTRA HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728833&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ FILMBOX ACTION FHD" group-title="┃PL┃ FILMOWE",┃PL┃ FILMBOX ACTION FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728836&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ FILMBOX ACTION" group-title="┃PL┃ FILMOWE",┃PL┃ FILMBOX ACTION
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728837&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ FILMBOX FAMILY FHD" group-title="┃PL┃ FILMOWE",┃PL┃ FILMBOX FAMILY FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728834&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ FILMBOX FAMILY" group-title="┃PL┃ FILMOWE",┃PL┃ FILMBOX FAMILY
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728835&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ FILMBOX ARTHOUSE FHD" group-title="┃PL┃ FILMOWE",┃PL┃ FILMBOX ARTHOUSE FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728838&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ FILMBOX ARTHOUSE HD" group-title="┃PL┃ FILMOWE",┃PL┃ FILMBOX ARTHOUSE HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728839&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ AXN FHD" group-title="┃PL┃ FILMOWE",┃PL┃ AXN FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728840&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ AXN HD" group-title="┃PL┃ FILMOWE",┃PL┃ AXN HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728841&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ AXN SPIN FHD" group-title="┃PL┃ FILMOWE",┃PL┃ AXN SPIN FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728842&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ AXN SPIN FHD" group-title="┃PL┃ FILMOWE",┃PL┃ AXN SPIN FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728843&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ AXN WHITE FHD" group-title="┃PL┃ FILMOWE",┃PL┃ AXN WHITE FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728846&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ AXN WHITE HD" group-title="┃PL┃ FILMOWE",┃PL┃ AXN WHITE HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728847&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ AXN BLACK FHD" group-title="┃PL┃ FILMOWE",┃PL┃ AXN BLACK FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728844&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ AXN BLACK HD" group-title="┃PL┃ FILMOWE",┃PL┃ AXN BLACK HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728845&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVN Fabula FHD" group-title="┃PL┃ FILMOWE",┃PL┃ TVN Fabula FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728848&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ POLSAT FILM FHD" group-title="┃PL┃ FILMOWE",┃PL┃ POLSAT FILM FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728849&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ POLSAT FILM 2 FHD" group-title="┃PL┃ FILMOWE",┃PL┃ POLSAT FILM 2 FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728850&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ POLSAT SERIALE FHD" group-title="┃PL┃ FILMOWE",┃PL┃ POLSAT SERIALE FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728868&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ SKYSHOWTIME 1 FHD" group-title="┃PL┃ FILMOWE",┃PL┃ SKYSHOWTIME 1 FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728851&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ SKYSHOWTIME 2 FHD" group-title="┃PL┃ FILMOWE",┃PL┃ SKYSHOWTIME 2 FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728852&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ PARAMOUNT CHANNEL FHD" group-title="┃PL┃ FILMOWE",┃PL┃ PARAMOUNT CHANNEL FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728853&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ WARNER TV FHD" group-title="┃PL┃ FILMOWE",┃PL┃ WARNER TV FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728854&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ EPIC DRAMA FHD" group-title="┃PL┃ FILMOWE",┃PL┃ EPIC DRAMA FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728855&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ STOPKLATKA FHD" group-title="┃PL┃ FILMOWE",┃PL┃ STOPKLATKA FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728856&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ AMC FHD" group-title="┃PL┃ FILMOWE",┃PL┃ AMC FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728857&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ SUNDANCE TV FHD" group-title="┃PL┃ FILMOWE",┃PL┃ SUNDANCE TV FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728858&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ SCIFI UNIVERSAL FHD" group-title="┃PL┃ FILMOWE",┃PL┃ SCIFI UNIVERSAL FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728859&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 13 ULICA FHD" group-title="┃PL┃ FILMOWE",┃PL┃ 13 ULICA FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728860&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ ALE KINO+ FHD" group-title="┃PL┃ FILMOWE",┃PL┃ ALE KINO+ FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728865&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ FX COMEDY FHD" group-title="┃PL┃ FILMOWE",┃PL┃ FX COMEDY FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728862&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ FX FHD" group-title="┃PL┃ FILMOWE",┃PL┃ FX FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728861&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ COMEDY CENTRAL FHD" group-title="┃PL┃ FILMOWE",┃PL┃ COMEDY CENTRAL FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728863&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ COMEDY CENTRAL EXTRA FHD" group-title="┃PL┃ FILMOWE",┃PL┃ COMEDY CENTRAL EXTRA FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728864&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ NOVELA TV FHD" group-title="┃PL┃ FILMOWE",┃PL┃ NOVELA TV FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728870&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ NOVELAS+ FHD" group-title="┃PL┃ FILMOWE",┃PL┃ NOVELAS+ FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728871&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ KINO TV FHD" group-title="┃PL┃ FILMOWE",┃PL┃ KINO TV FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728866&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ KINO POLSKA FHD" group-title="┃PL┃ FILMOWE",┃PL┃ KINO POLSKA FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728867&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ ROMANCE TV FHD" group-title="┃PL┃ FILMOWE",┃PL┃ ROMANCE TV FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728874&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TOP MOVIES POLSKA FHD" group-title="┃PL┃ FILMOWE",┃PL┃ TOP MOVIES POLSKA FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728877&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVP SERIALE FHD" group-title="┃PL┃ FILMOWE",┃PL┃ TVP SERIALE FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728869&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ VIDOCTV FHD" group-title="┃PL┃ FILMOWE",┃PL┃ VIDOCTV FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728876&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ BOLLYWOOD FHD" group-title="┃PL┃ FILMOWE",┃PL┃ BOLLYWOOD FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728873&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ FILMAX FHD" group-title="┃PL┃ FILMOWE",┃PL┃ FILMAX FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728875&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ POLSAT VOD 202 - ELIKSIR MŁODOŚCI FHD" group-title="┃PL┃ FILMOWE",┃PL┃ POLSAT VOD 202 - ELIKSIR MŁODOŚCI FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728882&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ POLSAT VOD 203 - CHRZCINY FHD" group-title="┃PL┃ FILMOWE",┃PL┃ POLSAT VOD 203 - CHRZCINY FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728883&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ POLSAT VOD 204 -  DZIEŃ SĄSIADA FHD" group-title="┃PL┃ FILMOWE",┃PL┃ POLSAT VOD 204 -  DZIEŃ SĄSIADA FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728884&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ POLSAT VOD 205 - I ZNOWU ZGRZESZYLIŚMY, DOBRY BOŻE! FHD" group-title="┃PL┃ FILMOWE",┃PL┃ POLSAT VOD 205 - I ZNOWU ZGRZESZYLIŚMY, DOBRY BOŻE! FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728885&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ POLSAT VOD 206 -  MROCZNY DOM FHD" group-title="┃PL┃ FILMOWE",┃PL┃ POLSAT VOD 206 -  MROCZNY DOM FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728886&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ BJGTJME DARMOWE FILMY FHD" group-title="┃PL┃ FILMOWE",┃PL┃ BJGTJME DARMOWE FILMY FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728879&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ GRJNGO WESTERNY FHD" group-title="┃PL┃ FILMOWE",┃PL┃ GRJNGO WESTERNY FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728878&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ KAPITAN BOMBA FHD" group-title="┃PL┃ FILMOWE",┃PL┃ KAPITAN BOMBA FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728880&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ PORUCZNIK KABURA TV FHD" group-title="┃PL┃ FILMOWE",┃PL┃ PORUCZNIK KABURA TV FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728881&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 OD NETFLIX 1" group-title="┃PL┃ OD NETFLIX",┃PL┃ 24/7 OD NETFLIX 1
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729387&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 OD NETFLIX 2" group-title="┃PL┃ OD NETFLIX",┃PL┃ 24/7 OD NETFLIX 2
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729388&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 OD NETFLIX 3" group-title="┃PL┃ OD NETFLIX",┃PL┃ 24/7 OD NETFLIX 3
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729389&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 OD NETFLIX 4" group-title="┃PL┃ OD NETFLIX",┃PL┃ 24/7 OD NETFLIX 4
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729390&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 OD NETFLIX 5" group-title="┃PL┃ OD NETFLIX",┃PL┃ 24/7 OD NETFLIX 5
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729391&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 OD NETFLIX 6" group-title="┃PL┃ OD NETFLIX",┃PL┃ 24/7 OD NETFLIX 6
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729392&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 OD NETFLIX 7" group-title="┃PL┃ OD NETFLIX",┃PL┃ 24/7 OD NETFLIX 7
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729393&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 OD NETFLIX 8" group-title="┃PL┃ OD NETFLIX",┃PL┃ 24/7 OD NETFLIX 8
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729394&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 OD NETFLIX 9" group-title="┃PL┃ OD NETFLIX",┃PL┃ 24/7 OD NETFLIX 9
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729395&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 OD NETFLIX 10" group-title="┃PL┃ OD NETFLIX",┃PL┃ 24/7 OD NETFLIX 10
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729396&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 OD NETFLIX 11" group-title="┃PL┃ OD NETFLIX",┃PL┃ 24/7 OD NETFLIX 11
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729397&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 OD NETFLIX 12" group-title="┃PL┃ OD NETFLIX",┃PL┃ 24/7 OD NETFLIX 12
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729398&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 OD NETFLIX 13" group-title="┃PL┃ OD NETFLIX",┃PL┃ 24/7 OD NETFLIX 13
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729399&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 OD NETFLIX 14" group-title="┃PL┃ OD NETFLIX",┃PL┃ 24/7 OD NETFLIX 14
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729400&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 OD NETFLIX 15" group-title="┃PL┃ OD NETFLIX",┃PL┃ 24/7 OD NETFLIX 15
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729401&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 OD NETFLIX 16" group-title="┃PL┃ OD NETFLIX",┃PL┃ 24/7 OD NETFLIX 16
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729402&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 OD DISNEY+ TOP 10" group-title="┃PL┃ OD DISNEY+",┃PL┃ 24/7 OD DISNEY+ TOP 10
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729427&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 OD DISNEY+ 1" group-title="┃PL┃ OD DISNEY+",┃PL┃ 24/7 OD DISNEY+ 1
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729428&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 OD DISNEY+ 2" group-title="┃PL┃ OD DISNEY+",┃PL┃ 24/7 OD DISNEY+ 2
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729429&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 OD DISNEY+ 3" group-title="┃PL┃ OD DISNEY+",┃PL┃ 24/7 OD DISNEY+ 3
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729430&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 OD DISNEY+ 4" group-title="┃PL┃ OD DISNEY+",┃PL┃ 24/7 OD DISNEY+ 4
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729431&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 OD DISNEY+ 5" group-title="┃PL┃ OD DISNEY+",┃PL┃ 24/7 OD DISNEY+ 5
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729432&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 OD DISNEY+ 6" group-title="┃PL┃ OD DISNEY+",┃PL┃ 24/7 OD DISNEY+ 6
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729433&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 OD DISNEY+ 7" group-title="┃PL┃ OD DISNEY+",┃PL┃ 24/7 OD DISNEY+ 7
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729434&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 OD HBO MAX TOP 10" group-title="┃PL┃ OD HBO MAX",┃PL┃ 24/7 OD HBO MAX TOP 10
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729455&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 OD HBO MAX 1" group-title="┃PL┃ OD HBO MAX",┃PL┃ 24/7 OD HBO MAX 1
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729456&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 OD HBO MAX 2" group-title="┃PL┃ OD HBO MAX",┃PL┃ 24/7 OD HBO MAX 2
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729457&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 OD HBO MAX 3" group-title="┃PL┃ OD HBO MAX",┃PL┃ 24/7 OD HBO MAX 3
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729458&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 OD HBO MAX 4" group-title="┃PL┃ OD HBO MAX",┃PL┃ 24/7 OD HBO MAX 4
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729459&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 OD HBO MAX 5" group-title="┃PL┃ OD HBO MAX",┃PL┃ 24/7 OD HBO MAX 5
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729460&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 OD HBO MAX 6" group-title="┃PL┃ OD HBO MAX",┃PL┃ 24/7 OD HBO MAX 6
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729461&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 OD HBO MAX 7" group-title="┃PL┃ OD HBO MAX",┃PL┃ 24/7 OD HBO MAX 7
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729462&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 OD HBO MAX 8" group-title="┃PL┃ OD HBO MAX",┃PL┃ 24/7 OD HBO MAX 8
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729463&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ PLANETE+ FHD" group-title="┃PL┃ TEMATYCZNE",┃PL┃ PLANETE+ FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728892&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ NATIONAL GEOGRAPHIC FHD" group-title="┃PL┃ TEMATYCZNE",┃PL┃ NATIONAL GEOGRAPHIC FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728897&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ NATIONAL GEOGRAPHIC HD" group-title="┃PL┃ TEMATYCZNE",┃PL┃ NATIONAL GEOGRAPHIC HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728898&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ NAT GEO WILD FHD" group-title="┃PL┃ TEMATYCZNE",┃PL┃ NAT GEO WILD FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728899&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ NAT GEO WILD HD" group-title="┃PL┃ TEMATYCZNE",┃PL┃ NAT GEO WILD HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728900&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ NAT GEO PEOPLE FHD" group-title="┃PL┃ TEMATYCZNE",┃PL┃ NAT GEO PEOPLE FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728901&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ DISCOVERY CHANNEL FHD" group-title="┃PL┃ TEMATYCZNE",┃PL┃ DISCOVERY CHANNEL FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728903&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ DISCOVERY CHANNEL HD" group-title="┃PL┃ TEMATYCZNE",┃PL┃ DISCOVERY CHANNEL HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728904&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ DISCOVERY SCIENCE FHD" group-title="┃PL┃ TEMATYCZNE",┃PL┃ DISCOVERY SCIENCE FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728905&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ DISCOVERY LIFE FHD" group-title="┃PL┃ TEMATYCZNE",┃PL┃ DISCOVERY LIFE FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728907&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ DISCOVERY HISTORIA FHD" group-title="┃PL┃ TEMATYCZNE",┃PL┃ DISCOVERY HISTORIA FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728906&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ INVESTIGATION DISCOVERY FHD" group-title="┃PL┃ TEMATYCZNE",┃PL┃ INVESTIGATION DISCOVERY FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728914&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ DTX fhd" group-title="┃PL┃ TEMATYCZNE",┃PL┃ DTX fhd
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728908&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ HISTORY FHD" group-title="┃PL┃ TEMATYCZNE",┃PL┃ HISTORY FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728909&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ HISTORY 2 FHD" group-title="┃PL┃ TEMATYCZNE",┃PL┃ HISTORY 2 FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728910&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ ANIMAL PLANET FHD" group-title="┃PL┃ TEMATYCZNE",┃PL┃ ANIMAL PLANET FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728902&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ BBC BRIT FHD" group-title="┃PL┃ TEMATYCZNE",┃PL┃ BBC BRIT FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728894&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ BBC EARTH FHD" group-title="┃PL┃ TEMATYCZNE",┃PL┃ BBC EARTH FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728895&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ BBC FIRST FHD" group-title="┃PL┃ TEMATYCZNE",┃PL┃ BBC FIRST FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728893&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ BBC LIFESTYLE FHD" group-title="┃PL┃ TEMATYCZNE",┃PL┃ BBC LIFESTYLE FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728896&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVP HISTORIA FHD" group-title="┃PL┃ TEMATYCZNE",┃PL┃ TVP HISTORIA FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728911&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVP HISTORIA 2 FHD" group-title="┃PL┃ TEMATYCZNE",┃PL┃ TVP HISTORIA 2 FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728912&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVP DOKUMENT FHD" group-title="┃PL┃ TEMATYCZNE",┃PL┃ TVP DOKUMENT FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728917&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVP NAUKA FHD" group-title="┃PL┃ TEMATYCZNE",┃PL┃ TVP NAUKA FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728913&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ POLSAT X FHD" group-title="┃PL┃ TEMATYCZNE",┃PL┃ POLSAT X FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728919&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ POLSAT VIASAT EXPLORE FHD" group-title="┃PL┃ TEMATYCZNE",┃PL┃ POLSAT VIASAT EXPLORE FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728922&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ POLSAT VIASAT HISTORY FHD" group-title="┃PL┃ TEMATYCZNE",┃PL┃ POLSAT VIASAT HISTORY FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728923&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ POLSAT VIASAT NATURE FHD" group-title="┃PL┃ TEMATYCZNE",┃PL┃ POLSAT VIASAT NATURE FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728924&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ POLSAT DOKU FHD" group-title="┃PL┃ TEMATYCZNE",┃PL┃ POLSAT DOKU FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728918&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ POLSAT REALITY FHD" group-title="┃PL┃ TEMATYCZNE",┃PL┃ POLSAT REALITY FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728920&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ CANAL+ DOKUMENT FHD" group-title="┃PL┃ TEMATYCZNE",┃PL┃ CANAL+ DOKUMENT FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728916&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ CI POLSAT FHD" group-title="┃PL┃ TEMATYCZNE",┃PL┃ CI POLSAT FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728915&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ DOCUBOX FHD" group-title="┃PL┃ TEMATYCZNE",┃PL┃ DOCUBOX FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728921&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ ADVENTURE FHD" group-title="┃PL┃ TEMATYCZNE",┃PL┃ ADVENTURE FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728928&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ FOKUS TV FHD" group-title="┃PL┃ TEMATYCZNE",┃PL┃ FOKUS TV FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728927&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ MOCONOMY FHD" group-title="┃PL┃ TEMATYCZNE",┃PL┃ MOCONOMY FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728930&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ ROYAL WORLD TV FHD" group-title="┃PL┃ TEMATYCZNE",┃PL┃ ROYAL WORLD TV FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728932&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ STUDIOMED TV FHD" group-title="┃PL┃ TEMATYCZNE",┃PL┃ STUDIOMED TV FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728931&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TRAVEL CHANNEL FHD" group-title="┃PL┃ TEMATYCZNE",┃PL┃ TRAVEL CHANNEL FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728926&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ VIASAT TRUE CRIME FHD" group-title="┃PL┃ TEMATYCZNE",┃PL┃ VIASAT TRUE CRIME FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728925&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ WATER PLANET FHD" group-title="┃PL┃ TEMATYCZNE",┃PL┃ WATER PLANET FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728929&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ NICKELODEON FHD" group-title="┃PL┃ DLA DZIECI",┃PL┃ NICKELODEON FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728949&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ NICKTOONS FHD" group-title="┃PL┃ DLA DZIECI",┃PL┃ NICKTOONS FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728948&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ NICK JR. FHD" group-title="┃PL┃ DLA DZIECI",┃PL┃ NICK JR. FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728951&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TEENNICK FHD" group-title="┃PL┃ DLA DZIECI",┃PL┃ TEENNICK FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728950&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ DISNEY XD FHD" group-title="┃PL┃ DLA DZIECI",┃PL┃ DISNEY XD FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728945&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ DISNEY CHANNEL FHD" group-title="┃PL┃ DLA DZIECI",┃PL┃ DISNEY CHANNEL FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728944&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ DISNEY JUNIOR FHD" group-title="┃PL┃ DLA DZIECI",┃PL┃ DISNEY JUNIOR FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728946&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ CARTOON NETWORK FHD" group-title="┃PL┃ DLA DZIECI",┃PL┃ CARTOON NETWORK FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728943&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ CARTOONITO FHD" group-title="┃PL┃ DLA DZIECI",┃PL┃ CARTOONITO FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728947&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ BABY TV FHD" group-title="┃PL┃ DLA DZIECI",┃PL┃ BABY TV FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728953&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ BABY TV PL FHD" group-title="┃PL┃ DLA DZIECI",┃PL┃ BABY TV PL FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728954&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ BBC CBEEBIES FHD" group-title="┃PL┃ DLA DZIECI",┃PL┃ BBC CBEEBIES FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728940&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TELETOON+ FHD" group-title="┃PL┃ DLA DZIECI",┃PL┃ TELETOON+ FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728941&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 2X2 FHD" group-title="┃PL┃ DLA DZIECI",┃PL┃ 2X2 FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728961&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 4FUN KIDS FHD" group-title="┃PL┃ DLA DZIECI",┃PL┃ 4FUN KIDS FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728963&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ ALFA TVP FHD" group-title="┃PL┃ DLA DZIECI",┃PL┃ ALFA TVP FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728957&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ BOBASY TV FHD" group-title="┃PL┃ DLA DZIECI",┃PL┃ BOBASY TV FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728965&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ DA VINCI FHD" group-title="┃PL┃ DLA DZIECI",┃PL┃ DA VINCI FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728958&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ DUCK TV FHD" group-title="┃PL┃ DLA DZIECI",┃PL┃ DUCK TV FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728959&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ DUCK TV PLUS FHD" group-title="┃PL┃ DLA DZIECI",┃PL┃ DUCK TV PLUS FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728960&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ MINIMINI+ FHD" group-title="┃PL┃ DLA DZIECI",┃PL┃ MINIMINI+ FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728942&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ POLSAT JIMJAM FHD" group-title="┃PL┃ DLA DZIECI",┃PL┃ POLSAT JIMJAM FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728952&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TOP KIDS FHD" group-title="┃PL┃ DLA DZIECI",┃PL┃ TOP KIDS FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728962&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVP ABC 2 FHD" group-title="┃PL┃ DLA DZIECI",┃PL┃ TVP ABC 2 FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728956&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVP ABC FHD" group-title="┃PL┃ DLA DZIECI",┃PL┃ TVP ABC FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728955&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ JUNIOR MUSIC FHD" group-title="┃PL┃ DLA DZIECI",┃PL┃ JUNIOR MUSIC FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728964&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 ABBY HATCHER" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 ABBY HATCHER
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728974&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 AUTA" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 AUTA
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729039&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 BAJKI MIX 90 - 1" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 BAJKI MIX 90 - 1
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728975&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 BAJKI MIX 90 - 2" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 BAJKI MIX 90 - 2
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728976&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 BAJKI MIX 90 - 3" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 BAJKI MIX 90 - 3
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728977&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 BAŚNIE ANDERSENA" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 BAŚNIE ANDERSENA
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728978&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 BAŚNIE BRACI GRIMM" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 BAŚNIE BRACI GRIMM
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728979&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 BING 1" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 BING 1
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728980&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 BING 2" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 BING 2
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728981&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 BLAZE I MEGAMASZYNY" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 BLAZE I MEGAMASZYNY
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729069&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 BLUEY 1" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 BLUEY 1
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728982&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 BLUEY 2" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 BLUEY 2
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728983&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 BLUEY 3" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 BLUEY 3
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728984&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 BOB BUDOWNICZY" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 BOB BUDOWNICZY
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728985&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 BOLEK I LOLEK NA WAKACJACH" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 BOLEK I LOLEK NA WAKACJACH
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728986&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 BYŁO SOBIE ŻYCIE" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 BYŁO SOBIE ŻYCIE
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728989&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 BYŁ SOBIE CZŁOWIEK" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 BYŁ SOBIE CZŁOWIEK
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728987&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 BYŁ SOBIE KOSMOS" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 BYŁ SOBIE KOSMOS
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728988&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 CIEKAWSKI GEORGE" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 CIEKAWSKI GEORGE
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728990&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 CLIFFORD - WIELKI CZERWONY PIES 1" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 CLIFFORD - WIELKI CZERWONY PIES 1
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729065&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 CLIFFORD - WIELKI CZERWONY PIES 2" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 CLIFFORD - WIELKI CZERWONY PIES 2
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729066&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 COCOBI - ENG" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 COCOBI - ENG
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728991&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 COCOMELON ENG." group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 COCOMELON ENG.
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728992&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 COCOMELON PL" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 COCOMELON PL
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728993&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 DINOPOCIĄG" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 DINOPOCIĄG
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728994&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 DISNEY BAJKI" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 DISNEY BAJKI
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728995&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 DISNEY BAJKI 2" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 DISNEY BAJKI 2
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728996&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 DISNEY BAJKI 4" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 DISNEY BAJKI 4
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728997&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 DORA POZNAJE ŚWIAT" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 DORA POZNAJE ŚWIAT
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728998&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 DRAGON BALL" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 DRAGON BALL
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1728999&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 ED, EDD I EDDY - PL / ENG" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 ED, EDD I EDDY - PL / ENG
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729000&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 FLINTSTONOWIE" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 FLINTSTONOWIE
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729001&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 GUMISIE 1" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 GUMISIE 1
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729002&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 JAK WYTRESOWAĆ SMOKA" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 JAK WYTRESOWAĆ SMOKA
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729003&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 JAŚ FASOLA" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 JAŚ FASOLA
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729004&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 JETSONOWIE 1" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 JETSONOWIE 1
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729005&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 JOHNNY BRAVO" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 JOHNNY BRAVO
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729006&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 KAPITAN TSUBASA" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 KAPITAN TSUBASA
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729007&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 KAZIO - EDUKACJA" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 KAZIO - EDUKACJA
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729008&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 KAZIO - PIOSENKI" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 KAZIO - PIOSENKI
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729009&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 KAZIO - WARZYWA I OWOCE" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 KAZIO - WARZYWA I OWOCE
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729010&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 KAZIO - ZWIERZĘTA" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 KAZIO - ZWIERZĘTA
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729011&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 KICI KOCIA" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 KICI KOCIA
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729012&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 KLINIKA DLA PLUSZAKÓW 1" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 KLINIKA DLA PLUSZAKÓW 1
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729048&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 KLINIKA DLA PLUSZAKÓW 2" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 KLINIKA DLA PLUSZAKÓW 2
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729049&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 KLUB PRZYJACIÓŁ MYSZKI MIKI (PL)" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 KLUB PRZYJACIÓŁ MYSZKI MIKI (PL)
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729013&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 KLUB PRZYJACIÓŁ MYSZKI MIKI 2 (PL)" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 KLUB PRZYJACIÓŁ MYSZKI MIKI 2 (PL)
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729014&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 KLUB WINX" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 KLUB WINX
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729060&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 KOCI DOMEK GABI" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 KOCI DOMEK GABI
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729015&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 KOT-O-CIAKI" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 KOT-O-CIAKI
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729016&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 KOZIOŁEK MATOŁEK" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 KOZIOŁEK MATOŁEK
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729017&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 KRECIK 1" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 KRECIK 1
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729018&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 KRECIK 2" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 KRECIK 2
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729019&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 KROLIK BUGS I STRUS PEDZIWIATR PL" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 KROLIK BUGS I STRUS PEDZIWIATR PL
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729020&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 KUCYKI PONY" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 KUCYKI PONY
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729051&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 KUNG FU PANDA" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 KUNG FU PANDA
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729021&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 LILO I STICH" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 LILO I STICH
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729022&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 LULANKI DO SNU" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 LULANKI DO SNU
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729023&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 MASZA I NIEDŹWIEDŹ" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 MASZA I NIEDŹWIEDŹ
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729024&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 MAŁA CZARODZIEJKA TATTY" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 MAŁA CZARODZIEJKA TATTY
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729025&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 MAŁE KRÓLESTWO BENA I HOLLY" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 MAŁE KRÓLESTWO BENA I HOLLY
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729026&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 MINIONKI" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 MINIONKI
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729035&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 MIŚ USZATEK" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 MIŚ USZATEK
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729027&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 MUMINKI 1" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 MUMINKI 1
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729028&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 MY MELODY AND KUROMI" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 MY MELODY AND KUROMI
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729029&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 NIESAMOWITY ŚWIAT GUMBALLA 1" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 NIESAMOWITY ŚWIAT GUMBALLA 1
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729030&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 NOWE PRZYGODY KUBUSIA PUCHATKA" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 NOWE PRZYGODY KUBUSIA PUCHATKA
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729031&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 OKTONAUCI - PRZYGODY NA LĄDZIE" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 OKTONAUCI - PRZYGODY NA LĄDZIE
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729072&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 PAN ROBÓTKA" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 PAN ROBÓTKA
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729032&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 PINGWINY Z MADAGASKARU 1" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 PINGWINY Z MADAGASKARU 1
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729033&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 PIOSENKI PRZEDSZKOLAKA" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 PIOSENKI PRZEDSZKOLAKA
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729034&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 POKEMON" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 POKEMON
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729036&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 PORWANIE BALTAZARA GĄBKI" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 PORWANIE BALTAZARA GĄBKI
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729037&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 POWER RANGERS ENG." group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 POWER RANGERS ENG.
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729038&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 PSI PATROL 1" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 PSI PATROL 1
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729040&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 PSI PATROL 2" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 PSI PATROL 2
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729041&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 PSI PATROL 3" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 PSI PATROL 3
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729042&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 PSI PATROL 4" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 PSI PATROL 4
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729043&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 PSI PATROL 5" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 PSI PATROL 5
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729044&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 PSI PATROL 6" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 PSI PATROL 6
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729045&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 PSI ZYWOT" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 PSI ZYWOT
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729050&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 PSZCZÓŁKA MAJA 1" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 PSZCZÓŁKA MAJA 1
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729052&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 PSZCZÓŁKA MAJA 2" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 PSZCZÓŁKA MAJA 2
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729053&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 REKSIO" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 REKSIO
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729054&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 RUBBLE I JEGO EKIPA" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 RUBBLE I JEGO EKIPA
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729046&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 RUBBLE I JEGO EKIPA 2" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 RUBBLE I JEGO EKIPA 2
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729047&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 RÓŻOWA PANTERA I PRZYJACIELE" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 RÓŻOWA PANTERA I PRZYJACIELE
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729055&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 SCOOBY DOO 1" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 SCOOBY DOO 1
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729056&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 SCOOBY DOO 2" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 SCOOBY DOO 2
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729057&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 SCOOBY DOO 3" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 SCOOBY DOO 3
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729058&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 SCOOBY DOO 4" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 SCOOBY DOO 4
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729059&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 SHREK" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 SHREK
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729061&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 SMERFY 1" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 SMERFY 1
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729062&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 SMERFY 2" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 SMERFY 2
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729063&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 SMERFY 3" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 SMERFY 3
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729064&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 SMRODEK I BRUDEK" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 SMRODEK I BRUDEK
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729073&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 SPONGEBOB KANCIASTOPORTY" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 SPONGEBOB KANCIASTOPORTY
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729067&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 STARY MACDONALD FARME MIAŁ - ALL LEANGUE" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 STARY MACDONALD FARME MIAŁ - ALL LEANGUE
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729068&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 STRAŻAK SAM 1" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 STRAŻAK SAM 1
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729070&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 STRAŻAK SAM 2" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 STRAŻAK SAM 2
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729071&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 STRUS PEDZIWIATR ENG" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 STRUS PEDZIWIATR ENG
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729074&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 SUPER BABY LALA" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 SUPER BABY LALA
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729075&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 SWINKA PEPPA" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 SWINKA PEPPA
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729076&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 SZYBCY I WŚCIEKLI - WYŚCIGOWI AGENCI" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 SZYBCY I WŚCIEKLI - WYŚCIGOWI AGENCI
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729077&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 TABALUGA 1" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 TABALUGA 1
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729078&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 TABALUGA 2" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 TABALUGA 2
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729079&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 TABALUGA 3" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 TABALUGA 3
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729080&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 TELETUBISIE" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 TELETUBISIE
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729081&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 TOM I JERRY" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 TOM I JERRY
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729082&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 TOM I JERRY 2" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 TOM I JERRY 2
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729083&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 WILK I ZAJĄC" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 WILK I ZAJĄC
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729084&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 ZACZAROWANY OŁÓWEK" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 ZACZAROWANY OŁÓWEK
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729085&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 ZWARIOWANE MELODIE" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 ZWARIOWANE MELODIE
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729086&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 ŚPIEWAJĄCE BRZDĄCE 1" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 ŚPIEWAJĄCE BRZDĄCE 1
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729087&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 ŚPIEWAJĄCE BRZDĄCE 2" group-title="┃PL┃ DLA DZIECI",┃PL┃ 24/7 ŚPIEWAJĄCE BRZDĄCE 2
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729088&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ CANAL+ NOW FHD" group-title="┃PL┃ CANAL+ SPORT",┃PL┃ CANAL+ NOW FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729144&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ CANAL+ NOW HD" group-title="┃PL┃ CANAL+ SPORT",┃PL┃ CANAL+ NOW HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729145&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ CANAL+ SPORT FHD" group-title="┃PL┃ CANAL+ SPORT",┃PL┃ CANAL+ SPORT FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729134&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ CANAL+ SPORT HD" group-title="┃PL┃ CANAL+ SPORT",┃PL┃ CANAL+ SPORT HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729135&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ CANAL+ SPORT 2 FHD" group-title="┃PL┃ CANAL+ SPORT",┃PL┃ CANAL+ SPORT 2 FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729136&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ CANAL+ SPORT 2 HD" group-title="┃PL┃ CANAL+ SPORT",┃PL┃ CANAL+ SPORT 2 HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729137&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ CANAL+ SPORT 3 FHD" group-title="┃PL┃ CANAL+ SPORT",┃PL┃ CANAL+ SPORT 3 FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729138&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ CANAL+ SPORT 3 HD" group-title="┃PL┃ CANAL+ SPORT",┃PL┃ CANAL+ SPORT 3 HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729139&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ CANAL+ SPORT 4 FHD" group-title="┃PL┃ CANAL+ SPORT",┃PL┃ CANAL+ SPORT 4 FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729140&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ CANAL+ SPORT 4 HD" group-title="┃PL┃ CANAL+ SPORT",┃PL┃ CANAL+ SPORT 4 HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729141&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ CANAL+ SPORT 5 FHD" group-title="┃PL┃ CANAL+ SPORT",┃PL┃ CANAL+ SPORT 5 FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729142&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ CANAL+ SPORT 5 HD" group-title="┃PL┃ CANAL+ SPORT",┃PL┃ CANAL+ SPORT 5 HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729143&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ CANAL+ EXTRA 1 FHD" group-title="┃PL┃ CANAL+ SPORT",┃PL┃ CANAL+ EXTRA 1 FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729146&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ CANAL+ EXTRA 1 HD" group-title="┃PL┃ CANAL+ SPORT",┃PL┃ CANAL+ EXTRA 1 HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729147&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ CANAL+ EXTRA 2 FHD" group-title="┃PL┃ CANAL+ SPORT",┃PL┃ CANAL+ EXTRA 2 FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729148&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ CANAL+ EXTRA 2 HD" group-title="┃PL┃ CANAL+ SPORT",┃PL┃ CANAL+ EXTRA 2 HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729149&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ CANAL+ EXTRA 3 FHD" group-title="┃PL┃ CANAL+ SPORT",┃PL┃ CANAL+ EXTRA 3 FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729150&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ CANAL+ EXTRA 3 HD" group-title="┃PL┃ CANAL+ SPORT",┃PL┃ CANAL+ EXTRA 3 HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729151&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ CANAL+ EXTRA 4 FHD" group-title="┃PL┃ CANAL+ SPORT",┃PL┃ CANAL+ EXTRA 4 FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729152&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ CANAL+ EXTRA 4 HD" group-title="┃PL┃ CANAL+ SPORT",┃PL┃ CANAL+ EXTRA 4 HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729153&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ CANAL+ EXTRA 5 FHD" group-title="┃PL┃ CANAL+ SPORT",┃PL┃ CANAL+ EXTRA 5 FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729154&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ CANAL+ EXTRA 5 HD" group-title="┃PL┃ CANAL+ SPORT",┃PL┃ CANAL+ EXTRA 5 HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729155&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ CANAL+ EXTRA 6 FHD" group-title="┃PL┃ CANAL+ SPORT",┃PL┃ CANAL+ EXTRA 6 FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729156&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ CANAL+ EXTRA 6 HD" group-title="┃PL┃ CANAL+ SPORT",┃PL┃ CANAL+ EXTRA 6 HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729157&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ CANAL+ EXTRA 7 FHD" group-title="┃PL┃ CANAL+ SPORT",┃PL┃ CANAL+ EXTRA 7 FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729158&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ CANAL+ EXTRA 7 HD" group-title="┃PL┃ CANAL+ SPORT",┃PL┃ CANAL+ EXTRA 7 HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729159&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ CANAL+ EXTRA 8 FHD" group-title="┃PL┃ CANAL+ SPORT",┃PL┃ CANAL+ EXTRA 8 FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729160&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ CANAL+ EXTRA 9 FHD" group-title="┃PL┃ CANAL+ SPORT",┃PL┃ CANAL+ EXTRA 9 FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729161&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ POLSAT SPORT 1 FHD" group-title="┃PL┃ POLSAT SPORT",┃PL┃ POLSAT SPORT 1 FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729162&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ POLSAT SPORT 1 HD" group-title="┃PL┃ POLSAT SPORT",┃PL┃ POLSAT SPORT 1 HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729163&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ POLSAT SPORT 2 FHD" group-title="┃PL┃ POLSAT SPORT",┃PL┃ POLSAT SPORT 2 FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729164&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ POLSAT SPORT 2 HD" group-title="┃PL┃ POLSAT SPORT",┃PL┃ POLSAT SPORT 2 HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729165&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ POLSAT SPORT 3 FHD" group-title="┃PL┃ POLSAT SPORT",┃PL┃ POLSAT SPORT 3 FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729168&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ POLSAT SPORT 3 HD" group-title="┃PL┃ POLSAT SPORT",┃PL┃ POLSAT SPORT 3 HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729169&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ POLSAT SPORT Fight FHD" group-title="┃PL┃ POLSAT SPORT",┃PL┃ POLSAT SPORT Fight FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729166&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ POLSAT SPORT FIGHT HD" group-title="┃PL┃ POLSAT SPORT",┃PL┃ POLSAT SPORT FIGHT HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729167&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ POLSAT SPORT PREMIUM 1 FHD" group-title="┃PL┃ POLSAT SPORT",┃PL┃ POLSAT SPORT PREMIUM 1 FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729170&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ POLSAT SPORT PREMIUM 1 HD" group-title="┃PL┃ POLSAT SPORT",┃PL┃ POLSAT SPORT PREMIUM 1 HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729171&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ POLSAT SPORT PREMIUM 2 FHD" group-title="┃PL┃ POLSAT SPORT",┃PL┃ POLSAT SPORT PREMIUM 2 FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729172&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ POLSAT SPORT PREMIUM 2 HD" group-title="┃PL┃ POLSAT SPORT",┃PL┃ POLSAT SPORT PREMIUM 2 HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729173&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ POLSAT SPORT EXTRA 1 FHD" group-title="┃PL┃ POLSAT SPORT",┃PL┃ POLSAT SPORT EXTRA 1 FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729174&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ POLSAT SPORT EXTRA 1 HD" group-title="┃PL┃ POLSAT SPORT",┃PL┃ POLSAT SPORT EXTRA 1 HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729175&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ POLSAT SPORT EXTRA 2 FHD" group-title="┃PL┃ POLSAT SPORT",┃PL┃ POLSAT SPORT EXTRA 2 FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729176&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ POLSAT SPORT EXTRA 2 HD" group-title="┃PL┃ POLSAT SPORT",┃PL┃ POLSAT SPORT EXTRA 2 HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729177&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ POLSAT SPORT EXTRA 3 FDH" group-title="┃PL┃ POLSAT SPORT",┃PL┃ POLSAT SPORT EXTRA 3 FDH
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729178&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ POLSAT SPORT EXTRA 3 HD" group-title="┃PL┃ POLSAT SPORT",┃PL┃ POLSAT SPORT EXTRA 3 HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729179&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ POLSAT SPORT EXTRA 4 FHD" group-title="┃PL┃ POLSAT SPORT",┃PL┃ POLSAT SPORT EXTRA 4 FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729180&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ POLSAT SPORT EXTRA 4 HD" group-title="┃PL┃ POLSAT SPORT",┃PL┃ POLSAT SPORT EXTRA 4 HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729181&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVP SPORT FHD" group-title="┃PL┃ POLSAT SPORT",┃PL┃ TVP SPORT FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729190&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVP SPORT HD" group-title="┃PL┃ POLSAT SPORT",┃PL┃ TVP SPORT HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729191&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ EUROSPORT 1 FHD" group-title="┃PL┃ POLSAT SPORT",┃PL┃ EUROSPORT 1 FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729182&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ EUROSPORT 1 HD" group-title="┃PL┃ POLSAT SPORT",┃PL┃ EUROSPORT 1 HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729183&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ EUROSPORT 2 FHD" group-title="┃PL┃ POLSAT SPORT",┃PL┃ EUROSPORT 2 FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729184&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ EUROSPORT 2 HD" group-title="┃PL┃ POLSAT SPORT",┃PL┃ EUROSPORT 2 HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729185&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ EUROSPORT 3 FHD" group-title="┃PL┃ POLSAT SPORT",┃PL┃ EUROSPORT 3 FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729186&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ EUROSPORT 3 HD" group-title="┃PL┃ POLSAT SPORT",┃PL┃ EUROSPORT 3 HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729187&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ EUROSPORT 4 FHD" group-title="┃PL┃ POLSAT SPORT",┃PL┃ EUROSPORT 4 FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729188&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ EUROSPORT 4 HD" group-title="┃PL┃ POLSAT SPORT",┃PL┃ EUROSPORT 4 HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729189&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ SPORT KLUB FHD" group-title="┃PL┃ POLSAT SPORT",┃PL┃ SPORT KLUB FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729192&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ SPORT KLUB HD" group-title="┃PL┃ POLSAT SPORT",┃PL┃ SPORT KLUB HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729193&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ FIGHTKLUB FHD" group-title="┃PL┃ POLSAT SPORT",┃PL┃ FIGHTKLUB FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729198&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ FIGHTKLUB HD" group-title="┃PL┃ POLSAT SPORT",┃PL┃ FIGHTKLUB HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729199&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ FIGHTBOX FHD" group-title="┃PL┃ POLSAT SPORT",┃PL┃ FIGHTBOX FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729196&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ FIGHTBOX HD" group-title="┃PL┃ POLSAT SPORT",┃PL┃ FIGHTBOX HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729197&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ GOLF ZONE FHD" group-title="┃PL┃ POLSAT SPORT",┃PL┃ GOLF ZONE FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729200&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ GOLF ZONE HD" group-title="┃PL┃ POLSAT SPORT",┃PL┃ GOLF ZONE HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729201&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ EXTREME SPORTS FHD" group-title="┃PL┃ POLSAT SPORT",┃PL┃ EXTREME SPORTS FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729194&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ EXTREME SPORTS HD" group-title="┃PL┃ POLSAT SPORT",┃PL┃ EXTREME SPORTS HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729195&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ SPORTOWA TV FHD" group-title="┃PL┃ POLSAT SPORT",┃PL┃ SPORTOWA TV FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729205&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ GAMETOON FHD" group-title="┃PL┃ POLSAT SPORT",┃PL┃ GAMETOON FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729202&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ E-SPORT FHD" group-title="┃PL┃ POLSAT SPORT",┃PL┃ E-SPORT FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729203&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ X-SPORT FHD" group-title="┃PL┃ POLSAT SPORT",┃PL┃ X-SPORT FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729204&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ ELEVEN SPORTS 1 FHD" group-title="┃PL┃ ELEVEN SPORTS",┃PL┃ ELEVEN SPORTS 1 FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729221&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ ELEVEN SPORTS 1 HD" group-title="┃PL┃ ELEVEN SPORTS",┃PL┃ ELEVEN SPORTS 1 HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729222&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ ELEVEN SPORTS 1" group-title="┃PL┃ ELEVEN SPORTS",┃PL┃ ELEVEN SPORTS 1
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729223&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ ELEVEN SPORTS 2 FHD" group-title="┃PL┃ ELEVEN SPORTS",┃PL┃ ELEVEN SPORTS 2 FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729224&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ ELEVEN SPORTS 2 HD" group-title="┃PL┃ ELEVEN SPORTS",┃PL┃ ELEVEN SPORTS 2 HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729225&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ ELEVEN SPORTS 2" group-title="┃PL┃ ELEVEN SPORTS",┃PL┃ ELEVEN SPORTS 2
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729226&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ ELEVEN SPORTS 3 FHD" group-title="┃PL┃ ELEVEN SPORTS",┃PL┃ ELEVEN SPORTS 3 FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729227&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ ELEVEN SPORTS 3 HD" group-title="┃PL┃ ELEVEN SPORTS",┃PL┃ ELEVEN SPORTS 3 HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729228&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ ELEVEN SPORTS 3" group-title="┃PL┃ ELEVEN SPORTS",┃PL┃ ELEVEN SPORTS 3
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729229&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ ELEVEN SPORTS 4 FHD" group-title="┃PL┃ ELEVEN SPORTS",┃PL┃ ELEVEN SPORTS 4 FHD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729230&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ ELEVEN SPORTS 4 HD" group-title="┃PL┃ ELEVEN SPORTS",┃PL┃ ELEVEN SPORTS 4 HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729231&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ ELEVEN SPORTS 4" group-title="┃PL┃ ELEVEN SPORTS",┃PL┃ ELEVEN SPORTS 4
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729232&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVN BRZYDULA" group-title="┃PL┃ TVN PLAYER",┃PL┃ TVN BRZYDULA
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729249&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVN CZAS NA ŚLUB" group-title="┃PL┃ TVN PLAYER",┃PL┃ TVN CZAS NA ŚLUB
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729248&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVN KULINARNE PODRÓZE" group-title="┃PL┃ TVN PLAYER",┃PL┃ TVN KULINARNE PODRÓZE
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729251&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVN KULTOWE SERIALE" group-title="┃PL┃ TVN PLAYER",┃PL┃ TVN KULTOWE SERIALE
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729252&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVN MAM TALENT" group-title="┃PL┃ TVN PLAYER",┃PL┃ TVN MAM TALENT
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729250&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVN MILIONERZY" group-title="┃PL┃ TVN PLAYER",┃PL┃ TVN MILIONERZY
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729253&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVN MOMENTY PRAWDY" group-title="┃PL┃ TVN PLAYER",┃PL┃ TVN MOMENTY PRAWDY
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729254&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVN MOTO" group-title="┃PL┃ TVN PLAYER",┃PL┃ TVN MOTO
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729255&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVN PATROL" group-title="┃PL┃ TVN PLAYER",┃PL┃ TVN PATROL
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729256&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVN PORA NA SHOW" group-title="┃PL┃ TVN PLAYER",┃PL┃ TVN PORA NA SHOW
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729257&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVN PRAWO I ZYCIE" group-title="┃PL┃ TVN PLAYER",┃PL┃ TVN PRAWO I ZYCIE
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729258&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVN RAJSKA MILOSC" group-title="┃PL┃ TVN PLAYER",┃PL┃ TVN RAJSKA MILOSC
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729259&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVN REWOLUCJE W KUCHNI" group-title="┃PL┃ TVN PLAYER",┃PL┃ TVN REWOLUCJE W KUCHNI
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729260&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVN SERIALE O KOBIETACH" group-title="┃PL┃ TVN PLAYER",┃PL┃ TVN SERIALE O KOBIETACH
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729261&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVN SZKOLA ZYCIA" group-title="┃PL┃ TVN PLAYER",┃PL┃ TVN SZKOLA ZYCIA
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729262&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVN SZPITALNE HISTORIE" group-title="┃PL┃ TVN PLAYER",┃PL┃ TVN SZPITALNE HISTORIE
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729263&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVN TALK SHOW" group-title="┃PL┃ TVN PLAYER",┃PL┃ TVN TALK SHOW
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729264&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVN TELENOWELE" group-title="┃PL┃ TVN PLAYER",┃PL┃ TVN TELENOWELE
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729265&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVN USTERKA" group-title="┃PL┃ TVN PLAYER",┃PL┃ TVN USTERKA
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729266&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVN W DOMU" group-title="┃PL┃ TVN PLAYER",┃PL┃ TVN W DOMU
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729267&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVN ZYCIE JAK W BAJCE" group-title="┃PL┃ TVN PLAYER",┃PL┃ TVN ZYCIE JAK W BAJCE
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729268&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVP FAST BARWY SZCZĘŚCIA" group-title="┃PL┃ TVP FAST",┃PL┃ TVP FAST BARWY SZCZĘŚCIA
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729281&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVP FAST KLAN" group-title="┃PL┃ TVP FAST",┃PL┃ TVP FAST KLAN
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729282&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVP FAST KRYMINAŁY" group-title="┃PL┃ TVP FAST",┃PL┃ TVP FAST KRYMINAŁY
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729283&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVP FAST MIŁOŚĆ" group-title="┃PL┃ TVP FAST",┃PL┃ TVP FAST MIŁOŚĆ
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729284&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVP FAST NA DOBRE I NA ZLE" group-title="┃PL┃ TVP FAST",┃PL┃ TVP FAST NA DOBRE I NA ZLE
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729280&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ MTV POLSKA" group-title="┃PL┃ MUZYKA",┃PL┃ MTV POLSKA
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729285&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ VIVA POLSKA" group-title="┃PL┃ MUZYKA",┃PL┃ VIVA POLSKA
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729286&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ VIVA CLASSICS" group-title="┃PL┃ MUZYKA",┃PL┃ VIVA CLASSICS
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729287&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ VIVA RUSSIA" group-title="┃PL┃ MUZYKA",┃PL┃ VIVA RUSSIA
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729335&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ MUSIC 1" group-title="┃PL┃ MUZYKA",┃PL┃ MUSIC 1
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729329&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ MUSIC BOX" group-title="┃PL┃ MUZYKA",┃PL┃ MUSIC BOX
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729288&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ MUSIC BOX CLASSIC" group-title="┃PL┃ MUZYKA",┃PL┃ MUSIC BOX CLASSIC
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729289&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 4FUN TV" group-title="┃PL┃ MUZYKA",┃PL┃ 4FUN TV
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729290&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 4FUN DANCE" group-title="┃PL┃ MUZYKA",┃PL┃ 4FUN DANCE
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729291&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 4FUN KIDS" group-title="┃PL┃ MUZYKA",┃PL┃ 4FUN KIDS
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729292&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ ESKA TV" group-title="┃PL┃ MUZYKA",┃PL┃ ESKA TV
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729293&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ ESKA TV EXTRA" group-title="┃PL┃ MUZYKA",┃PL┃ ESKA TV EXTRA
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729294&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ ESKA ROCK TV" group-title="┃PL┃ MUZYKA",┃PL┃ ESKA ROCK TV
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729296&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ ESKA ROCK" group-title="┃PL┃ MUZYKA",┃PL┃ ESKA ROCK
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729295&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ KINO POLSKA MUZYKA" group-title="┃PL┃ MUZYKA",┃PL┃ KINO POLSKA MUZYKA
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729297&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ VOX MUSIC TV" group-title="┃PL┃ MUZYKA",┃PL┃ VOX MUSIC TV
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729298&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ POLSAT MUSIC" group-title="┃PL┃ MUZYKA",┃PL┃ POLSAT MUSIC
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729299&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ POLO TV" group-title="┃PL┃ MUZYKA",┃PL┃ POLO TV
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729304&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ DISCO POLO MUSIC" group-title="┃PL┃ MUZYKA",┃PL┃ DISCO POLO MUSIC
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729305&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ POWER TV" group-title="┃PL┃ MUZYKA",┃PL┃ POWER TV
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729300&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ NUTA TV" group-title="┃PL┃ MUZYKA",┃PL┃ NUTA TV
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729302&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ NUTA GOLD" group-title="┃PL┃ MUZYKA",┃PL┃ NUTA GOLD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729303&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ VEVO 2K" group-title="┃PL┃ MUZYKA",┃PL┃ VEVO 2K
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729315&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ VEVO 70'S" group-title="┃PL┃ MUZYKA",┃PL┃ VEVO 70'S
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729318&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ VEVO 80'S" group-title="┃PL┃ MUZYKA",┃PL┃ VEVO 80'S
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729317&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ VEVO 90'S" group-title="┃PL┃ MUZYKA",┃PL┃ VEVO 90'S
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729316&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ VEVO COUNTRY" group-title="┃PL┃ MUZYKA",┃PL┃ VEVO COUNTRY
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729310&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ VEVO LATINOS" group-title="┃PL┃ MUZYKA",┃PL┃ VEVO LATINOS
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729313&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ VEVO MEXICANO" group-title="┃PL┃ MUZYKA",┃PL┃ VEVO MEXICANO
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729314&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ VEVO POP" group-title="┃PL┃ MUZYKA",┃PL┃ VEVO POP
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729311&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ VEVO R&B" group-title="┃PL┃ MUZYKA",┃PL┃ VEVO R&B
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729312&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ FIRST MUSIC 2" group-title="┃PL┃ MUZYKA",┃PL┃ FIRST MUSIC 2
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729331&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ KRONEHIT TV" group-title="┃PL┃ MUZYKA",┃PL┃ KRONEHIT TV
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729334&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ M2O TV" group-title="┃PL┃ MUZYKA",┃PL┃ M2O TV
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729308&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ MEZZO" group-title="┃PL┃ MUZYKA",┃PL┃ MEZZO
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729332&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ MIXTAPE" group-title="┃PL┃ MUZYKA",┃PL┃ MIXTAPE
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729306&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ MOOZ DANCE" group-title="┃PL┃ MUZYKA",┃PL┃ MOOZ DANCE
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729333&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ STARS TV" group-title="┃PL┃ MUZYKA",┃PL┃ STARS TV
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729301&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ SZLAGIER TV" group-title="┃PL┃ MUZYKA",┃PL┃ SZLAGIER TV
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729307&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TRACE URBAN" group-title="┃PL┃ MUZYKA",┃PL┃ TRACE URBAN
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729309&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ CLUBBING TV" group-title="┃PL┃ MUZYKA",┃PL┃ CLUBBING TV
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729319&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ DANCE TV - BEST OF DANCE TV" group-title="┃PL┃ MUZYKA",┃PL┃ DANCE TV - BEST OF DANCE TV
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729320&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ DANCE TV - DEEP HOUSE DISTRICT" group-title="┃PL┃ MUZYKA",┃PL┃ DANCE TV - DEEP HOUSE DISTRICT
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729321&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ DANCE TV - TECH HOUSE TERRACE" group-title="┃PL┃ MUZYKA",┃PL┃ DANCE TV - TECH HOUSE TERRACE
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729323&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ DANCE TV - TECHNO WAREHOUSE" group-title="┃PL┃ MUZYKA",┃PL┃ DANCE TV - TECHNO WAREHOUSE
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729322&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ DANCE TV 5" group-title="┃PL┃ MUZYKA",┃PL┃ DANCE TV 5
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729324&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ DANCE TV 6" group-title="┃PL┃ MUZYKA",┃PL┃ DANCE TV 6
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729325&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ DANCE TV 7" group-title="┃PL┃ MUZYKA",┃PL┃ DANCE TV 7
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729326&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ DANCE TV 8" group-title="┃PL┃ MUZYKA",┃PL┃ DANCE TV 8
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729327&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ DANCE TV 9" group-title="┃PL┃ MUZYKA",┃PL┃ DANCE TV 9
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729328&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ FIRST MUSIC" group-title="┃PL┃ MUZYKA",┃PL┃ FIRST MUSIC
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729330&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TV REGIONALNA ZARY" group-title="┃PL┃ REGIONALNE",┃PL┃ TV REGIONALNA ZARY
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729337&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TV REGIONALNA" group-title="┃PL┃ REGIONALNE",┃PL┃ TV REGIONALNA
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729349&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ SFERA TV" group-title="┃PL┃ REGIONALNE",┃PL┃ SFERA TV
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729338&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ LUBELSKA TV" group-title="┃PL┃ REGIONALNE",┃PL┃ LUBELSKA TV
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729339&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVK STELLA" group-title="┃PL┃ REGIONALNE",┃PL┃ TVK STELLA
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729340&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TV MAZOWSZE" group-title="┃PL┃ REGIONALNE",┃PL┃ TV MAZOWSZE
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729341&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TV ASTA" group-title="┃PL┃ REGIONALNE",┃PL┃ TV ASTA
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729342&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVS" group-title="┃PL┃ REGIONALNE",┃PL┃ TVS
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729343&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TWOJA TV" group-title="┃PL┃ REGIONALNE",┃PL┃ TWOJA TV
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729344&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TV JASLO" group-title="┃PL┃ REGIONALNE",┃PL┃ TV JASLO
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729346&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TV KUJAWY" group-title="┃PL┃ REGIONALNE",┃PL┃ TV KUJAWY
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729347&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TV REGIO" group-title="┃PL┃ REGIONALNE",┃PL┃ TV REGIO
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729348&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TV TORUN HD" group-title="┃PL┃ REGIONALNE",┃PL┃ TV TORUN HD
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729350&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVT" group-title="┃PL┃ REGIONALNE",┃PL┃ TVT
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729351&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVT ZGORZELEC" group-title="┃PL┃ REGIONALNE",┃PL┃ TVT ZGORZELEC
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729352&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ WTK" group-title="┃PL┃ REGIONALNE",┃PL┃ WTK
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729353&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVP WILNO" group-title="┃PL┃ REGIONALNE",┃PL┃ TVP WILNO
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729354&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVP3 BIALYSTOK" group-title="┃PL┃ REGIONALNE",┃PL┃ TVP3 BIALYSTOK
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729355&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVP3 BYDGOSZCZ" group-title="┃PL┃ REGIONALNE",┃PL┃ TVP3 BYDGOSZCZ
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729356&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVP3 GDANSK" group-title="┃PL┃ REGIONALNE",┃PL┃ TVP3 GDANSK
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729357&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVP3 GORZOW WIELKOPOLSKI" group-title="┃PL┃ REGIONALNE",┃PL┃ TVP3 GORZOW WIELKOPOLSKI
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729358&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVP3 KATOWICE" group-title="┃PL┃ REGIONALNE",┃PL┃ TVP3 KATOWICE
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729359&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVP3 KIELCE" group-title="┃PL┃ REGIONALNE",┃PL┃ TVP3 KIELCE
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729360&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVP3 KRAKOW" group-title="┃PL┃ REGIONALNE",┃PL┃ TVP3 KRAKOW
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729361&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVP3 LODZ" group-title="┃PL┃ REGIONALNE",┃PL┃ TVP3 LODZ
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729362&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVP3 LUBLIN" group-title="┃PL┃ REGIONALNE",┃PL┃ TVP3 LUBLIN
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729363&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVP3 OLSZTYN" group-title="┃PL┃ REGIONALNE",┃PL┃ TVP3 OLSZTYN
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729364&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVP3 OPOLE" group-title="┃PL┃ REGIONALNE",┃PL┃ TVP3 OPOLE
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729365&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVP3 POZNAN" group-title="┃PL┃ REGIONALNE",┃PL┃ TVP3 POZNAN
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729366&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVP3 RZESZOW" group-title="┃PL┃ REGIONALNE",┃PL┃ TVP3 RZESZOW
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729367&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVP3 SZCZECIN" group-title="┃PL┃ REGIONALNE",┃PL┃ TVP3 SZCZECIN
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729368&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVP3 WARSZAWA" group-title="┃PL┃ REGIONALNE",┃PL┃ TVP3 WARSZAWA
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729369&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ TVP3 WROCLAW" group-title="┃PL┃ REGIONALNE",┃PL┃ TVP3 WROCLAW
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729370&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 B.SZEMRAJ - PRZEPISY 1" group-title="┃PL┃ FIT & ZDROWIE",┃PL┃ 24/7 B.SZEMRAJ - PRZEPISY 1
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729375&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 B.SZEMRAJ - PRZEPISY 2" group-title="┃PL┃ FIT & ZDROWIE",┃PL┃ 24/7 B.SZEMRAJ - PRZEPISY 2
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729376&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 B.SZEMRAJ - PRZEPISY 3" group-title="┃PL┃ FIT & ZDROWIE",┃PL┃ 24/7 B.SZEMRAJ - PRZEPISY 3
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729377&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 M.WRZOSEK - PRZEPISY 1" group-title="┃PL┃ FIT & ZDROWIE",┃PL┃ 24/7 M.WRZOSEK - PRZEPISY 1
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729380&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 M.WRZOSEK - PRZEPISY 2" group-title="┃PL┃ FIT & ZDROWIE",┃PL┃ 24/7 M.WRZOSEK - PRZEPISY 2
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729381&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 M.WRZOSEK - PORADY 1" group-title="┃PL┃ FIT & ZDROWIE",┃PL┃ 24/7 M.WRZOSEK - PORADY 1
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729383&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 M.WRZOSEK - CAŁA PRAWDA O......" group-title="┃PL┃ FIT & ZDROWIE",┃PL┃ 24/7 M.WRZOSEK - CAŁA PRAWDA O......
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729382&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 M.WRZOSEK - IDZIEMY NA ZAKUPY 1" group-title="┃PL┃ FIT & ZDROWIE",┃PL┃ 24/7 M.WRZOSEK - IDZIEMY NA ZAKUPY 1
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729378&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 M.WRZOSEK - IDZIEMY NA ZAKUPY 2" group-title="┃PL┃ FIT & ZDROWIE",┃PL┃ 24/7 M.WRZOSEK - IDZIEMY NA ZAKUPY 2
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729379&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 M.WRZOSEK - SZYBKI TRENING W DOMU" group-title="┃PL┃ FIT & ZDROWIE",┃PL┃ 24/7 M.WRZOSEK - SZYBKI TRENING W DOMU
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729384&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 M.SKOCZYLAS - POPARTE BADANIAMI 1" group-title="┃PL┃ FIT & ZDROWIE",┃PL┃ 24/7 M.SKOCZYLAS - POPARTE BADANIAMI 1
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729385&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-name="┃PL┃ 24/7 CENTRUM RESPO - CO KUPOWAĆ A CO NIE !!!" group-title="┃PL┃ FIT & ZDROWIE",┃PL┃ 24/7 CENTRUM RESPO - CO KUPOWAĆ A CO NIE !!!
+http://line.cdnteam-tv1.online/play/live.php?mac=00%3A1B%3A79%3A42%3A26%3A5C&stream=1729386&extension=m3u8
