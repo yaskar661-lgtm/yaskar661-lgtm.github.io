@@ -1,0 +1,11 @@
+#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-TARGETDURATION:11
+#EXT-X-MEDIA-SEQUENCE:0
+#EXTINF:7.267,comment="adwData='YWR3X2FkPXRydWU=,ZHVyYXRpb25NaWxsaXNlY29uZHM9MjE4MDM=,YWRJZD0w,aW5zZXJ0aW9uVHlwZT1taWRyb2xs,'"
+https://cdn.radyotvonline.net/generic_newEnco/ad_0_17e0d481e1a345a04a19b5940eabcfc7_8cef631647c85e4ccb560267d1e6e06a_97_10000_0.aac?comment%3D%22adwData%3D%27YWR3X2FkPXRydWU%3D%2CZHVyYXRpb25NaWxsaXNlY29uZHM9MjE4MDM%3D%2CYWRJZD0w%2CaW5zZXJ0aW9uVHlwZT1taWRyb2xs%2C%27%22&id3split=true
+#EXTINF:7.267,comment="adwData=''"
+https://cdn.radyotvonline.net/generic_newEnco/ad_0_17e0d481e1a345a04a19b5940eabcfc7_8cef631647c85e4ccb560267d1e6e06a_97_10000_1.aac?comment%3D%22adwData%3D%27%27%22&id3split=true
+#EXTINF:7.267,comment="adwData=''"
+https://cdn.radyotvonline.net/generic_newEnco/ad_0_17e0d481e1a345a04a19b5940eabcfc7_8cef631647c85e4ccb560267d1e6e06a_97_10000_2.aac?comment%3D%22adwData%3D%27%27%22&id3split=true
+#EXT-X-ENDLIST
