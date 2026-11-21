@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Canlı Kanal Oynatıcı (15 dk Cache + Safari/iOS Yedekli)</title>
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      max-width: 760px;
+      margin: 24px auto;
+      padding: 0 16px;
+      background: #111318;
+      color: #f3f4f6;
+    }
+    .row {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 12px;
+    }
+    input, select, button {
+      padding: 10px 12px;
+      border-radius: 8px;
+      border: 1px solid #374151;
+      background: #1f2937;
+      color: #f9fafb;
+      font-size: 14px;
+    }
+    input {
+      flex: 1;
+      min-width: 240px;
+    }
+    select {
+      flex: 1;
+      min-width: 200px;
+    }
+    button {
+      cursor: pointer;
+      background: #2563eb;
+      border-color: #2563eb;
+      font-weight: 600;
+    }
+    button.secondary {
+      background: #374151;
+      border-color: #4b5563;
+    }
+    .player-wrap {
+      margin: 14px 0;
+      background: #000;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid #262b36;
+    }
+    video {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      display: block;
+      background: #000;
+    }
+    pre {
+      background: #0b0d11;
+      border: 1px solid #262b36;
+      border-radius: 8px;
+      padding: 12px;
+      overflow-x: auto;
+      white-space: pre-wrap;
+      word-break: break-word;
+      font-size: 13px;
+    }
+    .hint {
+      color: #9ca3af;
+      font-size: 13px;
+      margin-bottom: 14px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Canlı Kanal Oynatıcı</h2>
+  <p class="hint">
+    Çözümlenen <code>m3u8</code> bağlantıları <strong>15 dakika</strong> boyunca önbellekte tutulur ve
+    <code>hls.js</code> ile (Safari/iOS için yerel HLS yedeğiyle) oynatılır. Cloudflare Worker çıplak IP
+    isteklerinde <code>1003</code> hatası verdiği için IP tabanlı yayınlar doğrudan denenir.
+  </p>
+
+  <div class="row">
+    <input
+      id="proxyInput"
+      type="text"
+      value="https://guard.sekobes.workers.dev/?url="
+      placeholder="Proxy URL (ör. https://guard.sekobes.workers.dev/?url=)"
+    />
+    <button id="reloadBtn" class="secondary" type="button">Listeyi Yenile</button>
+  </div>
+
+  <div class="row">
+    <select id="channelSelect">
+      <option value="">Kanallar yükleniyor...</option>
+    </select>
+    <button id="resolveBtn" type="button">Oynat / Stream Al</button>
+    <button id="clearCacheBtn" class="secondary" type="button">Cache Temizle</button>
+  </div>
+
+  <div class="player-wrap">
+    <video id="videoPlayer" controls playsinline webkit-playsinline autoplay muted></video>
+  </div>
+
+  <pre id="output">Hazır.</pre>
+
+  <script>
+    const CACHE_TTL_MS = 15 * 60 * 1000; // 15 dakika
+    const REQUEST_TIMEOUT_MS = 12000;    // 12 saniye zaman aşımı
+    const memoryCache = new Map();
+
+    const proxyInput = document.getElementById("proxyInput");
+    const channelSelect = document.getElementById("channelSelect");
+    const output = document.getElementById("output");
+    const video = document.getElementById("videoPlayer");
+
+    let hlsInstance = null;
+    let activeCleanup = null;
+
+    function logOutput(objOrText) {
+      output.textContent =
+        typeof objOrText === "string"
+          ? objOrText
+          : JSON.stringify(objOrText, null, 2);
+    }
+
+    function isIpBasedUrl(rawUrl) {
+      try {
+        const u = new URL(rawUrl);
+        const host = u.hostname.replace(/^\[|\]$/g, "");
+        const isIPv4 = /^\d{1,3}(\.\d{1,3}){3}$/.test(host);
+        const isIPv6 = host.includes(":");
+        return isIPv4 || isIPv6;
+      } catch {
+        return false;
+      }
+    }
+
+    function buildTargetUrl(rawUrl) {
+      const proxyBase = proxyInput.value.trim();
+      if (!proxyBase) return rawUrl;
+
+      if (/[?&](url|u|target)=$/i.test(proxyBase)) {
+        return proxyBase + encodeURIComponent(rawUrl);
+      }
+      return proxyBase + rawUrl;
+    }
+
+    function isSafariOrIOS() {
+      const ua = navigator.userAgent || "";
+      const isIOS =
+        /iPad|iPhone|iPod/.test(ua) ||
+        (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+      const isSafari =
+        /Safari/i.test(ua) &&
+        !/Chrome|Chromium|CriOS|FxiOS|EdgiOS/i.test(ua);
+      return isIOS || isSafari;
+    }
+
+    function destroyPlayer() {
+      if (typeof activeCleanup === "function") {
+        activeCleanup();
+        activeCleanup = null;
+      }
+      if (hlsInstance) {
+        hlsInstance.destroy();
+        hlsInstance = null;
+      }
+      video.pause();
+      video.removeAttribute("src");
+      video.load();
+    }
+
+    function playM3u8(streamUrl, useProxyFallback = false) {
+      const ipStream = isIpBasedUrl(streamUrl);
+      const canUseProxy = !ipStream && Boolean(proxyInput.value.trim());
+      const finalUrl = useProxyFallback && canUseProxy ? buildTargetUrl(streamUrl) : streamUrl;
+
+      destroyPlayer();
+
+      video.muted = true;
+      video.playsInline = true;
+      video.setAttribute("playsinline", "");
+      video.setAttribute("webkit-playsinline", "");
+
+      const preferNativeHls =
+        isSafariOrIOS() && video.canPlayType("application/vnd.apple.mpegurl");
+
+      // 1. Safari / iOS Yerel HLS Yedeği
+      if (preferNativeHls || (!window.Hls && video.canPlayType("application/vnd.apple.mpegurl"))) {
+        let settled = false;
+
+        const onLoadedMetadata = () => {
+          if (settled) return;
+          settled = true;
+          cleanup();
+          video.play().catch(() => {});
+        };
+
+        const onNativeError = () => {
+          if (settled) return;
+          settled = true;
+          cleanup();
+
+          if (!useProxyFallback && canUseProxy) {
+            playM3u8(streamUrl, true);
+            return;
+          }
+
+          logOutput({
+            error: "Safari/iOS yerel HLS oynatıcısı açamadı",
+            triedUrl: finalUrl,
+            ipBasedStream: ipStream,
+            mixedContentNote:
+              window.location.protocol === "https:" && finalUrl.startsWith("http://")
+                ? "HTTPS sayfa içinden HTTP akış tarayıcı tarafından engellenmiş olabilir."
+                : null,
+          });
+        };
+
+        function cleanup() {
+          video.removeEventListener("loadedmetadata", onLoadedMetadata);
+          video.removeEventListener("error", onNativeError);
+          if (activeCleanup === cleanup) {
+            activeCleanup = null;
+          }
+        }
+
+        activeCleanup = cleanup;
+        video.addEventListener("loadedmetadata", onLoadedMetadata);
+        video.addEventListener("error", onNativeError);
+
+        video.src = finalUrl;
+        video.load();
+        return;
+      }
+
+      // 2. hls.js (Chrome, Firefox, Edge, Android vb.)
+      if (window.Hls && Hls.isSupported()) {
+        hlsInstance = new Hls({
+          enableWorker: true,
+          lowLatencyMode: true,
+          backBufferLength: 30,
+        });
+
+        hlsInstance.loadSource(finalUrl);
+        hlsInstance.attachMedia(video);
+
+        hlsInstance.on(Hls.Events.MANIFEST_PARSED, () => {
+          video.play().catch(() => {});
+        });
+
+        hlsInstance.on(Hls.Events.ERROR, (_event, data) => {
+          if (!data.fatal) return;
+
+          if (!useProxyFallback && canUseProxy) {
+            playM3u8(streamUrl, true);
+            return;
+          }
+
+          logOutput({
+            error: "HLS Oynatma Hatası",
+            type: data.type,
+            details: data.details,
+            failedUrl: data.url || finalUrl,
+            httpStatus: data.response?.code ?? null,
+            usedProxy: useProxyFallback && canUseProxy,
+            ipBasedStream: ipStream,
+            mixedContentNote:
+              window.location.protocol === "https:" && finalUrl.startsWith("http://")
+                ? "HTTPS sayfa içinden HTTP akış tarayıcı tarafından engellenmiş olabilir."
+                : null,
+          });
+        });
+        return;
+      }
+
+      logOutput("Bu tarayıcı HLS (m3u8) oynatmayı desteklemiyor.");
+    }
+
+    async function fetchWithTimeout(url, timeoutMs = REQUEST_TIMEOUT_MS) {
+      const controller = new AbortController();
+      const timer = setTimeout(() => controller.abort(), timeoutMs);
+
+      try {
+        const res = await fetch(url, {
+          method: "GET",
+          mode: "cors",
+          cache: "no-store",
+          signal: controller.signal,
+          headers: {
+            Accept: "application/json, text/plain, */*",
+          },
+        });
+        return res;
+      } catch (err) {
+        if (err.name === "AbortError") {
+          throw new Error(`İstek ${timeoutMs / 1000} sn içinde yanıt vermedi (Timeout).`);
+        }
+        throw new Error(
+          `Ağ/CORS hatası (${err.name}): ${err.message}. Sayfa origin: ${window.location.origin}`
+        );
+      } finally {
+        clearTimeout(timer);
+      }
+    }
+
+    function getCachedStream(channelId) {
+      const now = Date.now();
+
+      const mem = memoryCache.get(channelId);
+      if (mem && mem.expiresAt > now) {
+        return {
+          ...mem.data,
+          cacheStatus: "HIT (memory)",
+          remainingSeconds: Math.round((mem.expiresAt - now) / 1000),
+        };
+      }
+
+      const key = `geil_stream_cache_${channelId}`;
+      const raw = localStorage.getItem(key);
+      if (raw) {
+        try {
+          const parsed = JSON.parse(raw);
+          if (parsed && parsed.expiresAt > now && parsed.data) {
+            memoryCache.set(channelId, parsed);
+            return {
+              ...parsed.data,
+              cacheStatus: "HIT (localStorage)",
+              remainingSeconds: Math.round((parsed.expiresAt - now) / 1000),
+            };
+          }
+          localStorage.removeItem(key);
+        } catch {
+          localStorage.removeItem(key);
+        }
+      }
+
+      return null;
+    }
+
+    function setCachedStream(channelId, data) {
+      const entry = {
+        data,
+        expiresAt: Date.now() + CACHE_TTL_MS,
+      };
+      memoryCache.set(channelId, entry);
+      try {
+        localStorage.setItem(`geil_stream_cache_${channelId}`, JSON.stringify(entry));
+      } catch {
+        // localStorage kotası doluysa bellek cache çalışmaya devam eder
+      }
+    }
+
+    function clearAllStreamCache() {
+      memoryCache.clear();
+      const keysToRemove = [];
+      for (let i = 0; i < localStorage.length; i++) {
+        const k = localStorage.key(i);
+        if (k && k.startsWith("geil_stream_cache_")) {
+          keysToRemove.push(k);
+        }
+      }
+      keysToRemove.forEach((k) => localStorage.removeItem(k));
+    }
+
+    async function resolveStream(channelId) {
+      const cached = getCachedStream(channelId);
+      if (cached) {
+        return cached;
+      }
+
+      const playUrl = `https://geil.to/live/play/${encodeURIComponent(channelId)}`;
+      const resolveRawUrl =
+        `https://geil.to/live/resolve?region=TR&language=tr&url=${encodeURIComponent(playUrl)}`;
+
+      const res = await fetchWithTimeout(buildTargetUrl(resolveRawUrl));
+      const text = await res.text();
+
+      if (!res.ok) {
+        throw new Error(`HTTP ${res.status}: ${text.slice(0, 300)}`);
+      }
+
+      let json;
+      try {
+        json = JSON.parse(text);
+      } catch {
+        throw new Error(`Geçerli JSON dönmedi: ${text.slice(0, 300)}`);
+      }
+
+      if (!json || typeof json.url !== "string" || !json.url.trim()) {
+        throw new Error("JSON içinde 'url' alanı bulunamadı.");
+      }
+
+      setCachedStream(channelId, json);
+      return {
+        ...json,
+        cacheStatus: "MISS (fresh network, cached for 15m)",
+        remainingSeconds: 900,
+      };
+    }
+
+    async function loadChannels(group = "Turkey") {
+      channelSelect.innerHTML = `<option value="">Yükleniyor...</option>`;
+      const channels = new Map();
+      let lastError = null;
+
+      for (const cursor of [0, 300, 600, 900]) {
+        const params = new URLSearchParams({
+          region: "TR",
+          language: "tr",
+          sort: "name",
+          "filter[group]": group,
+          cursor: String(cursor),
+        });
+
+        const rawUrl = `https://geil.to/live/catalog/live/channels.json?${params.toString()}`;
+
+        try {
+          const res = await fetchWithTimeout(buildTargetUrl(rawUrl));
+          if (!res.ok) {
+            lastError = new Error(`Cursor ${cursor} -> HTTP ${res.status}`);
+            continue;
+          }
+
+          const data = await res.json();
+          if (!data || !Array.isArray(data.items) || data.items.length === 0) {
+            break;
+          }
+
+          for (const item of data.items) {
+            if (
+              item &&
+              (typeof item.id === "string" || typeof item.id === "number") &&
+              typeof item.name === "string"
+            ) {
+              const id = String(item.id).trim();
+              const name = item.name.replace(/[\r\n]/g, " ").trim() || id;
+              if (id) channels.set(id, name);
+            }
+          }
+        } catch (err) {
+          lastError = err;
+          if (cursor === 0) break;
+        }
+      }
+
+      channelSelect.innerHTML = "";
+
+      if (channels.size === 0) {
+        channelSelect.innerHTML = `<option value="">Kanal bulunamadı</option>`;
+        throw lastError || new Error("Kanal listesi boş döndü.");
+      }
+
+      for (const [id, name] of channels) {
+        const opt = document.createElement("option");
+        opt.value = id;
+        opt.textContent = `${name} (${id})`;
+        channelSelect.appendChild(opt);
+      }
+
+      logOutput(`${channels.size} kanal yüklendi. Bir kanal seçip "Oynat / Stream Al" butonuna basın.`);
+    }
+
+    async function handlePlaySelected() {
+      const channelId = channelSelect.value;
+      if (!channelId) {
+        logOutput("Lütfen önce bir kanal seçin.");
+        return;
+      }
+
+      logOutput(`"${channelId}" için stream çözümleniyor...`);
+      try {
+        const result = await resolveStream(channelId);
+        logOutput(result);
+        playM3u8(result.url, false);
+      } catch (err) {
+        logOutput(`Hata: ${err.message}`);
+      }
+    }
+
+    document.getElementById("resolveBtn").addEventListener("click", handlePlaySelected);
+    channelSelect.addEventListener("change", handlePlaySelected);
+
+    document.getElementById("reloadBtn").addEventListener("click", async () => {
+      logOutput("Kanal listesi yenileniyor...");
+      try {
+        await loadChannels("Turkey");
+      } catch (err) {
+        logOutput(`Kanal listesi alınamadı:\n${err.message}`);
+      }
+    });
+
+    document.getElementById("clearCacheBtn").addEventListener("click", () => {
+      clearAllStreamCache();
+      logOutput("15 dakikalık stream cache temizlendi.");
+    });
+
+    loadChannels("Turkey").catch((err) => {
+      logOutput(`Kanal listesi alınamadı:\n${err.message}`);
+    });
+  </script>
+</body>
+</html>
