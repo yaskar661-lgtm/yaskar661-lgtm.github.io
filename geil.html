@@ -80,8 +80,7 @@
   <h2>Canlı Kanal Oynatıcı</h2>
   <p class="hint">
     Çözümlenen <code>m3u8</code> bağlantıları <strong>15 dakika</strong> boyunca önbellekte tutulur ve
-    <code>hls.js</code> ile (Safari/iOS için yerel HLS yedeğiyle) oynatılır. Cloudflare Worker çıplak IP
-    isteklerinde <code>1003</code> hatası verdiği için IP tabanlı yayınlar doğrudan denenir.
+    proxy tanımlıysa IP adresli yayınlar da dahil olmak üzere önce proxy üzerinden oynatılır.
   </p>
 
   <div class="row">
@@ -175,10 +174,12 @@
       video.load();
     }
 
-    function playM3u8(streamUrl, useProxyFallback = false) {
+    // useDirectFallback = true ise proxy başarısız olduğunda doğrudan streamUrl denenir
+    function playM3u8(streamUrl, useDirectFallback = false) {
       const ipStream = isIpBasedUrl(streamUrl);
-      const canUseProxy = !ipStream && Boolean(proxyInput.value.trim());
-      const finalUrl = useProxyFallback && canUseProxy ? buildTargetUrl(streamUrl) : streamUrl;
+      const hasProxy = Boolean(proxyInput.value.trim());
+      const useProxyNow = hasProxy && !useDirectFallback;
+      const finalUrl = useProxyNow ? buildTargetUrl(streamUrl) : streamUrl;
 
       destroyPlayer();
 
@@ -206,7 +207,7 @@
           settled = true;
           cleanup();
 
-          if (!useProxyFallback && canUseProxy) {
+          if (useProxyNow && !useDirectFallback) {
             playM3u8(streamUrl, true);
             return;
           }
@@ -214,6 +215,7 @@
           logOutput({
             error: "Safari/iOS yerel HLS oynatıcısı açamadı",
             triedUrl: finalUrl,
+            usedProxy: useProxyNow,
             ipBasedStream: ipStream,
             mixedContentNote:
               window.location.protocol === "https:" && finalUrl.startsWith("http://")
@@ -257,7 +259,7 @@
         hlsInstance.on(Hls.Events.ERROR, (_event, data) => {
           if (!data.fatal) return;
 
-          if (!useProxyFallback && canUseProxy) {
+          if (useProxyNow && !useDirectFallback) {
             playM3u8(streamUrl, true);
             return;
           }
@@ -268,7 +270,7 @@
             details: data.details,
             failedUrl: data.url || finalUrl,
             httpStatus: data.response?.code ?? null,
-            usedProxy: useProxyFallback && canUseProxy,
+            usedProxy: useProxyNow,
             ipBasedStream: ipStream,
             mixedContentNote:
               window.location.protocol === "https:" && finalUrl.startsWith("http://")
