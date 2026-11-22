@@ -46,6 +46,10 @@
       background: #374151;
       border-color: #4b5563;
     }
+    button:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
     .player-wrap {
       margin: 14px 0;
       background: #000;
@@ -98,6 +102,7 @@
       <option value="">Kanallar yükleniyor...</option>
     </select>
     <button id="resolveBtn" type="button">Oynat / Stream Al</button>
+    <button id="openRawBtn" class="secondary" type="button" disabled>m3u8'i Tarayıcıda Aç</button>
     <button id="clearCacheBtn" class="secondary" type="button">Cache Temizle</button>
   </div>
 
@@ -114,11 +119,18 @@
 
     const proxyInput = document.getElementById("proxyInput");
     const channelSelect = document.getElementById("channelSelect");
+    const openRawBtn = document.getElementById("openRawBtn");
     const output = document.getElementById("output");
     const video = document.getElementById("videoPlayer");
 
     let hlsInstance = null;
     let activeCleanup = null;
+    let lastResolvedStreamUrl = "";
+
+    function setRawStreamUrl(url) {
+      lastResolvedStreamUrl = typeof url === "string" ? url.trim() : "";
+      openRawBtn.disabled = !lastResolvedStreamUrl;
+    }
 
     function logOutput(objOrText) {
       output.textContent =
@@ -368,6 +380,7 @@
         }
       }
       keysToRemove.forEach((k) => localStorage.removeItem(k));
+      setRawStreamUrl("");
     }
 
     async function resolveStream(channelId) {
@@ -471,6 +484,7 @@
     async function handlePlaySelected() {
       const channelId = channelSelect.value;
       if (!channelId) {
+        setRawStreamUrl("");
         logOutput("Lütfen önce bir kanal seçin.");
         return;
       }
@@ -478,12 +492,22 @@
       logOutput(`"${channelId}" için stream çözümleniyor...`);
       try {
         const result = await resolveStream(channelId);
+        setRawStreamUrl(result.url);
         logOutput(result);
         playM3u8(result.url, false);
       } catch (err) {
+        setRawStreamUrl("");
         logOutput(`Hata: ${err.message}`);
       }
     }
+
+    openRawBtn.addEventListener("click", () => {
+      if (!lastResolvedStreamUrl) {
+        logOutput("Önce bir kanal çözün veya oynatın.");
+        return;
+      }
+      window.open(lastResolvedStreamUrl, "_blank", "noopener,noreferrer");
+    });
 
     document.getElementById("resolveBtn").addEventListener("click", handlePlaySelected);
     channelSelect.addEventListener("change", handlePlaySelected);
